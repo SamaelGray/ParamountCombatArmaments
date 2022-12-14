@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- === Hand Cannon === -->
+    <SoundDef>
+    <defName>Shot_PCA_Handcannon</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Revolver</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>40~50</volumeRange>
+        <pitchRange>0.7~0.8</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Pistol === -->
+  <SoundDef>
+    <defName>Shot_PCA_Pistol</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Weapon/Autopistol</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~70</volumeRange>
+        <pitchRange>0.9~1.0</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === PDW === -->
+  <SoundDef>
+    <defName>Shot_PCA_PDW</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Weapon/MachinePistol</clipPath>
+          </li>
+        </grains>
+        <volumeRange>55~70</volumeRange>
+        <pitchRange>0.9~1.0</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Magnum Rifles === -->
+  <SoundDef>
+    <defName>Shot_PCA_Magnum</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot/Shot_BattleRifle</clipPath>
+          </li>
+        </grains>
+        <pitchRange>1~1.1</pitchRange>
+        <volumeRange>35~50</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Magnum Sniper === -->
+  <SoundDef>
+    <defName>Shot_PCA_MagnumSniper</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Weapon/SniperRifle</clipPath>
+          </li>
+        </grains>
+        <pitchRange>1~1.1</pitchRange>
+        <volumeRange>75~80</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === AMR === -->
+  <SoundDef>
+    <defName>Shot_PCA_AMR</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Weapon/SniperRifle</clipPath>
+          </li>
+        </grains>
+        <pitchRange>1.05~1.15</pitchRange>
+        <volumeRange>77~85</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Magnum Charge === -->
+  <SoundDef>
+    <defName>Shot_PCA_MagnumCharge</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Weapon/ChargeLance/Fire</clipPath>
+          </li>
+        </grains>
+        <volumeRange>55~70</volumeRange>
+        <pitchRange>1~1.15</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
