@@ -20,96 +20,20 @@
     </subSounds>
   </SoundDef>
 
-  <!-- === Pistol === -->
+  <!-- === Suppressed === -->
   <SoundDef>
-    <defName>Shot_PCA_Pistol</defName>
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipPath>Weapon/Autopistol</clipPath>
-          </li>
-        </grains>
-        <volumeRange>60~70</volumeRange>
-        <pitchRange>0.9~1.0</pitchRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <!-- === PDW === -->
-  <SoundDef>
-    <defName>Shot_PCA_PDW</defName>
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipPath>Weapon/MachinePistol</clipPath>
-          </li>
-        </grains>
-        <volumeRange>55~70</volumeRange>
-        <pitchRange>0.9~1.0</pitchRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <!-- === Magnum Rifles === -->
-  <SoundDef>
-    <defName>Shot_PCA_Magnum</defName>
+    <defName>Shot_PCA_Suppressed</defName>
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Shot/Shot_BattleRifle</clipPath>
+            <clipPath>Shot_Suppressed</clipPath>
           </li>
         </grains>
-        <pitchRange>1~1.1</pitchRange>
-        <volumeRange>35~50</volumeRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <!-- === Magnum Sniper === -->
-  <SoundDef>
-    <defName>Shot_PCA_MagnumSniper</defName>
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipPath>Weapon/SniperRifle</clipPath>
-          </li>
-        </grains>
-        <pitchRange>1~1.1</pitchRange>
-        <volumeRange>75~80</volumeRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <!-- === AMR === -->
-  <SoundDef>
-    <defName>Shot_PCA_AMR</defName>
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipPath>Weapon/SniperRifle</clipPath>
-          </li>
-        </grains>
-        <pitchRange>1.05~1.15</pitchRange>
-        <volumeRange>77~85</volumeRange>
+        <volumeRange>20~30</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>

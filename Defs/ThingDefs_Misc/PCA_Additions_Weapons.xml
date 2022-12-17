@@ -60,23 +60,24 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
+			<WorkToMake>6500</WorkToMake>
 			<Mass>2.5</Mass>
 			<Bulk>4.5</Bulk>
-			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>0.75</SwayFactor>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>0.65</SwayFactor>
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>35</Steel>
+			<Steel>30</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Chemfuel>5</Chemfuel>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.44</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>2.49</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_500SWMagnum_FMJ</defaultProjectile>
@@ -90,7 +91,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>5</magazineSize>
-				<reloadTime>5.0</reloadTime>
+				<reloadTime>4.6</reloadTime>
 				<ammoSet>AmmoSet_500SWMagnum</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -135,7 +136,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_FNFiveSeven</defName>
 		<label>Five-seveN</label>
-		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents.</description>
+		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_FN57</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -145,34 +146,35 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>8500</WorkToMake>
-			<Mass>0.6</Mass>
-			<Bulk>2.0</Bulk>
-			<ShotSpread>0.17</ShotSpread>
-			<SwayFactor>0.90</SwayFactor>
-			<SightsEfficiency>0.80</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>0.9</Mass>
+			<Bulk>4.2</Bulk>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>0.51</SwayFactor>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-			<Steel>20</Steel>
+			<Steel>25</Steel>
 			<Chemfuel>5</Chemfuel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.39</recoilAmount>
+				<recoilAmount>1.46</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>15</range>
-				<soundCast>Shot_PCA_Pistol</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -216,8 +218,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.2</DrawSize>
-				<DrawOffset>-0.02,0.0</DrawOffset>
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0.2,-0.07</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -234,7 +236,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>13500</WorkToMake>
 			<Mass>3.40</Mass>
 			<Bulk>9.14</Bulk>
 			<ShotSpread>0.09</ShotSpread>
@@ -243,10 +245,11 @@
 			<RangedWeapon_Cooldown>0.79</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>50</Steel>
+			<Steel>55</Steel>
+			<Chemfuel>5</Chemfuel>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<WoodLog>10</WoodLog>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -279,9 +282,6 @@
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
-		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
-		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>stock</label>
@@ -328,7 +328,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_PNinety</defName>
 		<label>P90</label>
-		<description>A personal defense weapon which uses a specialized round to penetrate lightly armored opponents.</description>
+		<description>A personal defense weapon which uses a specialized round to penetrate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_FNP90</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -338,26 +338,27 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>36000</WorkToMake>
-			<Mass>2.60</Mass>
-			<Bulk>5.05</Bulk>
-			<ShotSpread>0.12</ShotSpread>
-			<SwayFactor>0.77</SwayFactor>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>2.90</Mass>
+			<Bulk>6.0</Bulk>
+			<ShotSpread>0.11</ShotSpread>
+			<SwayFactor>0.89</SwayFactor>
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentIndustrial>7</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.14</recoilAmount>
+				<recoilAmount>0.81</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
@@ -365,9 +366,9 @@
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<warmupTime>0.5</warmupTime>
 				<range>31</range>
-				<soundCast>Shot_PCA_PDW</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -426,8 +427,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.15,1.28</DrawSize>
-				<DrawOffset>-0.05,0.05</DrawOffset>
+				<DrawSize>1.2,1.2</DrawSize>
+				<DrawOffset>0.1,0.03</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -437,33 +438,34 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MicroTavor</defName>
 		<label>Micro Tavor</label>
-		<description>Ancient short barrel rifle design, in bullpup configuration for increased compactability and easier handling.</description>
+		<description>Ancient short barrel rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MicroTavor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>37000</WorkToMake>
-			<Mass>3.30</Mass>
-			<Bulk>5.80</Bulk>
-			<ShotSpread>0.11</ShotSpread>
-			<SwayFactor>0.91</SwayFactor>
+			<WorkToMake>39500</WorkToMake>
+			<Mass>3.80</Mass>
+			<Bulk>7.30</Bulk>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.11</SwayFactor>
 			<SightsEfficiency>1.1</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-			<Steel>40</Steel>
-			<Chemfuel>5</Chemfuel>
+			<Steel>45</Steel>
+			<Chemfuel>10</Chemfuel>
 			<ComponentIndustrial>7</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.81</recoilAmount>
+				<recoilAmount>1.27</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
@@ -471,9 +473,9 @@
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<warmupTime>0.8</warmupTime>
 				<range>51</range>
-				<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -531,7 +533,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1,1</DrawSize>
-				<DrawOffset>0.05,-0.02</DrawOffset>
+				<DrawOffset>0.03,-0.03</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -548,33 +550,38 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>39500</WorkToMake>
-			<Mass>4.5</Mass>
-			<Bulk>7.7</Bulk>
-			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.22</SwayFactor>
-			<SightsEfficiency>1.1</SightsEfficiency>
+			<WorkToMake>51000</WorkToMake>
+			<Mass>5.0</Mass>
+			<Bulk>9.2</Bulk>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>1.43</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>45</Steel>
-			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Steel>50</Steel>
+			<Chemfuel>15</Chemfuel>
+			<ComponentIndustrial>11</ComponentIndustrial>	<!-- +4 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.91</recoilAmount>
+				<recoilAmount>1.33</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<warmupTime>1.0</warmupTime>
-				<range>62</range>
-				<soundCast>Shot_CE_BattleRifle</soundCast>
+				<warmupTime>1.15</warmupTime>
+				<range>59</range>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle break -->
 			</li>
 		</verbs>
 		<comps>
@@ -635,8 +642,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1,1.15</DrawSize>
-				<DrawOffset>0.05,-0.02</DrawOffset>
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0.15,-0.05</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -646,38 +653,43 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_Mjolnir</defName>
 		<label>Mjölnir</label>
-		<description>Ancient semi-auto battle rifle firing a magnum rilfe cartridge.</description>
+		<description>Ancient semi-auto battle rifle firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Mjölnir</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>34000</WorkToMake>
-			<Mass>5.8</Mass>
-			<Bulk>10.0</Bulk>	<!-- Folding stock -->
-			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.83</SwayFactor>
-			<SightsEfficiency>1.1</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+			<WorkToMake>34500</WorkToMake>
+			<Mass>6.3</Mass>
+			<Bulk>11.5</Bulk>	<!-- Folding stock -->
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>2.04</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentIndustrial>8</ComponentIndustrial>	<!-- +4 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.74</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.67</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
+				<warmupTime>1.15</warmupTime>
 				<range>68</range>
-				<soundCast>Shot_PCA_Magnum</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -736,8 +748,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.4</DrawSize>
-				<DrawOffset>0.1,-0.02</DrawOffset>
+				<DrawSize>1.3,1.3</DrawSize>
+				<DrawOffset>0.25,-0.02</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -747,7 +759,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_338MG</defName>
 		<label>MG 338</label>
-		<description>Ancient lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs.</description>
+		<description>Ancient lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MG338</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -757,33 +769,38 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>44000</WorkToMake>
-			<Mass>9.7</Mass>
-			<Bulk>13.0</Bulk>	<!-- Folding stock -->
-			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>1.57</SwayFactor>
-			<SightsEfficiency>1.1</SightsEfficiency>
+			<WorkToMake>53000</WorkToMake>
+			<Mass>10.2</Mass>
+			<Bulk>14.5</Bulk>	<!-- Folding stock -->
+			<ShotSpread>0.03</ShotSpread>
+			<SwayFactor>1.72</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>75</Steel>
+			<Steel>85</Steel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<ComponentIndustrial>11</ComponentIndustrial>	<!-- +4 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.77</recoilAmount>
+				<recoilAmount>1.29</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
-				<warmupTime>1.2</warmupTime>
-				<range>75</range>
+				<warmupTime>1.35</warmupTime>
+				<range>68</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
-				<soundCast>Shot_PCA_Magnum</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -792,7 +809,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>75</magazineSize>
+				<magazineSize>100</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_338Norma</ammoSet>
 			</li>
@@ -849,8 +866,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.33,1.33</DrawSize>
-				<DrawOffset>0.1,0</DrawOffset>
+				<DrawSize>1.4,1.4</DrawSize>
+				<DrawOffset>0.25,-0.01</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -860,7 +877,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_SRS</defName>
 		<label>SRS</label>
-		<description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with a high-magnification scope for sniping at long range.</description>
+		<description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with an advanced high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_SRS</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -871,31 +888,36 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>44000</WorkToMake>
-			<Mass>5.60</Mass>
-			<Bulk>10.25</Bulk>
-			<ShotSpread>0.04</ShotSpread>
-			<SwayFactor>1.12</SwayFactor>
-			<SightsEfficiency>3.2</SightsEfficiency>
+			<WorkToMake>50500</WorkToMake>
+			<Mass>6.10</Mass>
+			<Bulk>12.0</Bulk>
+			<ShotSpread>0.02</ShotSpread>
+			<SwayFactor>1.28</SwayFactor>
+			<SightsEfficiency>2.9</SightsEfficiency>
 			<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>60</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>11</ComponentIndustrial>	<!-- +4 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.75</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.68</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
-				<warmupTime>2.3</warmupTime>
-				<range>86</range>
-				<soundCast>Shot_PCA_MagnumSniper</soundCast>
+				<warmupTime>2.05</warmupTime>
+				<range>81</range>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -955,8 +977,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.2</DrawSize>
-				<DrawOffset>0.15,-0.06</DrawOffset>
+				<DrawSize>1.25,1.25</DrawSize>
+				<DrawOffset>0.2,-0.04</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -977,31 +999,36 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>58000</WorkToMake>
-			<Mass>11.5</Mass>
-			<Bulk>10.25</Bulk>
-			<ShotSpread>0.03</ShotSpread>
-			<SwayFactor>1.68</SwayFactor>
+			<WorkToMake>68000</WorkToMake>
+			<Mass>12.3</Mass>
+			<Bulk>12.25</Bulk>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.87</SwayFactor>
 			<SightsEfficiency>3.5</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.59</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.58</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
+			<Steel>90</Steel>
 			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>12</ComponentIndustrial>	<!-- +4 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.98</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.91</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>86</range>
-				<soundCast>Shot_PCA_AMR</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -1061,8 +1088,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.35,1.35</DrawSize>
-				<DrawOffset>0.15,-0.06</DrawOffset>
+				<DrawSize>1.45,1.45</DrawSize>
+				<DrawOffset>0.2,-0.06</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1080,11 +1107,11 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>50000</WorkToMake>
-			<Mass>5.0</Mass>
-			<Bulk>12.45</Bulk>
-			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.77</SwayFactor>
+			<WorkToMake>56000</WorkToMake>
+			<Mass>6.0</Mass>
+			<Bulk>12.5</Bulk>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>1.87</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
@@ -1094,20 +1121,21 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>60</Steel>
+			<Steel>65</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
 			<ComponentIndustrial>8</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.65</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.5</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
-				<warmupTime>1.35</warmupTime>
+				<warmupTime>1.2</warmupTime>
 				<range>75</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -1196,11 +1224,11 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>63000</WorkToMake>
-			<Mass>9.0</Mass>
-			<Bulk>15.7</Bulk>
-			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>1.53</SwayFactor>
+			<WorkToMake>74000</WorkToMake>
+			<Mass>10.0</Mass>
+			<Bulk>16.0</Bulk>
+			<ShotSpread>0.04</ShotSpread>
+			<SwayFactor>1.62</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
@@ -1210,21 +1238,22 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
-			<Steel>80</Steel>
-			<Plasteel>35</Plasteel>
+			<Steel>85</Steel>
+			<Plasteel>40</Plasteel>
 			<Chemfuel>20</Chemfuel>
 			<ComponentIndustrial>11</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.2</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.14</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
 				<warmupTime>1.4</warmupTime>
-				<range>81</range>
+				<range>75</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
@@ -1318,7 +1347,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>72500</WorkToMake>
+			<WorkToMake>84500</WorkToMake>
 			<Mass>20.0</Mass>
 			<Bulk>21.0</Bulk>
 			<ShotSpread>0.01</ShotSpread>
@@ -1332,12 +1361,13 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
+		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>125</Steel>
 			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
 			<ComponentIndustrial>11</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
