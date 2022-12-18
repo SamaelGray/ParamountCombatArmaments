@@ -1111,9 +1111,9 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>49000</WorkToMake>
+			<WorkToMake>50500</WorkToMake>
 			<Mass>6.0</Mass>
-			<Bulk>12.5</Bulk>
+			<Bulk>10.5</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.06</ShotSpread>
 			<SwayFactor>1.87</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
@@ -1126,7 +1126,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
 		<costList>
-			<Steel>65</Steel>
+			<Steel>55</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
 			<ComponentIndustrial>8</ComponentIndustrial>
