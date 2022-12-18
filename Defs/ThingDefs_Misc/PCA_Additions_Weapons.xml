@@ -552,7 +552,7 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_RMTTS</defName>
 		<label>RM277</label>
-		<description>Ancient battle rifle design, in bullpup configuration for increased compactability and easier handling.</description>
+		<description>Ancient battle rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_RM277</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1001,7 +1001,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_Lynx</defName>
 		<label>GM6 Lynx</label>
-		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range.</description>
+		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Lynx</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
