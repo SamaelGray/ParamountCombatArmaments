@@ -69,7 +69,6 @@
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>30</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -158,7 +157,6 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
@@ -248,7 +246,6 @@
 			<RangedWeapon_Cooldown>0.79</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>55</Steel>
 			<Chemfuel>5</Chemfuel>
@@ -353,7 +350,6 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
@@ -463,7 +459,6 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -559,7 +554,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>51000</WorkToMake>
+			<WorkToMake>47000</WorkToMake>
 			<Mass>5.0</Mass>
 			<Bulk>9.2</Bulk>
 			<ShotSpread>0.05</ShotSpread>
@@ -573,11 +568,10 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>50</Steel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial>	<!-- +4 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -670,7 +664,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>34500</WorkToMake>
+			<WorkToMake>34000</WorkToMake>
 			<Mass>6.3</Mass>
 			<Bulk>11.5</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.05</ShotSpread>
@@ -684,11 +678,10 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>8</ComponentIndustrial>	<!-- +4 for the advanced scope -->
+			<ComponentIndustrial>6</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -780,7 +773,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>53000</WorkToMake>
+			<WorkToMake>49500</WorkToMake>
 			<Mass>10.2</Mass>
 			<Bulk>14.5</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.03</ShotSpread>
@@ -794,11 +787,10 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>85</Steel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial>	<!-- +4 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -900,7 +892,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>50500</WorkToMake>
+			<WorkToMake>46000</WorkToMake>
 			<Mass>6.10</Mass>
 			<Bulk>12.0</Bulk>
 			<ShotSpread>0.02</ShotSpread>
@@ -914,11 +906,10 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial>	<!-- +4 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -1012,7 +1003,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>68000</WorkToMake>
+			<WorkToMake>64000</WorkToMake>
 			<Mass>12.3</Mass>
 			<Bulk>12.25</Bulk>
 			<ShotSpread>0.01</ShotSpread>
@@ -1026,11 +1017,10 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>90</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>12</ComponentIndustrial>	<!-- +4 for the advanced scope -->
+			<ComponentIndustrial>10</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -1121,7 +1111,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>56000</WorkToMake>
+			<WorkToMake>49000</WorkToMake>
 			<Mass>6.0</Mass>
 			<Bulk>12.5</Bulk>
 			<ShotSpread>0.06</ShotSpread>
@@ -1135,7 +1125,6 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>65</Steel>
 			<Plasteel>30</Plasteel>
@@ -1238,7 +1227,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>74000</WorkToMake>
+			<WorkToMake>67000</WorkToMake>
 			<Mass>10.0</Mass>
 			<Bulk>16.0</Bulk>
 			<ShotSpread>0.04</ShotSpread>
@@ -1252,7 +1241,6 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>85</Steel>
 			<Plasteel>40</Plasteel>
@@ -1361,7 +1349,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>84500</WorkToMake>
+			<WorkToMake>77500</WorkToMake>
 			<Mass>20.0</Mass>
 			<Bulk>21.0</Bulk>
 			<ShotSpread>0.01</ShotSpread>
@@ -1375,7 +1363,6 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
-		<generateAllowChance>0.5</generateAllowChance>
 		<costList>
 			<Steel>125</Steel>
 			<Plasteel>50</Plasteel>
