@@ -32,7 +32,7 @@
             <clipPath>Shot_Suppressed</clipPath>
           </li>
         </grains>
-        <volumeRange>15~30</volumeRange>
+        <volumeRange>15~25</volumeRange>
         <pitchRange>0.9~1.1</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
