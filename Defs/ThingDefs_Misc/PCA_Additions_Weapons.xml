@@ -664,7 +664,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>34000</WorkToMake>
+			<WorkToMake>37000</WorkToMake>
 			<Mass>6.3</Mass>
 			<Bulk>11.5</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.05</ShotSpread>
