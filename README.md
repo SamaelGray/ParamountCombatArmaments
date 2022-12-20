@@ -5,22 +5,22 @@ This mod adds several new items designed to take advantage of CE mechanics while
 
 ## Currently included:
 ### Pistols
-- FN Five-SeveN
+- FN Five-SeveN MK3 MRD
 - 500 S&W Magnum
 ### SMGs
-- FN P90
+- FN P90 TR
 ### Assault/battle rifles
 - Big Horn Armory Black Thunder
 - IWI Micro Tavor X95
-- RM277
-- Mk-18 Mod 1 Mjölnir
+- LoneStar Future Weapons RM277
+- SWORD International Mk-18 Mod 1 Mjölnir
 - B-8 advanced charge BR
 ### Sniper rifles
 - Desert Tech SRS-A2
 - GM6 Lynx
 - A-20 advanced charge AMR
 ### Machine guns
-- MG 338
+- SIG SAUER MG 338
 - M-8 advanced charge MMG
 ### Other
 - Ranged shield belt
