@@ -1103,7 +1103,7 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeABR</defName>
 		<label>B-8 advanced charge BR</label>
-		<description>Charged-shot semi-auto battle rifle firing a powerful charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot semi-auto battle rifle firing a powerful charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeABR</texPath>
@@ -1111,11 +1111,11 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>50500</WorkToMake>
+			<WorkToMake>49500</WorkToMake>
 			<Mass>6.0</Mass>
-			<Bulk>10.5</Bulk>	<!-- Folding stock -->
-			<ShotSpread>0.06</ShotSpread>
-			<SwayFactor>1.87</SwayFactor>
+			<Bulk>11.0</Bulk>	<!-- Folding stock -->
+			<ShotSpread>0.04</ShotSpread>
+			<SwayFactor>1.97</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
@@ -1126,7 +1126,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
 		<costList>
-			<Steel>55</Steel>
+			<Steel>60</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
 			<ComponentIndustrial>8</ComponentIndustrial>
@@ -1134,7 +1134,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.5</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.5</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
@@ -1142,7 +1142,7 @@
 				<range>75</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
 			</li>
 		</verbs>
 		<comps>
@@ -1205,8 +1205,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.25,1.25</DrawSize>
-				<DrawOffset>0.1,0.02</DrawOffset>
+				<DrawSize>1.33,1.33</DrawSize>
+				<DrawOffset>0.25,-0.02</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1215,8 +1215,8 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAMMG</defName>
-		<label>M-8 charge MMG</label>
-		<description>Charged-shot medium machine gun designed for suppression. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
+		<label>M-8 advanced charge MMG</label>
+		<description>Charged-shot medium machine gun designed for suppression. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAMMG</texPath>
@@ -1229,9 +1229,9 @@
 		<statBases>
 			<WorkToMake>67000</WorkToMake>
 			<Mass>10.0</Mass>
-			<Bulk>16.0</Bulk>
+			<Bulk>14.2</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
-			<SwayFactor>1.62</SwayFactor>
+			<SwayFactor>1.67</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
@@ -1242,15 +1242,15 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
 		<costList>
-			<Steel>85</Steel>
-			<Plasteel>40</Plasteel>
+			<Steel>75</Steel>
+			<Plasteel>35</Plasteel>
 			<Chemfuel>20</Chemfuel>
 			<ComponentIndustrial>11</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.14</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>1.14</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
@@ -1260,7 +1260,7 @@
 				<burstShotCount>10</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle device -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1330,8 +1330,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.4,1.4</DrawSize>
-				<DrawOffset>0.1,0.02</DrawOffset>
+				<DrawSize>1.44,1.44</DrawSize>
+				<DrawOffset>0.25,-0.01</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1341,7 +1341,7 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>LG_Gun_ChargeAAMR</defName>
 		<label>A-20 advanced charge AMR</label>
-		<description>Charged-shot semi-auto anti-materiel rifle equipped with advanced optics that help the shooter with target acquisition.</description>
+		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>
@@ -1349,11 +1349,11 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>77500</WorkToMake>
+			<WorkToMake>95500</WorkToMake>
 			<Mass>20.0</Mass>
-			<Bulk>21.0</Bulk>
+			<Bulk>17.5</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>2.88</SwayFactor>
+			<SwayFactor>2.71</SwayFactor>
 			<SightsEfficiency>3.5</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.60</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
@@ -1364,15 +1364,15 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
 		<costList>
-			<Steel>125</Steel>
+			<Steel>115</Steel>
 			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial>
+			<ComponentIndustrial>12</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.36</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>2.36</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
@@ -1380,13 +1380,13 @@
 				<range>86</range>
 				<soundCast>Shot_PCA_MagnumCharge</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle device -->
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>5</magazineSize>
-				<reloadTime>4</reloadTime>
+				<reloadTime>4.5</reloadTime>
 				<ammoSet>AmmoSet_20x105mmCharged</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -1444,8 +1444,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.8,1.8</DrawSize>
-				<DrawOffset>0.20,-0.05</DrawOffset>
+				<DrawSize>1.75,1.75</DrawSize>
+				<DrawOffset>0.35,-0.06</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
