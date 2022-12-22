@@ -62,7 +62,7 @@
     </graphicData>
     <uiIconPath>Things/Building/Turrets/PCA_HCB_uiIcon</uiIconPath>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <WorkToBuild>100000</WorkToBuild>
       <Mass>80</Mass>
       <Bulk>100</Bulk>
@@ -71,8 +71,8 @@
     <costList>
       <Steel>300</Steel>
       <Plasteel>100</Plasteel>
-      <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <building>
       <turretGunDef>PCA_Gun_HCB</turretGunDef>
@@ -149,7 +149,7 @@
     </graphicData>
     <uiIconPath>Things/Building/Turrets/PCA_HCA_uiIcon</uiIconPath>
     <statBases>
-      <MaxHitPoints>600</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <WorkToBuild>120000</WorkToBuild>
       <Mass>100</Mass>
       <Bulk>120</Bulk>
@@ -158,8 +158,8 @@
     <costList>
       <Steel>400</Steel>
       <Plasteel>120</Plasteel>
-      <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <building>
       <turretGunDef>PCA_Gun_HCA</turretGunDef>
