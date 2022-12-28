@@ -68,7 +68,7 @@
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<costList>
 			<Steel>30</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -102,6 +102,7 @@
 		</thingSetMakerTags>
 		<weaponTags>
 			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
 			<li>CE_OneHandedWeapon</li>
 			<li>CE_AI_BROOM</li>
 		</weaponTags>
@@ -156,7 +157,7 @@
 		<equippedStatOffsets>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
@@ -190,6 +191,7 @@
 		</comps>
 		<weaponTags>
 			<li>Autopistol</li>
+			<li>IndustrialGunAdvanced</li>
 			<li>CE_OneHandedWeapon</li>
 			<li>CE_Sidearm</li>
 			<li>CE_AI_BROOM</li>
@@ -245,7 +247,7 @@
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.79</RangedWeapon_Cooldown>
 		</statBases>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<costList>
 			<Steel>55</Steel>
 			<Chemfuel>5</Chemfuel>
@@ -349,7 +351,7 @@
 		<equippedStatOffsets>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
@@ -458,7 +460,7 @@
 		<equippedStatOffsets>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -567,7 +569,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>50</Steel>
 			<Chemfuel>15</Chemfuel>
@@ -677,7 +679,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
@@ -786,7 +788,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>85</Steel>
 			<Chemfuel>15</Chemfuel>
@@ -905,7 +907,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
@@ -939,6 +941,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
 			<li>SniperRifle</li>
 			<li>Bipod_DMR</li>
 			<li>CE_AI_SR</li>
@@ -1016,7 +1019,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>90</Steel>
 			<Chemfuel>10</Chemfuel>
@@ -1050,6 +1053,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
 			<li>SniperRifle</li>
 			<li>Bipod_DMR</li>
 			<li>CE_AI_SR</li>
@@ -1124,7 +1128,7 @@
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>60</Steel>
 			<Plasteel>30</Plasteel>
@@ -1240,7 +1244,7 @@
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>75</Steel>
 			<Plasteel>35</Plasteel>
@@ -1362,7 +1366,7 @@
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
-		<generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.33</generateCommonality>
 		<costList>
 			<Steel>115</Steel>
 			<Plasteel>50</Plasteel>
