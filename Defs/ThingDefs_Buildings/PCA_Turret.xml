@@ -25,7 +25,7 @@
     </equippedStatOffsets>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.01</recoilAmount>
+        <recoilAmount>0.76</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
@@ -72,7 +72,7 @@
       <Steel>300</Steel>
       <Plasteel>100</Plasteel>
       <ComponentIndustrial>9</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
     </costList>
     <building>
       <turretGunDef>PCA_Gun_HCB</turretGunDef>
@@ -100,7 +100,7 @@
       <texPath>Things/Building/Turrets/PCA_HCA_gun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <description>Heavy charge autocannon for use against armored opponents.</description>
+    <description>Heavy charge autocannon for use against highly armored opponents.</description>
     <statBases>
       <Mass>50</Mass>
       <ShotSpread>0.01</ShotSpread>
@@ -115,7 +115,7 @@
     </equippedStatOffsets>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.50</recoilAmount>
+        <recoilAmount>1.12</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
@@ -159,7 +159,7 @@
       <Steel>400</Steel>
       <Plasteel>120</Plasteel>
       <ComponentIndustrial>7</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
     </costList>
     <building>
       <turretGunDef>PCA_Gun_HCA</turretGunDef>
