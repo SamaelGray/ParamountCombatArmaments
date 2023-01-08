@@ -50,7 +50,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_500SW</defName>
 		<label>500 S&amp;W Magnum Tactical</label>
-		<description>An ancient pattern double-action revolver. Fires the most powerful pistol cartridge. Comes equipped with reflex sights.</description>
+		<description>An ancient pattern double-action revolver. Fires one of the most powerful pistol cartridges ever made. Comes equipped with reflex sights.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_SW500</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -238,7 +238,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_BlackThunder</defName>
 		<label>Big Horn Armory Model 89 Black Thunder Tactical</label>
-		<description>Ancient lever-action repeating rifle that fires the most powerful pistol cartridges of all time. Comes equipped with reflex sights.</description>
+		<description>Ancient lever-action repeating rifle that fires one of the most powerful pistol cartridges of all time. Comes equipped with reflex sights.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_BlackThunder</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
