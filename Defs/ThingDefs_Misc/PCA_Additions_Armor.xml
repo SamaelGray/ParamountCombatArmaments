@@ -165,6 +165,7 @@
 			<Hyperweave>100</Hyperweave>
 		</costList>
 		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<wearPerDay>0</wearPerDay>
 			<bodyPartGroups>
 				<li>FullHead</li>
