@@ -665,14 +665,14 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_Mjolnir</defName>
 		<label>SWORD International Mk-18 Mod 1 Mjölnir Tactical</label>
-		<description>Ancient semi-auto battle rifle firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
+		<description>Ancient battle rifle design firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Mjölnir</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>37000</WorkToMake>
+			<WorkToMake>40500</WorkToMake>
 			<Mass>6.3</Mass>
 			<Bulk>11.5</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.05</ShotSpread>
@@ -689,7 +689,7 @@
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>6</ComponentIndustrial>	<!-- +2 for the advanced scope -->
+			<ComponentIndustrial>8</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -699,6 +699,8 @@
 				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
 				<warmupTime>1.15</warmupTime>
 				<range>68</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
@@ -1113,7 +1115,7 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeABR</defName>
 		<label>B-8 advanced charge BR</label>
-		<description>Charged-shot semi-auto battle rifle firing a powerful charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot fully automatic battle rifle firing a magnum charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeABR</texPath>
@@ -1121,7 +1123,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>49500</WorkToMake>
+			<WorkToMake>59000</WorkToMake>
 			<Mass>6.0</Mass>
 			<Bulk>11.0</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
@@ -1139,7 +1141,7 @@
 			<Steel>60</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentIndustrial>10</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
@@ -1150,6 +1152,8 @@
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
 				<range>75</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
@@ -1162,7 +1166,9 @@
 				<ammoSet>AmmoSet_8x50mmCharged</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>True</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
 		</comps>
 		<thingSetMakerTags>
@@ -1226,7 +1232,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAMMG</defName>
 		<label>M-8 advanced charge MMG</label>
-		<description>Charged-shot medium machine gun designed for suppression. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot medium machine gun firing a magnum charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAMMG</texPath>
@@ -1351,7 +1357,7 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>LG_Gun_ChargeAAMR</defName>
 		<label>A-20 advanced charge AMR</label>
-		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>
