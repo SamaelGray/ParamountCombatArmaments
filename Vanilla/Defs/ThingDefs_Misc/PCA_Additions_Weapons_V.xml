@@ -25,6 +25,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_SW500</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<weaponClasses>
@@ -108,6 +109,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_FN57</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<weaponClasses>
@@ -195,6 +197,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_BlackThunder</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -260,6 +263,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_FNP90</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_SMG</soundInteract>
 		<weaponClasses>
@@ -351,6 +355,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MicroTavor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -439,6 +444,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_RM277</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -529,6 +535,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Mjölnir</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
@@ -604,6 +611,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MG338</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -682,6 +690,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_SRS</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -775,6 +784,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Lynx</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -869,6 +879,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeABR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.44,1.44)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
@@ -950,6 +961,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAMMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.44,1.44)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<weaponClasses>
@@ -1034,6 +1046,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
