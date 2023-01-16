@@ -1276,7 +1276,7 @@
 				<burstShotCount>10</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle device -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1355,7 +1355,7 @@
 	<!-- ==================== Charge AAMR ==================== -->
 
  	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>LG_Gun_ChargeAAMR</defName>
+		<defName>PCA_Gun_ChargeAAMR</defName>
 		<label>A-20 advanced charge AMR</label>
 		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
