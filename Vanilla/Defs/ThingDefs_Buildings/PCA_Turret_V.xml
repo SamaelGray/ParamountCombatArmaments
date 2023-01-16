@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="PCA_TurretBase" ParentName="BuildingBase" Abstract="True">
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tradeability>All</tradeability>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<WorkToMake>10000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Heavy Charge Blaster ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_HCB</defName>
+		<label>12x72mm Charged bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>2.0</stoppingPower>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>PCA_Gun_HCB</defName>
+		<label>heavy charge blaster</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/PCA_HCB_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Heavy charge blaster for use against armored opponents.</description>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_HCB</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>54.9</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="PCA_TurretBase">
+		<defName>PCA_Turret_HCB</defName>
+		<label>heavy charge blaster</label>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/PCA_HCB_base</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/PCA_HCB_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>100000</WorkToBuild>
+			<Mass>80</Mass>
+		</statBases>
+		<description>Heavy charge blaster mounted on a tripod.</description>
+		<costList>
+			<Steel>300</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_HCB</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.36</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<researchPrerequisites>
+			<li>ChargedShot</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<!-- ==================== Heavy Charge Autocannon ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_HCA</defName>
+		<label>20x105mm Charged bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>200</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>PCA_Gun_HCA</defName>
+		<label>heavy charge autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/PCA_HCA_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Heavy charge autocannon for use against highly armored opponents.</description>
+		<statBases>
+			<Mass>50</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.74</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_HCA</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>54.9</range>
+				<soundCast>Shot_PCA_MagnumCharge</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="PCA_TurretBase">
+		<defName>PCA_Turret_HCA</defName>
+		<label>heavy charge autocannon</label>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/PCA_HCA_base</texPath>
+			<drawSize>(2.0,2.0)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/PCA_HCA_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>120000</WorkToBuild>
+			<Mass>100</Mass>
+		</statBases>
+		<description>Heavy charge autocannon mounted on a tripod.</description>
+		<costList>
+			<Steel>400</Steel>
+			<Plasteel>120</Plasteel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_HCA</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.37</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<researchPrerequisites>
+			<li>ChargedShot</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+</Defs>

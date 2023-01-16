@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- === Hand Cannon === -->
+    <SoundDef>
+    <defName>Shot_PCA_Handcannon</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Revolver</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>40~50</volumeRange>
+        <pitchRange>0.7~0.8</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Suppressed === -->
+  <SoundDef>
+    <defName>Shot_PCA_Suppressed</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot_Suppressed</clipPath>
+          </li>
+        </grains>
+        <volumeRange>15~25</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Magnum Charge === -->
+  <SoundDef>
+    <defName>Shot_PCA_MagnumCharge</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Weapon/ChargeLance/Fire</clipPath>
+          </li>
+        </grains>
+        <volumeRange>55~70</volumeRange>
+        <pitchRange>1~1.15</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

@@ -17,12 +17,10 @@
 		<generateCommonality>0.1</generateCommonality>
 		<statBases>
 			<Mass>3</Mass>
-			<Bulk>4</Bulk>
-			<WornBulk>2</WornBulk>
 			<WorkToMake>16000</WorkToMake>
 			<Flammability>0.4</Flammability>
-			<EnergyShieldRechargeRate>0.195</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>1.35</EnergyShieldEnergyMax>
+			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>0.9</EnergyShieldEnergyMax>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<thingSetMakerTags>
@@ -101,7 +99,7 @@
 	</ThingDef>
 
 	<!-- ==================== Nanosuit ==================== -->
-	
+
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>PCA_Apparel_Nanosuit</defName>
 		<label>nanosuit</label>
@@ -128,13 +126,10 @@
 			<MaxHitPoints>500</MaxHitPoints>
 			<MarketValue>5000</MarketValue>
 			<Mass>5</Mass>
-			<Bulk>10</Bulk>
-			<WornBulk>5</WornBulk>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>10</ArmorRating_Sharp>
-			<ArmorRating_Blunt>20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
-			<ArmorRating_Electric>0.5</ArmorRating_Electric>
 			<Insulation_Cold>50</Insulation_Cold>
 			<Insulation_Heat>25</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
@@ -148,9 +143,8 @@
 			<MoveSpeed>0.5</MoveSpeed>
 			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<ToxicResistance>1.0</ToxicResistance>
-			<AimingAccuracy>0.25</AimingAccuracy>
-			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
-			<CarryWeight>25</CarryWeight>
+			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+			<CarryingCapacity>25</CarryingCapacity>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>

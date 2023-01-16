@@ -3,6 +3,8 @@ Power Creep Armory mod for Rimworld
 
 This mod adds several new items designed to take advantage of CE mechanics while filling in niches in the vanilla lineup in a way that the stuff included are a bit more powerful than other options out there hence the name of the mod.
 
+Compatible with both the vanilla combat system and CE.
+
 ## Currently included:
 ### Pistols
 - FN Five-SeveN MK3 MRD Tactical
