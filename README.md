@@ -1,11 +1,12 @@
 # PowerCreepArmory
 Power Creep Armory mod for Rimworld
 
-This mod adds several new items designed to take advantage of CE mechanics while filling in niches in the vanilla lineup in a way that the stuff included are a bit more powerful than other options out there hence the name of the mod.
+This mod adds several new guns, apparel and buildings designed to take advantage of CE mechanics while filling in niches in the vanilla lineup in a way that the included items are both balanced and fairly stronger than the other modded options in the workshop.
 
 Compatible with both the vanilla combat system and CE.
 
 ## Currently included:
+
 ### Pistols
 - FN Five-SeveN MK3 MRD Tactical
 - 500 S&W Magnum Tactical
@@ -27,5 +28,6 @@ Compatible with both the vanilla combat system and CE.
 ### Other
 - Ranged shield belt
 - Nanosuit
+- Medium Charge Blaster turret
 - Heavy Charge Blaster turret
 - Heavy Charge Autocannon turret

@@ -19,7 +19,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_500SW</defName>
+		<defName>PCA_Gun_500SWTactical</defName>
 		<label>500 S&amp;W Magnum Tactical</label>
 		<description>An ancient pattern double-action revolver. Fires one of the most powerful pistol cartridges ever made. Comes equipped with reflex sights.</description>
 		<graphicData>
@@ -86,7 +86,7 @@
 		</tools>
 	</ThingDef>
 
-	<!-- ==================== FN Five-seveN ==================== -->
+	<!-- ==================== Five-seveN ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_FN57x28mm</defName>
@@ -103,7 +103,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_FNFiveSeven</defName>
+		<defName>PCA_Gun_FiveseveNTactical</defName>
 		<label>FN Five-SeveN MK3 MRD Tactical</label>
 		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
@@ -173,7 +173,7 @@
 		</tools>
 	</ThingDef>
 
-	<!-- ==================== Model 89 Black thunder ==================== -->
+	<!-- ==================== Black Thunder ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_500SWMagnum_HV</defName>
@@ -191,7 +191,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_BlackThunder</defName>
+		<defName>PCA_Gun_BlackThunderTactical</defName>
 		<label>Big Horn Armory Model 89 Black Thunder Tactical</label>
 		<description>Ancient lever-action repeating rifle that fires one of the most powerful pistol cartridges of all time. Comes equipped with reflex sights.</description>
 		<graphicData>
@@ -254,10 +254,10 @@
 		</tools>
 	</ThingDef>
 
-	<!-- ==================== FN P90 ==================== -->
+	<!-- ==================== P90 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_PNinety</defName>
+		<defName>PCA_Gun_P90Tactical</defName>
 		<label>FN P90 TR Tactical</label>
 		<description>A personal defense weapon which uses a specialized round to penetrate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
@@ -349,7 +349,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_MicroTavor</defName>
+		<defName>PCA_Gun_MicroTavorTactical</defName>
 		<label>IWI Micro Tavor X95 Tactical</label>
 		<description>Ancient short barrel rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
@@ -438,7 +438,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_RMTTS</defName>
+		<defName>PCA_Gun_RM277Tactical</defName>
 		<label>LoneStar Future Weapons RM277 Tactical</label>
 		<description>Ancient battle rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
@@ -529,7 +529,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_Mjolnir</defName>
+		<defName>PCA_Gun_MjolnirTactical</defName>
 		<label>SWORD International Mk-18 Mod 1 Mjölnir Tactical</label>
 		<description>Ancient battle rifle design firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
@@ -605,7 +605,7 @@
 	<!-- ==================== MG 338 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_338MG</defName>
+		<defName>PCA_Gun_MG338Tactical</defName>
 		<label>SIG SAUER MG 338 Tactical</label>
 		<description>Ancient lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
@@ -684,7 +684,7 @@
 	<!-- ==================== SRS ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_SRS</defName>
+		<defName>PCA_Gun_SRSTactical</defName>
 		<label>Desert Tech SRS-A2 Tactical</label>
 		<description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with an advanced high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
 		<graphicData>
@@ -778,7 +778,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_Lynx</defName>
+		<defName>PCA_Gun_LynxTactical</defName>
 		<label>GM6 Lynx Tactical</label>
 		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
 		<graphicData>
@@ -865,7 +865,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>22</damageAmountBase>
 			<armorPenetrationBase>0.45</armorPenetrationBase>
 			<speed>200</speed>
 		</projectile>

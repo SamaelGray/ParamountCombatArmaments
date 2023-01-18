@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ==================== Medium Charge Blaster ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>PCA_Gun_MCB</defName>
+		<label>medium charge blaster</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/PCA_MCB_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Medium charge blaster for use against lightly armored targets.</description>
+		<statBases>
+			<Mass>20</Mass>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.11</SwayFactor>
+			<SightsEfficiency>2.12</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.25</AimingAccuracy>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.62</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>75</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_8x50mmCharged</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>PCA_Turret_MCB</defName>
+		<label>medium charge blaster</label>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/PCA_MCB_base</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/PCA_MCB_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>80000</WorkToBuild>
+			<Mass>40</Mass>
+			<Bulk>50</Bulk>
+		</statBases>
+		<description>Medium charge blaster mounted on a tripod.</description>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_MCB</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.36</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>CE_ChargeTurret</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Heavy Charge Blaster ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
@@ -10,7 +99,7 @@
 			<texPath>Things/Building/Turrets/PCA_HCB_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Heavy charge blaster for use against armored opponents.</description>
+		<description>Heavy charge blaster for use against armored targets.</description>
 		<statBases>
 			<Mass>40</Mass>
 			<ShotSpread>0.01</ShotSpread>
@@ -100,7 +189,7 @@
 			<texPath>Things/Building/Turrets/PCA_HCA_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Heavy charge autocannon for use against highly armored opponents.</description>
+		<description>Heavy charge autocannon for use against highly armored targets.</description>
 		<statBases>
 			<Mass>50</Mass>
 			<ShotSpread>0.01</ShotSpread>
