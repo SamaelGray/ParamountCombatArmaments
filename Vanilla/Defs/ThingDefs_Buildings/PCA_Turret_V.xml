@@ -79,8 +79,8 @@
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
 				<warmupTime>1.4</warmupTime>
 				<range>35.9</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
@@ -170,8 +170,8 @@
 				<defaultProjectile>Bullet_HCB</defaultProjectile>
 				<warmupTime>1.6</warmupTime>
 				<range>54.9</range>
+				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>10</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
@@ -262,6 +262,8 @@
 				<defaultProjectile>Bullet_HCA</defaultProjectile>
 				<warmupTime>1.6</warmupTime>
 				<range>54.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<soundCast>Shot_PCA_MagnumCharge</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
@@ -281,13 +283,13 @@
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>120000</WorkToBuild>
-			<Mass>100</Mass>
+			<Mass>120</Mass>
 		</statBases>
-		<description>Heavy charge autocannon mounted on a tripod.</description>
+		<description>Heavy charge autocannon mounted on a quadpod.</description>
 		<costList>
 			<Steel>400</Steel>
-			<Plasteel>120</Plasteel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Plasteel>150</Plasteel>
+			<ComponentIndustrial>9</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
 		</costList>
 		<building>
