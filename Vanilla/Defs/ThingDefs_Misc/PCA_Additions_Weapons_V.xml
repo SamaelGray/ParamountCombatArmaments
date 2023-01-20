@@ -41,6 +41,9 @@
 			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>30</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -210,6 +213,9 @@
 			<RangedWeapon_Cooldown>1.18</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>55</Steel>
 			<Chemfuel>5</Chemfuel>

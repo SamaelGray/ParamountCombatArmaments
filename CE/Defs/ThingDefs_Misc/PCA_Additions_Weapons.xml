@@ -69,6 +69,12 @@
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Gunsmithing</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
+		</recipeMaker>
 		<costList>
 			<Steel>30</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -165,7 +171,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<researchPrerequisites>
+				<li>BlowbackOperation</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>25</Steel>
@@ -254,6 +263,12 @@
 			<RangedWeapon_Cooldown>0.79</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Gunsmithing</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
+		</recipeMaker>
 		<costList>
 			<Steel>55</Steel>
 			<Chemfuel>5</Chemfuel>
@@ -359,7 +374,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
@@ -468,7 +486,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>45</Steel>
@@ -577,7 +598,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>50</Steel>
@@ -687,7 +711,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -798,7 +825,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>85</Steel>
@@ -917,7 +947,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -1029,7 +1062,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
 			<Steel>90</Steel>
@@ -1138,7 +1174,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
@@ -1258,7 +1297,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
@@ -1380,7 +1422,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
