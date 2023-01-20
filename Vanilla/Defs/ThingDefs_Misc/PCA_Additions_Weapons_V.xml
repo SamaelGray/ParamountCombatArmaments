@@ -462,6 +462,9 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>50</Steel>
 			<Chemfuel>15</Chemfuel>
@@ -487,9 +490,6 @@
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -553,6 +553,9 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
@@ -578,9 +581,6 @@
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -632,6 +632,9 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>85</Steel>
 			<Chemfuel>15</Chemfuel>
@@ -657,9 +660,6 @@
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -712,6 +712,9 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
@@ -736,9 +739,6 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>SniperRifle</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -806,6 +806,9 @@
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Steel>90</Steel>
 			<Chemfuel>10</Chemfuel>
@@ -830,9 +833,6 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>SniperRifle</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -896,6 +896,12 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
 		<costList>
 			<Steel>60</Steel>
 			<Plasteel>30</Plasteel>
@@ -924,12 +930,6 @@
 			<li>AdvancedGun</li>
 			<li>SpacerGun</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
-			<recipeUsers Inherit="false">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -981,6 +981,12 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
 		<costList>
 			<Steel>75</Steel>
 			<Plasteel>35</Plasteel>
@@ -1009,12 +1015,6 @@
 			<li>AdvancedGun</li>
 			<li>SpacerGun</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
-			<recipeUsers Inherit="false">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -1063,6 +1063,12 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
 		<costList>
 			<Steel>115</Steel>
 			<Plasteel>50</Plasteel>
@@ -1090,12 +1096,6 @@
 			<li>AdvancedGun</li>
 			<li>SpacerGun</li>
 		</weaponTags>
-		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
-			<recipeUsers Inherit="false">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
 		<tools>
 			<li>
 				<label>stock</label>
