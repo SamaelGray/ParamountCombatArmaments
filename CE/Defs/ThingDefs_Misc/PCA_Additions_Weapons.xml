@@ -359,7 +359,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
