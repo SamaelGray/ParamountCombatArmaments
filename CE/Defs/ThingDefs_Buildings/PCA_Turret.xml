@@ -84,8 +84,8 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>CE_TurretHeavyWeapons</li>
 			<li>CE_ChargeTurret</li>
+			<li>CE_AdvancedNV</li>
 		</researchPrerequisites>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
@@ -176,6 +176,7 @@
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
 			<li>CE_ChargeTurret</li>
+			<li>CE_AdvancedNV</li>
 		</researchPrerequisites>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
@@ -266,6 +267,7 @@
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
 			<li>CE_ChargeTurret</li>
+			<li>CE_AdvancedNV</li>
 		</researchPrerequisites>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
