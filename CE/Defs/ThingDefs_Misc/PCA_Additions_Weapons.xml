@@ -1104,7 +1104,7 @@
 			<li>SniperRifle</li>
 			<li>Bipod_DMR</li>
 			<li>CE_AI_SR</li>
-		</weaponTags>>
+		</weaponTags>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>stock</label>
