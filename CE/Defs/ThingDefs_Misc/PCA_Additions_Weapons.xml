@@ -138,7 +138,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.15,-0.07</DrawOffset>
+				<DrawOffset>0.15,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -236,8 +236,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.25,-0.07</DrawOffset>
+				<DrawSize>1.0,1.0</DrawSize>
+				<DrawOffset>0.25,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -341,7 +341,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.3,1.3</DrawSize>
-				<DrawOffset>0.15,-0.03</DrawOffset>
+				<DrawOffset>0.15,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -566,7 +566,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.15,-0.03</DrawOffset>
+				<DrawOffset>0.15,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -679,7 +679,115 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.15,1.15</DrawSize>
-				<DrawOffset>0.15,-0.05</DrawOffset>
+				<DrawOffset>0.15,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Neopup ==================== -->
+
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_NeopupTactical</defName>
+		<label>Neopup PAW-20 Tactical</label>
+		<description>Ancient handheld, semi-automatic direct-fire grenade launcher also capable of firing normal projectiles. Comes equipped with an advanced scope and a suppressor.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_Neopup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>31000</WorkToMake>
+			<Mass>5.9</Mass>
+			<Bulk>7.7</Bulk>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>1.45</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<Chemfuel>15</Chemfuel>
+			<ComponentIndustrial>6</ComponentIndustrial>	<!-- +2 for the advanced scope -->
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.55</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
+				<warmupTime>1.15</warmupTime>
+				<range>48</range>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle break -->
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.15,1.15</DrawSize>
+				<DrawOffset>0.12,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -790,7 +898,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.4,1.4</DrawSize>
-				<DrawOffset>0.3,-0.02</DrawOffset>
+				<DrawOffset>0.3,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -911,7 +1019,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.4,1.4</DrawSize>
-				<DrawOffset>0.3,-0.01</DrawOffset>
+				<DrawOffset>0.3,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1026,7 +1134,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.25,1.25</DrawSize>
-				<DrawOffset>0.4,-0.04</DrawOffset>
+				<DrawOffset>0.4,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1141,7 +1249,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.5,1.5</DrawSize>
-				<DrawOffset>0.3,-0.06</DrawOffset>
+				<DrawOffset>0.3,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1261,7 +1369,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.44,1.44</DrawSize>
-				<DrawOffset>0.3,-0.02</DrawOffset>
+				<DrawOffset>0.3,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1389,7 +1497,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.44,1.44</DrawSize>
-				<DrawOffset>0.3,-0.01</DrawOffset>
+				<DrawOffset>0.3,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1399,7 +1507,7 @@
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAAMR</defName>
 		<label>A-20 advanced charge AMR</label>
-		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot semi-automatic anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>
@@ -1506,7 +1614,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.75,1.75</DrawSize>
-				<DrawOffset>0.45,-0.06</DrawOffset>
+				<DrawOffset>0.45,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

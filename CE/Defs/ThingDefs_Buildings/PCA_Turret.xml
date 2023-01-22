@@ -1,6 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ==================== Manned NeoStrike ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>LG_Gun_NeoStrike</defName>
+		<label>NeoStrike machine gun</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/NeoStrike_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Heavy machine gun for use against infantry and lightly armored vehicles.</description>
+		<statBases>
+			<Mass>13</Mass>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.93</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.25</AimingAccuracy>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.29</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
+				<warmupTime>1.35</warmupTime>
+				<range>55</range>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>Shot_LG_Suppressed</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>120</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>LG_Turret_NeoStrike</defName>
+		<label>NeoStrike machine gun</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/NeoStrike_base</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/NeoStrike_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>35000</WorkToBuild>
+			<Mass>20</Mass>
+			<Bulk>25</Bulk>
+		</statBases>
+		<description>NeoStrike heavy machine gun mounted on a tripod.</description>
+		<costList>
+			<Steel>170</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>LG_Gun_NeoStrike</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.38</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<!-- ==================== NeoStrike SD-ROW ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>LG_Gun_NeoStrikeSD-ROW</defName>
+		<label>NeoStrike SD-ROW machine gun</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/NeoStrikeSD-ROW_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Automated heavy machine gun for use against infantry and lightly armored vehicles.</description>
+		<statBases>
+			<Mass>15</Mass>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.93</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.25</AimingAccuracy>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.29</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
+				<warmupTime>1.35</warmupTime>
+				<range>55</range>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>Shot_LG_Suppressed</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>80</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretAutoBase">
+		<defName>LG_Turret_NeoStrikeSD-ROW</defName>
+		<label>NeoStrike SD-ROW machine gun</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/NeoStrikeSD-ROW_base</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/NeoStrikeSD-ROW_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>45000</WorkToBuild>
+			<Mass>30</Mass>
+			<Bulk>40</Bulk>
+			<AimingAccuracy>0.75</AimingAccuracy>
+			<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
+		</statBases>
+		<description>NeoStrike SD-ROW heavy machine gun mounted on a tripod.</description>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>LG_Gun_NeoStrikeSD-ROW</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>GunTurrets</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Medium Charge Blaster ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
