@@ -81,6 +81,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<researchPrerequisites>
+			<li>CE_AdvancedNV</li>
 			<li>CE_TurretHeavyWeapons</li>
 		</researchPrerequisites>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -109,7 +110,7 @@
 		</equippedStatOffsets>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.29</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.2</recoilAmount><!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
@@ -174,6 +175,7 @@
 			</li>
 		</comps>
 		<researchPrerequisites>
+			<li>CE_AdvancedNV</li>
 			<li>CE_TurretHeavyWeapons</li>
 			<li>GunTurrets</li>
 		</researchPrerequisites>
