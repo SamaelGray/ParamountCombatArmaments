@@ -4,10 +4,10 @@
 	<!-- ==================== Manned NeoStrike ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>LG_Gun_NeoStrike</defName>
+		<defName>PCA_Gun_NeoStrike</defName>
 		<label>NeoStrike machine gun</label>
 		<graphicData>
-			<texPath>Things/Building/Turrets/NeoStrike_gun</texPath>
+			<texPath>Things/Building/Turrets/PCA_NeoStrike_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>Heavy machine gun for use against infantry and lightly armored vehicles.</description>
@@ -32,7 +32,7 @@
 				<range>55</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>Shot_LG_Suppressed</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -52,14 +52,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>LG_Turret_NeoStrike</defName>
+		<defName>PCA_Turret_NeoStrike</defName>
 		<label>NeoStrike machine gun</label>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Building/Turrets/NeoStrike_base</texPath>
+			<texPath>Things/Building/Turrets/PCA_NeoStrike_base</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Turrets/NeoStrike_uiIcon</uiIconPath>
+		<uiIconPath>Things/Building/Turrets/PCA_NeoStrike_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>35000</WorkToBuild>
@@ -72,7 +72,7 @@
 			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<building>
-			<turretGunDef>LG_Gun_NeoStrike</turretGunDef>
+			<turretGunDef>PCA_Gun_NeoStrike</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>0.38</turretBurstCooldownTime>
 		</building>
@@ -90,10 +90,10 @@
 	<!-- ==================== NeoStrike SD-ROW ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>LG_Gun_NeoStrikeSD-ROW</defName>
+		<defName>PCA_Gun_NeoStrikeSD-ROW</defName>
 		<label>NeoStrike SD-ROW machine gun</label>
 		<graphicData>
-			<texPath>Things/Building/Turrets/NeoStrikeSD-ROW_gun</texPath>
+			<texPath>Things/Building/Turrets/PCA_NeoStrikeSD-ROW_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>Automated heavy machine gun for use against infantry and lightly armored vehicles.</description>
@@ -118,7 +118,7 @@
 				<range>55</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>Shot_LG_Suppressed</soundCast>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -138,14 +138,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretAutoBase">
-		<defName>LG_Turret_NeoStrikeSD-ROW</defName>
+		<defName>PCA_Turret_NeoStrikeSD-ROW</defName>
 		<label>NeoStrike SD-ROW machine gun</label>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Building/Turrets/NeoStrikeSD-ROW_base</texPath>
+			<texPath>Things/Building/Turrets/PCA_NeoStrikeSD-ROW_base</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Turrets/NeoStrikeSD-ROW_uiIcon</uiIconPath>
+		<uiIconPath>Things/Building/Turrets/PCA_NeoStrikeSD-ROW_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0.5</Flammability>
@@ -161,7 +161,7 @@
 			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<building>
-			<turretGunDef>LG_Gun_NeoStrikeSD-ROW</turretGunDef>
+			<turretGunDef>PCA_Gun_NeoStrikeSD-ROW</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 		</building>
 		<placeWorkers>
