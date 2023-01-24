@@ -456,7 +456,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.15,0.03</DrawOffset>
+				<DrawOffset>0.15,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -585,9 +585,9 @@
 		<statBases>
 			<WorkToMake>47000</WorkToMake>
 			<Mass>5.0</Mass>
-			<Bulk>9.2</Bulk>
+			<Bulk>8.9</Bulk>
 			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>1.43</SwayFactor>
+			<SwayFactor>1.40</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
@@ -605,7 +605,7 @@
 		</recipeMaker>
 		<costList>
 			<Steel>50</Steel>
-			<Chemfuel>15</Chemfuel>
+			<Chemfuel>10</Chemfuel>
 			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
@@ -679,7 +679,128 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.15,1.15</DrawSize>
-				<DrawOffset>0.15,0</DrawOffset>
+				<DrawOffset>0.12,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== RM277 SAW ==================== -->
+
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_RM277SAWTactical</defName>
+		<label>LoneStar Future Weapons RM277 SAW Tactical</label>
+		<description>Ancient squad automatic weapon design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_RM277SAW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>5.5</Mass>
+			<Bulk>11.4</Bulk>
+			<ShotSpread>0.04</ShotSpread>
+			<SwayFactor>1.05</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.25</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>1.35</warmupTime>
+				<range>65</range>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle break -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>5.4</reloadTime>
+				<ammoSet>AmmoSet_277Fury</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>True</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_LMG</li>
+			<li>Bipod_SAW</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.15,1.15</DrawSize>
+				<DrawOffset>0.14,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -695,11 +816,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
 		<statBases>
 			<WorkToMake>31000</WorkToMake>
 			<Mass>5.9</Mass>
 			<Bulk>7.7</Bulk>
-			<ShotSpread>0.05</ShotSpread>
+			<ShotSpread>0.1</ShotSpread>
 			<SwayFactor>1.45</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>

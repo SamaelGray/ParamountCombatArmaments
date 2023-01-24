@@ -16,6 +16,7 @@ Compatible with both the vanilla combat system and CE.
 - Big Horn Armory Model 89 Black Thunder Tactical
 - IWI Micro Tavor X95 Tactical
 - LoneStar Future Weapons RM277 Tactical
+- LoneStar Future Weapons RM277 SAW Tactical
 - Neopup PAW-20 Tactical
 - SWORD International Mk-18 Mod 1 Mjölnir Tactical
 - B-8 advanced charge BR
