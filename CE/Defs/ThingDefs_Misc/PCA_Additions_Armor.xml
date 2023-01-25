@@ -144,7 +144,7 @@
 			<EnergyShieldEnergyMax>1.0</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeDamageFactor>0.25</MeleeDamageFactor>
+			<MeleeDamageFactor MayRequire="Ludeon.Rimworld.Biotech">0.25</MeleeDamageFactor>
 			<MoveSpeed>0.5</MoveSpeed>
 			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<ToxicResistance>1.0</ToxicResistance>
