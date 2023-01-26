@@ -940,8 +940,6 @@
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<AimingAccuracy>0.10</AimingAccuracy>
-			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
