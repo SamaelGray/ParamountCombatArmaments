@@ -10,7 +10,7 @@
 			<texPath>Things/Building/Turrets/PCA_NeoStrike_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Heavy machine gun for use against infantry and lightly armored vehicles.</description>
+		<description>Heavy machine gun for use against infantry and lightly armored targets.</description>
 		<statBases>
 			<Mass>13</Mass>
 			<ShotSpread>0.05</ShotSpread>
@@ -96,7 +96,7 @@
 			<texPath>Things/Building/Turrets/PCA_NeoStrikeSD-ROW_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Automated heavy machine gun for use against infantry and lightly armored vehicles.</description>
+		<description>Automated heavy machine gun for use against infantry and lightly armored targets.</description>
 		<statBases>
 			<Mass>15</Mass>
 			<ShotSpread>0.05</ShotSpread>

@@ -25,6 +25,7 @@ Compatible with both the vanilla combat system and CE.
 - GM6 Lynx Tactical
 - A-20 advanced charge AMR
 ### Machine guns
+- Portable NeoStrike machine gun Tactical
 - SIG SAUER MG 338 Tactical
 - M-8 advanced charge MMG
 ### Other
