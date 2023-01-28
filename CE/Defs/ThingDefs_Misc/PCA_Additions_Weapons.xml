@@ -931,7 +931,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>39500</WorkToMake>
+			<WorkToMake>41500</WorkToMake>
 			<Mass>14.0</Mass>
 			<Bulk>12.5</Bulk>
 			<ShotSpread>0.08</ShotSpread>
@@ -940,6 +940,8 @@
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
+			<AimingAccuracy>0.05</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
@@ -951,7 +953,7 @@
 		<costList>
 			<Steel>100</Steel>
 			<Chemfuel>5</Chemfuel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentIndustrial>7</ComponentIndustrial>	<!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
