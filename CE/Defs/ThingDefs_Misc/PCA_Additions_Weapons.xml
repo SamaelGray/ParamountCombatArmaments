@@ -1037,7 +1037,7 @@
 		<statBases>
 			<WorkToMake>40500</WorkToMake>
 			<Mass>6.3</Mass>
-			<Bulk>11.5</Bulk>	<!-- Folding stock -->
+			<Bulk>11.95</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.05</ShotSpread>
 			<SwayFactor>2.04</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
@@ -1062,10 +1062,10 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.67</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.62</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
 				<warmupTime>1.15</warmupTime>
 				<range>68</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
@@ -1079,7 +1079,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>20</magazineSize>
 				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_338Norma</ammoSet>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
@@ -1150,10 +1150,10 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>49500</WorkToMake>
-			<Mass>10.2</Mass>
-			<Bulk>14.5</Bulk>	<!-- Folding stock -->
+			<Mass>10.5</Mass>
+			<Bulk>15.2</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.03</ShotSpread>
-			<SwayFactor>1.72</SwayFactor>
+			<SwayFactor>1.74</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 		</statBases>
@@ -1176,10 +1176,10 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.29</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.24</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
 				<warmupTime>1.35</warmupTime>
 				<range>68</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -1197,7 +1197,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>100</magazineSize>
 				<reloadTime>7.8</reloadTime>
-				<ammoSet>AmmoSet_338Norma</ammoSet>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -1298,10 +1298,10 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.68</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.63</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
 				<warmupTime>2.05</warmupTime>
 				<range>81</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
@@ -1313,7 +1313,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>5</magazineSize>
 				<reloadTime>4.5</reloadTime>
-				<ammoSet>AmmoSet_338Norma</ammoSet>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>

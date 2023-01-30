@@ -597,17 +597,17 @@
 	<!-- ==================== Mjölnir ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_338Norma</defName>
-		<label>.338 Norma Magnum bullet</label>
+		<defName>Bullet_338Lapua</defName>
+		<label>.338 Lapua Magnum bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>26</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<speed>162</speed>
+			<speed>182</speed>
 		</projectile>
 	</ThingDef>
 
@@ -648,7 +648,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
 				<warmupTime>1.15</warmupTime>
 				<range>35.9</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
@@ -702,7 +702,7 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>49500</WorkToMake>
-			<Mass>10.2</Mass>
+			<Mass>10.5</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
@@ -727,7 +727,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
 				<warmupTime>1.35</warmupTime>
 				<range>35.9</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -807,7 +807,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
 				<warmupTime>2.05</warmupTime>
 				<range>51.9</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
