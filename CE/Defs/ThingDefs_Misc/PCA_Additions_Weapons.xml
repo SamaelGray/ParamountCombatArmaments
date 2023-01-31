@@ -1537,7 +1537,7 @@
 				<warmupTime>1.2</warmupTime>
 				<range>75</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
