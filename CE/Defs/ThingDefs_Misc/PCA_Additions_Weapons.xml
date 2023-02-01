@@ -456,7 +456,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.15,0</DrawOffset>
+				<DrawOffset>0.1,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -566,7 +566,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.15,0</DrawOffset>
+				<DrawOffset>0.1,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -860,7 +860,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>6</magazineSize>
+				<magazineSize>10</magazineSize>
 				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
@@ -1510,6 +1510,7 @@
 		<equippedStatOffsets>
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
@@ -1538,7 +1539,7 @@
 				<range>75</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
 			</li>
@@ -1633,6 +1634,7 @@
 		<equippedStatOffsets>
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
@@ -1661,7 +1663,7 @@
 				<range>75</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
 				<targetParams>
@@ -1758,6 +1760,7 @@
 		<equippedStatOffsets>
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
@@ -1784,7 +1787,7 @@
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>86</range>
-				<soundCast>Shot_PCA_MagnumCharge</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle device -->
 			</li>

@@ -977,6 +977,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
@@ -1001,7 +1002,7 @@
 				<range>35.9</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
 			</li>
@@ -1062,6 +1063,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
@@ -1086,7 +1088,7 @@
 				<range>35.9</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
 			</li>
@@ -1144,6 +1146,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
@@ -1166,7 +1169,7 @@
 				<defaultProjectile>Bullet_HCA</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>54.9</range>
-				<soundCast>Shot_PCA_MagnumCharge</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
 			</li>

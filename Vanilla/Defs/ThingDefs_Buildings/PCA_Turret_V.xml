@@ -49,13 +49,100 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 	</ThingDef>
 
+	<!-- ==================== XR338 Minigun ==================== -->
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>PCA_Gun_XR338Minigun</defName>
+		<label>XR338 Minigun</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/XR338/PCA_XR338_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>XR338 Minigun for use against infantry and lightly armored targets.</description>
+		<statBases>
+			<Mass>32</Mass>
+			<AccuracyTouch>0.25</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.28</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
+				<warmupTime>2.35</warmupTime>
+				<range>35.9</range>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="PCA_TurretBase">
+		<defName>PCA_Turret_XR338Minigun</defName>
+		<label>XR338 Minigun</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/XR338/PCA_XR338_base</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/XR338/PCA_XR338_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>60000</WorkToBuild>
+			<Mass>50</Mass>
+		</statBases>
+		<description>XR338 Minigun mounted on a tripod.</description>
+		<costList>
+			<Steel>220</Steel>
+			<ComponentIndustrial>14</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_XR338Minigun</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>200</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MultibarrelWeapons</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Medium Charge Blaster ==================== -->
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>PCA_Gun_MCB</defName>
 		<label>medium charge blaster</label>
 		<graphicData>
-			<texPath>Things/Building/Turrets/PCA_MCB_gun</texPath>
+			<texPath>Things/Building/Turrets/MCB/PCA_MCB_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>Medium charge blaster for use against lightly armored targets.</description>
@@ -70,7 +157,9 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<verbs>
 			<li>
@@ -81,7 +170,7 @@
 				<range>35.9</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
 			</li>
@@ -93,10 +182,10 @@
 		<label>medium charge blaster</label>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Building/Turrets/PCA_MCB_base</texPath>
+			<texPath>Things/Building/Turrets/MCB/PCA_MCB_base</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Turrets/PCA_MCB_uiIcon</uiIconPath>
+		<uiIconPath>Things/Building/Turrets/MCB/PCA_MCB_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>80000</WorkToBuild>
@@ -146,7 +235,7 @@
 		<defName>PCA_Gun_HCB</defName>
 		<label>heavy charge blaster</label>
 		<graphicData>
-			<texPath>Things/Building/Turrets/PCA_HCB_gun</texPath>
+			<texPath>Things/Building/Turrets/HCB/PCA_HCB_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>Heavy charge blaster for use against armored targets.</description>
@@ -161,7 +250,9 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<verbs>
 			<li>
@@ -172,7 +263,7 @@
 				<range>54.9</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
 			</li>
@@ -184,10 +275,10 @@
 		<label>heavy charge blaster</label>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Building/Turrets/PCA_HCB_base</texPath>
+			<texPath>Things/Building/Turrets/HCB/PCA_HCB_base</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Turrets/PCA_HCB_uiIcon</uiIconPath>
+		<uiIconPath>Things/Building/Turrets/HCB/PCA_HCB_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToBuild>100000</WorkToBuild>
@@ -238,7 +329,7 @@
 		<defName>PCA_Gun_HCA</defName>
 		<label>heavy charge autocannon</label>
 		<graphicData>
-			<texPath>Things/Building/Turrets/PCA_HCA_gun</texPath>
+			<texPath>Things/Building/Turrets/HCA/PCA_HCA_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>Heavy charge autocannon for use against highly armored targets.</description>
@@ -253,7 +344,9 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
 		<verbs>
 			<li>
@@ -264,7 +357,7 @@
 				<range>54.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_MagnumCharge</soundCast>
+				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
 			</li>
@@ -276,10 +369,10 @@
 		<label>heavy charge autocannon</label>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Building/Turrets/PCA_HCA_base</texPath>
+			<texPath>Things/Building/Turrets/HCA/PCA_HCA_base</texPath>
 			<drawSize>(2.0,2.0)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Turrets/PCA_HCA_uiIcon</uiIconPath>
+		<uiIconPath>Things/Building/Turrets/HCA/PCA_HCA_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>120000</WorkToBuild>
