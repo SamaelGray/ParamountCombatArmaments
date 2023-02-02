@@ -616,7 +616,7 @@
 		<label>SWORD International Mk-18 Mod 1 Mjölnir Tactical</label>
 		<description>Ancient battle rifle design firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
-			<texPath>Things/Weapons/PCA_Mjölnir</texPath>
+			<texPath>Things/Weapons/PCA_Mjolnir</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
