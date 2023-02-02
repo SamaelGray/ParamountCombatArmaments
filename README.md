@@ -33,7 +33,7 @@ Compatible with both the vanilla combat system and CE.
 - Nanosuit
 - NeoStrike heavy machine gun
 - NeoStrike SD-ROW heavy machine gun
-- DTV XR338 Minigun
+- DTV Arms XR338 Minigun
 - Medium Charge Blaster turret
 - Heavy Charge Blaster turret
 - Heavy Charge Autocannon turret
