@@ -147,7 +147,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_FiveseveNTactical</defName>
-		<label>FN Five-SeveN MK3 MRD Tactical</label>
+		<label>Five-SeveN MK3 MRD Tactical</label>
 		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_FN57</texPath>
@@ -246,7 +246,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_BlackThunderTactical</defName>
-		<label>Big Horn Armory Model 89 Black Thunder Tactical</label>
+		<label>Model 89 Black Thunder Tactical</label>
 		<description>Ancient lever-action repeating rifle that fires one of the most powerful pistol cartridges of all time. Comes equipped with reflex sights.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_BlackThunder</texPath>
@@ -350,7 +350,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_P90Tactical</defName>
-		<label>FN P90 TR Tactical</label>
+		<label>P90 TR Tactical</label>
 		<description>A personal defense weapon which uses a specialized round to penetrate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_FNP90</texPath>
@@ -465,7 +465,7 @@
 
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MicroTavorTactical</defName>
-		<label>IWI Micro Tavor X95 Tactical</label>
+		<label>Micro Tavor X95 Tactical</label>
 		<description>Ancient short barrel rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MicroTavor</texPath>
@@ -575,7 +575,7 @@
 
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_RM277Tactical</defName>
-		<label>LoneStar Future Weapons RM277 Tactical</label>
+		<label>RM277 Tactical</label>
 		<description>Ancient battle rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_RM277</texPath>
@@ -688,7 +688,7 @@
 
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_RM277SAWTactical</defName>
-		<label>LoneStar Future Weapons RM277 SAW Tactical</label>
+		<label>RM277 SAW Tactical</label>
 		<description>Ancient squad automatic weapon design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_RM277SAW</texPath>
@@ -1027,7 +1027,7 @@
 
  	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MjolnirTactical</defName>
-		<label>SWORD International Mk-18 Mod 1 Mjölnir Tactical</label>
+		<label>Mk-18 Mod 1 Mjölnir Tactical</label>
 		<description>Ancient battle rifle design firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Mjolnir</texPath>
@@ -1138,7 +1138,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MG338Tactical</defName>
-		<label>SIG SAUER MG 338 Tactical</label>
+		<label>MG 338 Tactical</label>
 		<description>Ancient lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs. Comes equipped with an advanced scope and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MG338</texPath>
@@ -1259,7 +1259,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_SRSTactical</defName>
-		<label>Desert Tech SRS-A2 Tactical</label>
+		<label>SRS-A2 Tactical</label>
 		<description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with an advanced high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_SRS</texPath>
