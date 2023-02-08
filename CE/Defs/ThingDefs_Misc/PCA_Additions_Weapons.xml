@@ -947,6 +947,7 @@
 		<generateCommonality>0.33</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisites>
+				<li>PrecisionRifling</li>
 				<li>CE_TurretHeavyWeapons</li>
 			</researchPrerequisites>
 		</recipeMaker>

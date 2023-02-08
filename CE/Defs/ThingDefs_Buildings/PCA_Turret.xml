@@ -82,6 +82,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<researchPrerequisites>
+			<li>PrecisionRifling</li>
 			<li>CE_AdvancedNV</li>
 			<li>CE_TurretHeavyWeapons</li>
 		</researchPrerequisites>
@@ -182,6 +183,7 @@
 			</li>
 		</comps>
 		<researchPrerequisites>
+			<li>PrecisionRifling</li>
 			<li>CE_AdvancedNV</li>
 			<li>CE_TurretHeavyWeapons</li>
 			<li>GunTurrets</li>
@@ -286,6 +288,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<researchPrerequisites>
+			<li>PrecisionRifling</li>
 			<li>CE_AdvancedNV</li>
 			<li>MultibarrelWeapons</li>
 		</researchPrerequisites>
