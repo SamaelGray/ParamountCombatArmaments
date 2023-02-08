@@ -32,7 +32,7 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>6500</WorkToMake>
+			<WorkToMake>7500</WorkToMake><!--+1000 for a simulated extra work-->
 			<Mass>2.5</Mass>
 			<AccuracyTouch>0.85</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
@@ -205,7 +205,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>13500</WorkToMake>
+			<WorkToMake>15000</WorkToMake><!--+1500 for a simulated extra work-->
 			<Mass>3.40</Mass>
 			<AccuracyTouch>0.85</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
