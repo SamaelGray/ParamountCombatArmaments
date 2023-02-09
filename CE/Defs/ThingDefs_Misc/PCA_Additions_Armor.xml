@@ -67,6 +67,7 @@
 			<tags>
 				<li>BeltDefense</li>
 			</tags>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
