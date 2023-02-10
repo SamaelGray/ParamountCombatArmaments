@@ -19,6 +19,7 @@
 			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			<AimingAccuracy>0.10</AimingAccuracy>
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
@@ -107,6 +108,7 @@
 			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			<AimingAccuracy>0.10</AimingAccuracy>
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
@@ -209,6 +211,7 @@
 			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 			<AimingAccuracy>0.10</AimingAccuracy>
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
@@ -314,6 +317,7 @@
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
@@ -404,6 +408,7 @@
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
@@ -496,6 +501,7 @@
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>

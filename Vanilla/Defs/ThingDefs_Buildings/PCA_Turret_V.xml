@@ -70,7 +70,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
@@ -157,7 +157,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
@@ -250,7 +250,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
@@ -344,7 +344,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
