@@ -358,7 +358,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MicroTavorTactical</defName>
 		<label>Micro Tavor X95 Tactical</label>
-		<description>Ancient short barrel rifle design in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
+		<description>Ancient short barrel rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MicroTavor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -423,89 +423,6 @@
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-
-	<!-- ==================== XM556 ==================== -->
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_556x45mmNATO</defName>
-		<label>5.56mm NATO bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>11</damageAmountBase>
-			<speed>185</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_XM556Tactical</defName>
-		<label>XM556 Microgun Tactical</label>
-		<description>Ancient rotary multi-barreled machine gun with a high rate of fire in portable configuration for use against infantry. Comes equipped with a suppressor and laser sights.</description>
-		<graphicData>
-			<texPath>Things/Weapons/PCA_XM556</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.1,1.1)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<statBases>
-			<WorkToMake>42000</WorkToMake>
-			<Mass>7.25</Mass>
-			<AccuracyTouch>0.25</AccuracyTouch>
-			<AccuracyShort>0.35</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
-			<AccuracyLong>0.28</AccuracyLong>
-			<RangedWeapon_Cooldown>0.54</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
-			<AimingDelayFactor>-0.10</AimingDelayFactor>
-			<HuntingStealth>0.5</HuntingStealth>
-		</equippedStatOffsets>
-		<generateCommonality>0.5</generateCommonality>
-		<recipeMaker>
-			<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
-		</recipeMaker>
-		<costList>
-			<Steel>60</Steel>
-			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_556x45mmNATO</defaultProjectile>
-				<burstShotCount>25</burstShotCount>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<warmupTime>2.1</warmupTime>
-				<range>31.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
-			</li>
-		</verbs>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>GunHeavy</li>
-		</weaponTags>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>11.7</power>
-				<cooldownTime>2.6</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -1020,100 +937,6 @@
 		</tools>
 	</ThingDef>
 
-	<!-- ==================== Charge Microgun ==================== -->
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_6x24mmCharged</defName>
-		<label>6x24mm Charged</label>
-		<graphicData>
-			<texPath>Things/Projectile/Charge_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
-			<speed>160</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_ChargeMicrogun</defName>
-		<label>M-6 advanced charge Microgun</label>
-		<description>Charged-shot rotary multi-barreled machine gun with a high rate of fire in portable configuration for use against infantry. Equipped with a suppressor and laser sights.</description>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Things/Weapons/PCA_ChargeMicrogun</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.2,1.2)</drawSize>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
-		<statBases>
-			<WorkToMake>61000</WorkToMake>
-			<Mass>7.0</Mass>
-			<AccuracyTouch>0.25</AccuracyTouch>
-			<AccuracyShort>0.35</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
-			<AccuracyLong>0.28</AccuracyLong>
-			<RangedWeapon_Cooldown>0.52</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
-			<AimingDelayFactor>-0.10</AimingDelayFactor>
-			<HuntingStealth>0.5</HuntingStealth>
-		</equippedStatOffsets>
-		<generateCommonality>0.5</generateCommonality>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>ChargedShot</li>
-				<li>MultibarrelWeapons</li>
-			</researchPrerequisites>
-			<recipeUsers Inherit="false">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Steel>50</Steel>
-			<Plasteel>30</Plasteel>
-			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>12</ComponentIndustrial><!-- +1 for the laser sights -->
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_6x24mmCharged</defaultProjectile>
-				<warmupTime>2.1</warmupTime>
-				<range>30.9</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>25</burstShotCount>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
-			</li>
-		</verbs>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>SpacerGun</li>
-		</weaponTags>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>11.7</power>
-				<cooldownTime>2.6</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-
 	<!-- ==================== Charge ABR ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -1134,7 +957,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeABR</defName>
 		<label>B-8 advanced charge BR</label>
-		<description>Charged-shot fully automatic battle rifle firing a magnum charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot fully automatic battle rifle firing a magnum charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeABR</texPath>
@@ -1217,7 +1040,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAMMG</defName>
 		<label>M-8 advanced charge MMG</label>
-		<description>Charged-shot medium machine gun firing a magnum charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot medium machine gun firing a magnum charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAMMG</texPath>
@@ -1303,7 +1126,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAAMR</defName>
 		<label>A-20 advanced charge AMR</label>
-		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot semi-auto anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>

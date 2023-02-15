@@ -82,7 +82,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.49</recoilAmount><!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>2.49</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_500SWMagnum_FMJ</defaultProjectile>
@@ -90,7 +90,7 @@
 				<range>16</range>
 				<soundCast>Shot_PCA_Handcannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
 			</li>
 		</verbs>
 		<comps>
@@ -183,7 +183,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.46</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.46</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
@@ -191,7 +191,7 @@
 				<range>15</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -276,7 +276,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.01</recoilAmount><!-- Decreased by 25% due to the muzzle break -->
+				<recoilAmount>2.01</recoilAmount>	<!-- Decreased by 25% due to the muzzle break -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_500SWMagnum_HV_FMJ</defaultProjectile>
@@ -284,7 +284,7 @@
 				<range>31</range>
 				<soundCast>Shot_BoltActionRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle break -->
 			</li>
 		</verbs>
 		<thingSetMakerTags>
@@ -386,7 +386,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>0.81</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>0.81</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
@@ -396,7 +396,7 @@
 				<range>31</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>6</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -463,10 +463,10 @@
 
 	<!-- ==================== Micro Tavor ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MicroTavorTactical</defName>
 		<label>Micro Tavor X95 Tactical</label>
-		<description>Ancient short barrel rifle design in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
+		<description>Ancient short barrel rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_MicroTavor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -498,7 +498,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.27</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.27</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
@@ -508,7 +508,7 @@
 				<range>51</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -571,105 +571,9 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- ==================== XM556 ==================== -->
-
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_XM556Tactical</defName>
-		<label>XM556 Microgun Tactical</label>
-		<description>Ancient rotary multi-barreled machine gun with a high rate of fire in portable configuration for use against infantry. Comes equipped with a suppressor and laser sights.</description>
-		<graphicData>
-			<texPath>Things/Weapons/PCA_XM556</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
-		<statBases>
-			<WorkToMake>42000</WorkToMake>
-			<Mass>7.25</Mass>
-			<Bulk>8.6</Bulk>
-			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.82</SwayFactor>
-			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-			<AimingAccuracy>0.05</AimingAccuracy>
-			<AimingDelayFactor>-0.10</AimingDelayFactor>
-			<HuntingStealth>0.5</HuntingStealth>
-		</equippedStatOffsets>
-		<generateCommonality>0.5</generateCommonality>
-		<recipeMaker>
-			<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
-		</recipeMaker>
-		<costList>
-			<Steel>60</Steel>
-			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
-		</costList>
-		<verbs>
-			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>0.81</recoilAmount><!-- Decreased by 25% due to the suppressor -->
-				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-				<warmupTime>2.1</warmupTime>
-				<range>55</range>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-				<burstShotCount>50</burstShotCount>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<comps>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>500</magazineSize>
-				<reloadTime>9.2</reloadTime>
-				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
-			</li>
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
-				<aiAimMode>Snapshot</aiAimMode>
-				<aimedBurstShotCount>25</aimedBurstShotCount>
-			</li>
-		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>CE_AI_Suppressive</li>
-			<li>GunHeavy</li>
-		</weaponTags>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>2.4</cooldownTime>
-				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Barrels</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.2</DrawSize>
-				<DrawOffset>0,-0.3</DrawOffset>
-			</li>
-		</modExtensions>
-	</ThingDef>
-
 	<!-- ==================== RM277 ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_RM277Tactical</defName>
 		<label>RM277 Tactical</label>
 		<description>Ancient battle rifle design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
@@ -703,11 +607,11 @@
 		<costList>
 			<Steel>50</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.33</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.33</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
@@ -717,7 +621,7 @@
 				<range>59</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle break -->
 			</li>
 		</verbs>
 		<comps>
@@ -783,7 +687,7 @@
 
 	<!-- ==================== RM277 SAW ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_RM277SAWTactical</defName>
 		<label>RM277 SAW Tactical</label>
 		<description>Ancient squad automatic weapon design, in bullpup configuration for increased compactability and easier handling. Comes equipped with an advanced scope and a suppressor.</description>
@@ -820,11 +724,11 @@
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.25</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.25</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
@@ -834,7 +738,7 @@
 				<range>65</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle break -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -905,7 +809,7 @@
 
 	<!-- ==================== Neopup ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_NeopupTactical</defName>
 		<label>Neopup PAW-20 Tactical</label>
 		<description>Ancient handheld, semi-automatic direct-fire grenade launcher also capable of firing normal projectiles. Comes equipped with an advanced scope and a suppressor.</description>
@@ -942,11 +846,11 @@
 		<costList>
 			<Steel>85</Steel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>6</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>6</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.55</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>2.55</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
@@ -954,7 +858,7 @@
 				<range>48</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle break -->
 			</li>
 		</verbs>
 		<comps>
@@ -1020,7 +924,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_PortableNeoStrikeTactical</defName>
 		<label>Portable NeoStrike machine gun Tactical</label>
-		<description>Ancient heavy machine gun in portable configuration for use against infantry and lightly armored vehicles. Comes equipped with a suppressor and laser sights.</description>
+		<description>Ancient heavy machine gun in portable configuration for use against infantry and lightly armored vehicles. Comes equipped with a suppressor.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_PortableNeoStrike</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1053,11 +957,11 @@
 		<costList>
 			<Steel>100</Steel>
 			<Chemfuel>5</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>7</ComponentIndustrial>	<!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.68</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.68</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
@@ -1067,7 +971,7 @@
 				<burstShotCount>5</burstShotCount>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1125,7 +1029,7 @@
 
 	<!-- ==================== Mjölnir ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_MjolnirTactical</defName>
 		<label>Mk-18 Mod 1 Mjölnir Tactical</label>
 		<description>Ancient battle rifle design firing a magnum rilfe cartridge. Comes equipped with an advanced scope and a suppressor.</description>
@@ -1137,7 +1041,7 @@
 		<statBases>
 			<WorkToMake>40500</WorkToMake>
 			<Mass>6.3</Mass>
-			<Bulk>11.95</Bulk><!-- Folding stock -->
+			<Bulk>11.95</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.05</ShotSpread>
 			<SwayFactor>2.04</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
@@ -1159,11 +1063,11 @@
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>8</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.62</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.62</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
@@ -1173,7 +1077,7 @@
 				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -1252,7 +1156,7 @@
 		<statBases>
 			<WorkToMake>49500</WorkToMake>
 			<Mass>10.5</Mass>
-			<Bulk>15.2</Bulk><!-- Folding stock -->
+			<Bulk>15.2</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.03</ShotSpread>
 			<SwayFactor>1.74</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
@@ -1274,11 +1178,11 @@
 		<costList>
 			<Steel>85</Steel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.24</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.24</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
@@ -1288,7 +1192,7 @@
 				<burstShotCount>10</burstShotCount>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1397,11 +1301,11 @@
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.63</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.63</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
@@ -1409,7 +1313,7 @@
 				<range>81</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -1513,11 +1417,11 @@
 		<costList>
 			<Steel>90</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>10</ComponentIndustrial>	<!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.91</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.91</recoilAmount>	<!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
@@ -1525,7 +1429,7 @@
 				<range>86</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -1589,116 +1493,12 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- ==================== Charge Microgun ==================== -->
-
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_ChargeMicrogun</defName>
-		<label>M-6 advanced charge Microgun</label>
-		<description>Charged-shot rotary multi-barreled machine gun with a high rate of fire in portable configuration for use against infantry. Equipped with a suppressor and laser sights.</description>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Things/Weapons/PCA_ChargeMicrogun</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
-		<statBases>
-			<WorkToMake>61000</WorkToMake>
-			<Mass>7.0</Mass>
-			<Bulk>8.1</Bulk>
-			<ShotSpread>0.06</ShotSpread>
-			<SwayFactor>1.74</SwayFactor>
-			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-			<AimingAccuracy>0.05</AimingAccuracy>
-			<AimingDelayFactor>-0.10</AimingDelayFactor>
-			<HuntingStealth>0.5</HuntingStealth>
-		</equippedStatOffsets>
-		<generateCommonality>0.5</generateCommonality>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>ChargedShot</li>
-				<li>MultibarrelWeapons</li>
-			</researchPrerequisites>
-			<recipeUsers Inherit="false">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Steel>50</Steel>
-			<Plasteel>30</Plasteel>
-			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>12</ComponentIndustrial><!-- +1 for the laser sights -->
-		</costList>
-		<verbs>
-			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>0.77</recoilAmount><!-- Decreased by 25% due to the suppressor -->
-				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_6x24mmCharged</defaultProjectile>
-				<warmupTime>2.1</warmupTime>
-				<range>55</range>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-				<burstShotCount>50</burstShotCount>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<comps>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>500</magazineSize>
-				<reloadTime>9.2</reloadTime>
-				<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
-			</li>
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
-				<aiAimMode>Snapshot</aiAimMode>
-				<aimedBurstShotCount>25</aimedBurstShotCount>
-			</li>
-		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>AdvancedGun</li>
-			<li>SpacerGun</li>
-			<li>CE_AI_Suppressive</li>
-		</weaponTags>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>2.4</cooldownTime>
-				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Barrels</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.2</DrawSize>
-				<DrawOffset>0,-0.3</DrawOffset>
-			</li>
-		</modExtensions>
-	</ThingDef>
-
 	<!-- ==================== Charge ABR ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeABR</defName>
 		<label>B-8 advanced charge BR</label>
-		<description>Charged-shot fully automatic battle rifle firing a magnum charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot fully automatic battle rifle firing a magnum charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeABR</texPath>
@@ -1708,7 +1508,7 @@
 		<statBases>
 			<WorkToMake>59000</WorkToMake>
 			<Mass>6.0</Mass>
-			<Bulk>11.0</Bulk><!-- Folding stock -->
+			<Bulk>11.0</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
 			<SwayFactor>1.97</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
@@ -1736,11 +1536,11 @@
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
 			<ComponentIndustrial>10</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.5</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
+				<recoilAmount>1.5</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
@@ -1750,7 +1550,7 @@
 				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
 			</li>
 		</verbs>
 		<comps>
@@ -1820,7 +1620,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAMMG</defName>
 		<label>M-8 advanced charge MMG</label>
-		<description>Charged-shot medium machine gun firing a magnum charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot medium machine gun firing a magnum charged cartridge. Equipped with an advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAMMG</texPath>
@@ -1833,7 +1633,7 @@
 		<statBases>
 			<WorkToMake>67000</WorkToMake>
 			<Mass>10.0</Mass>
-			<Bulk>14.2</Bulk><!-- Folding stock -->
+			<Bulk>14.2</Bulk>	<!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
 			<SwayFactor>1.67</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
@@ -1861,11 +1661,11 @@
 			<Plasteel>35</Plasteel>
 			<Chemfuel>20</Chemfuel>
 			<ComponentIndustrial>11</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.14</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
+				<recoilAmount>1.14</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8x50mmCharged</defaultProjectile>
@@ -1875,7 +1675,7 @@
 				<burstShotCount>10</burstShotCount>
 				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 66% due to the muzzle device -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1947,10 +1747,10 @@
 
 	<!-- ==================== Charge AAMR ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+ 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAAMR</defName>
 		<label>A-20 advanced charge AMR</label>
-		<description>Charged-shot semi-automatic anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<description>Charged-shot semi-automatic anti-materiel rifle in bullpup design firing a high caliber charged cartridge. Equipped with and advanced scope that helps the shooter with target acquisition.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>
@@ -1988,11 +1788,11 @@
 			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
 			<ComponentIndustrial>12</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>	<!-- For the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.36</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
+				<recoilAmount>2.36</recoilAmount>	<!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
@@ -2000,7 +1800,7 @@
 				<range>86</range>
 				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
+				<muzzleFlashScale>3</muzzleFlashScale>	<!-- Decreased by 33% due to the muzzle device -->
 			</li>
 		</verbs>
 		<comps>
