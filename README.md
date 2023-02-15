@@ -25,10 +25,8 @@ Compatible with both the vanilla combat system and CE.
 - GM6 Lynx Tactical
 - A-20 advanced charge AMR
 ### Machine guns
-- Empty Shell XM556 Microgun Tactical
 - Portable NeoStrike machine gun Tactical
 - SIG SAUER MG 338 Tactical
-- M-6 advanced charge Microgun
 - M-8 advanced charge MMG
 ### Other
 - Ranged shield belt
