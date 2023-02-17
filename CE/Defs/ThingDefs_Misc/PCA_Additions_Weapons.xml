@@ -662,7 +662,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.2,1.2</DrawSize>
-				<DrawOffset>0,-0.3</DrawOffset>
+				<DrawOffset>0,-0.1</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1081,7 +1081,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
-				<aiAimMode>SuppressFire</aiAimMode>
+				<aiAimMode>Snapshot</aiAimMode>
 				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
 		</comps>
@@ -1118,7 +1118,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.25,1.25</DrawSize>
-				<DrawOffset>0,-0.3</DrawOffset>
+				<DrawOffset>0,-0.1</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1688,7 +1688,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.2,1.2</DrawSize>
-				<DrawOffset>0,-0.3</DrawOffset>
+				<DrawOffset>0,-0.1</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
