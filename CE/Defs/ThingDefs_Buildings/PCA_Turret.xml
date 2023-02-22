@@ -298,6 +298,118 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
+	<!-- ==================== Nexter P20 ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>PCA_Gun_NexterPTwenty</defName>
+		<label>Nexter P20 autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/NexterP20/PCA_NexterP20_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>High caliber autocannon for use against highly armored targets. Equipped with a large gun shield to protect the user behind it.</description>
+		<statBases>
+			<Mass>60</Mass>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.75</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.03</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>86</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>100</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>PCA_Turret_NexterPTwenty</defName>
+		<label>Nexter P20 autocannon</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/NexterP20/PCA_NexterP20_base</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/NexterP20/PCA_NexterP20_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>70000</WorkToBuild>
+			<Mass>160</Mass>
+			<Bulk>150</Bulk>
+		</statBases>
+		<description>Nexter P20 autocannon mounted on a quadpod. Equipped with a large gun shield to protect the user behind it.</description>
+		<costList>
+			<Steel>400</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_NexterPTwenty</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.37</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>PrecisionRifling</li>
+			<li>CE_AdvancedNV</li>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Medium Charge Blaster ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
@@ -307,7 +419,7 @@
 			<texPath>Things/Building/Turrets/MCB/PCA_MCB_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Medium charge blaster for use against lightly armored targets.</description>
+		<description>Medium charge blaster for use against lightly armored targets. Equipped with extra armor plates and very resistant to damage.</description>
 		<statBases>
 			<Mass>20</Mass>
 			<ShotSpread>0.01</ShotSpread>
@@ -340,7 +452,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>200</magazineSize>
+				<magazineSize>250</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_8x50mmCharged</ammoSet>
 			</li>
@@ -366,7 +478,7 @@
 			<Mass>40</Mass>
 			<Bulk>50</Bulk>
 		</statBases>
-		<description>Medium charge blaster mounted on a tripod.</description>
+		<description>Medium charge blaster mounted on a tripod. Equipped with extra armor plates and very resistant to damage.</description>
 		<costList>
 			<Steel>150</Steel>
 			<Plasteel>50</Plasteel>
@@ -382,6 +494,28 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
 		<researchPrerequisites>
 			<li>CE_ChargeTurret</li>
 			<li>CE_AdvancedNV</li>
@@ -398,7 +532,7 @@
 			<texPath>Things/Building/Turrets/HCB/PCA_HCB_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Heavy charge blaster for use against armored targets.</description>
+		<description>Heavy charge blaster for use against armored targets. Equipped with extra armor plates and very resistant to damage.</description>
 		<statBases>
 			<Mass>40</Mass>
 			<ShotSpread>0.01</ShotSpread>
@@ -431,7 +565,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>100</magazineSize>
+				<magazineSize>200</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_12x72mmCharged</ammoSet>
 			</li>
@@ -457,7 +591,7 @@
 			<Mass>80</Mass>
 			<Bulk>100</Bulk>
 		</statBases>
-		<description>Heavy charge blaster mounted on a tripod.</description>
+		<description>Heavy charge blaster mounted on a tripod. Equipped with extra armor plates and very resistant to damage.</description>
 		<costList>
 			<Steel>300</Steel>
 			<Plasteel>100</Plasteel>
@@ -474,6 +608,28 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
 			<li>CE_ChargeTurret</li>
@@ -491,7 +647,7 @@
 			<texPath>Things/Building/Turrets/HCA/PCA_HCA_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Heavy charge autocannon for use against highly armored targets.</description>
+		<description>Heavy charge autocannon for use against highly armored targets. Equipped with extra armor plates and very resistant to damage.</description>
 		<statBases>
 			<Mass>60</Mass>
 			<ShotSpread>0.01</ShotSpread>
@@ -524,7 +680,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>50</magazineSize>
+				<magazineSize>100</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_20x105mmCharged</ammoSet>
 			</li>
@@ -550,7 +706,7 @@
 			<Mass>120</Mass>
 			<Bulk>150</Bulk>
 		</statBases>
-		<description>Heavy charge autocannon mounted on a quadpod.</description>
+		<description>Heavy charge autocannon mounted on a quadpod. Equipped with extra armor plates and very resistant to damage.</description>
 		<costList>
 			<Steel>400</Steel>
 			<Plasteel>150</Plasteel>
@@ -567,6 +723,28 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
 			<li>CE_ChargeTurret</li>

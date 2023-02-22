@@ -1589,6 +1589,123 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- ==================== Anzio ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_Anzio20Tactical</defName>
+		<label>Anzio 20mm Tactical</label>
+		<description>Ancient bolt-action precision anti-materiel rifle. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Features a shorter than average barrel for better portability and comes equipped with a suppressor. Due to the use of plasteel in its manufacturing, it is a relatively light weapon.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_Anzio20mm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>56500</WorkToMake>
+			<Mass>25</Mass>
+			<Bulk>23</Bulk>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>3.37</SwayFactor>
+			<SightsEfficiency>3.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+				<li>CE_TurretHeavyWeapons</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>60</Plasteel>
+			<Chemfuel>20</Chemfuel>
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.1</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
+				<warmupTime>4.05</warmupTime>
+				<range>86</range>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>Bipod_AMR</li>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>2.5,2.5</DrawSize>
+				<DrawOffset>0.8,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- ==================== Charge Microgun ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -1992,7 +2109,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.36</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
+				<recoilAmount>2.47</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>

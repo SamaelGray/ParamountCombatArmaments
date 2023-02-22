@@ -23,6 +23,7 @@ Compatible with both the vanilla combat system and CE.
 ### Sniper rifles
 - Desert Tech SRS-A2 Tactical
 - GM6 Lynx Tactical
+- Anzio 20mm Tactical
 - A-20 advanced charge AMR
 ### Machine guns
 - Empty Shell XM556 Microgun Tactical
@@ -36,6 +37,7 @@ Compatible with both the vanilla combat system and CE.
 - NeoStrike heavy machine gun
 - NeoStrike SD-ROW heavy machine gun
 - DTV Arms XR338 Minigun
+- Nexter P20 autocannon
 - Medium Charge Blaster turret
 - Heavy Charge Blaster turret
 - Heavy Charge Autocannon turret

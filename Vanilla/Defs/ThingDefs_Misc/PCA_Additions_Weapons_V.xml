@@ -892,7 +892,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
 				<warmupTime>2.05</warmupTime>
-				<range>51.9</range>
+				<range>45.9</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
@@ -937,7 +937,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>28</damageAmountBase>
 			<stoppingPower>2.0</stoppingPower>
 			<speed>178</speed>
 		</projectile>
@@ -986,7 +986,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
-				<range>52.9</range>
+				<range>47.9</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
@@ -998,6 +998,100 @@
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
 			<li>SniperRifle</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- ==================== Anzio ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_20x102mmNATO</defName>
+		<label>20x102mm NATO bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<stoppingPower>2.0</stoppingPower>
+			<speed>206</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_Anzio20Tactical</defName>
+		<label>Anzio 20mm Tactical</label>
+		<description>Ancient bolt-action precision anti-materiel rifle. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Features a shorter than average barrel for better portability and comes equipped with a suppressor. Due to the use of plasteel in its manufacturing, it is a relatively light weapon.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_Anzio20mm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>56500</WorkToMake>
+			<Mass>25</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
+			<AccuracyLong>0.9</AccuracyLong>
+			<RangedWeapon_Cooldown>2.08</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.33</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>60</Plasteel>
+			<Chemfuel>20</Chemfuel>
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x102mmNATO</defaultProjectile>
+				<warmupTime>4.05</warmupTime>
+				<range>49.9</range>
+				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>GunHeavy</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -1345,7 +1439,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_HCA</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
-				<range>54.9</range>
+				<range>50.9</range>
 				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
