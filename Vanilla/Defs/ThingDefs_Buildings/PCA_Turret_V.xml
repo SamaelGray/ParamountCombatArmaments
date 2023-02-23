@@ -189,11 +189,12 @@
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>70000</WorkToBuild>
-			<Mass>160</Mass>
+			<Mass>120</Mass>
 		</statBases>
 		<description>Nexter P20 autocannon mounted on a quadpod. Equipped with a large gun shield to protect the user behind it.</description>
 		<costList>
-			<Steel>400</Steel>
+			<Steel>350</Steel>
+			<Plasteel>25</Plasteel>
 			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<building>
