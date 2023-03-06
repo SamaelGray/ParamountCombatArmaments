@@ -42,7 +42,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>120</magazineSize>
+				<magazineSize>150</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
@@ -131,7 +131,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>80</magazineSize>
+				<magazineSize>100</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
@@ -237,7 +237,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>500</magazineSize>
+				<magazineSize>1000</magazineSize>
 				<reloadTime>9.2</reloadTime>
 				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>

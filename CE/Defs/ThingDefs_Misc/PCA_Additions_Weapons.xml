@@ -299,7 +299,7 @@
 		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>6</magazineSize>
+				<magazineSize>7</magazineSize>
 				<reloadOneAtATime>true</reloadOneAtATime>
 				<reloadTime>0.85</reloadTime>
 				<ammoSet>AmmoSet_500SWMagnum_HV</ammoSet>
@@ -1084,7 +1084,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>50</magazineSize>
+				<magazineSize>100</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
@@ -1180,7 +1180,7 @@
 				<warmupTime>1.15</warmupTime>
 				<range>68</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-				<burstShotCount>2</burstShotCount>
+				<burstShotCount>3</burstShotCount>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
@@ -1194,6 +1194,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
 		</comps>
 		<thingSetMakerTags>
@@ -1880,7 +1881,7 @@
 				<warmupTime>1.2</warmupTime>
 				<range>75</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
+				<burstShotCount>3</burstShotCount>
 				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
