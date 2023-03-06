@@ -12,7 +12,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>16</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<speed>98</speed>
 		</projectile>
@@ -101,7 +101,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>8</damageAmountBase>
-			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
 			<speed>130</speed>
 		</projectile>
 	</ThingDef>
@@ -290,7 +290,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
@@ -937,7 +937,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>28</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<stoppingPower>2.0</stoppingPower>
 			<speed>178</speed>
 		</projectile>
@@ -1031,7 +1031,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>32</damageAmountBase>
+			<damageAmountBase>35</damageAmountBase>
 			<stoppingPower>2.0</stoppingPower>
 			<speed>206</speed>
 		</projectile>
@@ -1161,6 +1161,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
 				<li>ChargedShot</li>
 				<li>MultibarrelWeapons</li>

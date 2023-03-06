@@ -462,7 +462,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>40</damageAmountBase>
+			<damageAmountBase>45</damageAmountBase>
 			<armorPenetrationBase>0.9</armorPenetrationBase>
 			<stoppingPower>3.0</stoppingPower>
 			<speed>200</speed>
