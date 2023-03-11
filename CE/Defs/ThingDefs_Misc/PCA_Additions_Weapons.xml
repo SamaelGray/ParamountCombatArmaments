@@ -723,7 +723,7 @@
 				<range>59</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -841,7 +841,7 @@
 				<range>65</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -962,7 +962,7 @@
 				<range>48</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<comps>
@@ -1146,9 +1146,9 @@
 		<statBases>
 			<WorkToMake>40500</WorkToMake>
 			<Mass>6.3</Mass>
-			<Bulk>11.95</Bulk><!-- Folding stock -->
+			<Bulk>10.95</Bulk><!-- Folding stock -->
 			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>2.04</SwayFactor>
+			<SwayFactor>1.94</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
@@ -1263,9 +1263,9 @@
 		<statBases>
 			<WorkToMake>49500</WorkToMake>
 			<Mass>10.5</Mass>
-			<Bulk>15.2</Bulk><!-- Folding stock -->
+			<Bulk>14.2</Bulk><!-- Folding stock -->
 			<ShotSpread>0.03</ShotSpread>
-			<SwayFactor>1.74</SwayFactor>
+			<SwayFactor>1.67</SwayFactor>
 			<SightsEfficiency>2.06</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 		</statBases>
@@ -1841,9 +1841,9 @@
 		<statBases>
 			<WorkToMake>59000</WorkToMake>
 			<Mass>6.0</Mass>
-			<Bulk>11.0</Bulk><!-- Folding stock -->
+			<Bulk>10.5</Bulk><!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
-			<SwayFactor>1.97</SwayFactor>
+			<SwayFactor>1.87</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
@@ -1967,9 +1967,9 @@
 		<statBases>
 			<WorkToMake>67000</WorkToMake>
 			<Mass>10.0</Mass>
-			<Bulk>14.2</Bulk><!-- Folding stock -->
+			<Bulk>13.7</Bulk><!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
-			<SwayFactor>1.67</SwayFactor>
+			<SwayFactor>1.60</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>

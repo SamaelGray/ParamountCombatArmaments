@@ -571,7 +571,7 @@
 				<range>33.9</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<thingSetMakerTags>
@@ -647,7 +647,7 @@
 				<range>34.9</range>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<thingSetMakerTags>
