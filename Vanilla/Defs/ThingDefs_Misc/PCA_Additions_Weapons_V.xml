@@ -1044,7 +1044,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_Anzio20mm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.1,2.1)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
