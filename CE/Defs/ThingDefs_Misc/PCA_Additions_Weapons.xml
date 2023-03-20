@@ -1180,7 +1180,7 @@
 				<warmupTime>1.15</warmupTime>
 				<range>68</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_PCA_Suppressed</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
@@ -1881,7 +1881,7 @@
 				<warmupTime>1.2</warmupTime>
 				<range>75</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
