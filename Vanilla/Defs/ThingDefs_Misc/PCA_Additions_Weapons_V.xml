@@ -56,7 +56,7 @@
 				<defaultProjectile>Bullet_500SWMagnum</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>27.9</range>
-				<soundCast>Shot_PCA_Handcannon</soundCast>
+				<soundCast>Shot_Revolver</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
 			</li>
@@ -147,7 +147,7 @@
 				<defaultProjectile>Bullet_FN57x28mm</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>26.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_Autopistol</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -306,7 +306,7 @@
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<warmupTime>0.5</warmupTime>
 				<range>28.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -395,7 +395,7 @@
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<warmupTime>0.8</warmupTime>
 				<range>29.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -485,7 +485,7 @@
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<warmupTime>2.1</warmupTime>
 				<range>31.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -569,7 +569,7 @@
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<warmupTime>1.15</warmupTime>
 				<range>33.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -645,7 +645,7 @@
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<warmupTime>1.45</warmupTime>
 				<range>34.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -736,7 +736,7 @@
 				<range>35.9</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -815,7 +815,7 @@
 				<range>35.9</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -893,7 +893,7 @@
 				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
 				<warmupTime>2.05</warmupTime>
 				<range>45.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -987,7 +987,7 @@
 				<defaultProjectile>Bullet_50BMG</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>47.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -1082,7 +1082,7 @@
 				<defaultProjectile>Bullet_20x102mmNATO</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>49.9</range>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
@@ -1185,7 +1185,7 @@
 				<range>30.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>25</burstShotCount>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>Shot_ChargeBlaster</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
 			</li>
@@ -1274,7 +1274,7 @@
 				<range>35.9</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
 			</li>
@@ -1360,7 +1360,7 @@
 				<range>35.9</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
 			</li>
@@ -1441,7 +1441,7 @@
 				<defaultProjectile>Bullet_HCA</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>50.9</range>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
 			</li>

@@ -34,7 +34,7 @@
 				<range>55</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>AGS</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -123,7 +123,7 @@
 				<range>55</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>AGS</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -226,7 +226,7 @@
 				<range>75</range>
 				<burstShotCount>50</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
@@ -331,7 +331,7 @@
 				<range>86</range>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_Suppressed</soundCast>
+				<soundCast>autocannon_slow</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -446,7 +446,7 @@
 				<range>75</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -559,7 +559,7 @@
 				<range>86</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
 				<recoilPattern>Mounted</recoilPattern>
@@ -674,7 +674,7 @@
 				<range>86</range>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>Shot_PCA_SuppressedCharged</soundCast>
+				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
 				<recoilPattern>Mounted</recoilPattern>
