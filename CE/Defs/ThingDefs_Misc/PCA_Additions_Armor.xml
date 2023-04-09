@@ -150,7 +150,7 @@
 			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<ToxicResistance>1.0</ToxicResistance>
 			<AimingAccuracy>0.25</AimingAccuracy>
-			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 			<CarryWeight>25</CarryWeight>
 		</equippedStatOffsets>
 		<thingCategories>
@@ -163,7 +163,7 @@
 			<ComponentSpacer>10</ComponentSpacer>
 			<Plasteel>100</Plasteel>
 			<Uranium>25</Uranium>
-			<Hyperweave>100</Hyperweave>
+			<Hyperweave>150</Hyperweave>
 		</costList>
 		<apparel>
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
