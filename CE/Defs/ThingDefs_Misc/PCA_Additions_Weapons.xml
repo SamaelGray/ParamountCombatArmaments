@@ -963,6 +963,9 @@
 				<soundCast>AGS</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 		<comps>
