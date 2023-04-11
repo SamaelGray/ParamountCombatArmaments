@@ -34,7 +34,7 @@
 				<range>55</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>AGS</soundCast>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
@@ -126,7 +126,7 @@
 				<range>55</range>
 				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>AGS</soundCast>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<recoilPattern>Mounted</recoilPattern>

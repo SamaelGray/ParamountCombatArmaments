@@ -960,7 +960,7 @@
 				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
 				<warmupTime>1.15</warmupTime>
 				<range>48</range>
-				<soundCast>AGS</soundCast>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
@@ -1077,7 +1077,7 @@
 				<range>55</range>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<soundCast>AGS</soundCast>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 				<targetParams>
