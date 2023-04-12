@@ -1243,8 +1243,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.5,1.5</DrawSize>
-				<DrawOffset>0.2,0</DrawOffset>
+				<DrawSize>1.6,1.6</DrawSize>
+				<DrawOffset>0.25,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1366,8 +1366,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.5,1.5</DrawSize>
-				<DrawOffset>0.2,0</DrawOffset>
+				<DrawSize>1.6,1.6</DrawSize>
+				<DrawOffset>0.25,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1483,8 +1483,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.25,1.25</DrawSize>
-				<DrawOffset>0.15,0</DrawOffset>
+				<DrawSize>1.3,1.3</DrawSize>
+				<DrawOffset>0.16,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1946,8 +1946,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.5,1.5</DrawSize>
-				<DrawOffset>0.2,0</DrawOffset>
+				<DrawSize>1.6,1.6</DrawSize>
+				<DrawOffset>0.25,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -2077,8 +2077,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.5,1.5</DrawSize>
-				<DrawOffset>0.2,0</DrawOffset>
+				<DrawSize>1.6,1.6</DrawSize>
+				<DrawOffset>0.25,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
