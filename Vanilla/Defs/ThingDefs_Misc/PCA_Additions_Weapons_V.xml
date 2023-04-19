@@ -427,6 +427,82 @@
 		</tools>
 	</ThingDef>
 
+	<!-- ==================== MGA SAW ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_MGASAWTactical</defName>
+		<label>MGA SAW Tactical</label>
+		<description>Ancient belt-fed squad automatic weapon design, in a compact configuration for ease of handling. Comes equipped with an advanced scope and a suppressor.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_MGA-SAW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>45500</WorkToMake>
+			<Mass>6.8</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>0.84</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_300AACBlackout</defaultProjectile>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>1.45</warmupTime>
+				<range>31.9</range>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 	<!-- ==================== XM556 ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -551,7 +627,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -627,7 +703,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -718,7 +794,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -797,7 +873,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -877,7 +953,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -971,7 +1047,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -1065,7 +1141,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
@@ -1251,7 +1327,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 			<recipeUsers Inherit="false">
@@ -1337,7 +1413,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 			<recipeUsers Inherit="false">
@@ -1420,7 +1496,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 			<recipeUsers Inherit="false">

@@ -1,7 +1,7 @@
 # PowerCreepArmory
 Power Creep Armory mod for Rimworld
 
-This mod adds several new guns, apparel and buildings designed to take advantage of CE mechanics while filling in niches in the vanilla lineup in a way that the included items are both balanced and fairly stronger than the other modded options in the workshop.
+This mod adds several new guns, apparel and buildings designed to take advantage of CE and vanilla mechanics while filling in niches in the vanilla lineup in a way that the included items are both balanced and reasonably stronger than the other modded options in the workshop.
 
 Compatible with both the vanilla combat system and CE.
 
@@ -26,6 +26,7 @@ Compatible with both the vanilla combat system and CE.
 - Anzio 20mm Tactical
 - A-20 advanced charge AMR
 ### Machine guns
+- Machine Gun Armory SAW Tactical
 - Empty Shell XM556 Microgun Tactical
 - Portable NeoStrike machine gun Tactical
 - SIG SAUER MG 338 Tactical

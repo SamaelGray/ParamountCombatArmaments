@@ -576,6 +576,126 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- ==================== MGA SAW ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_MGASAWTactical</defName>
+		<label>MGA SAW Tactical</label>
+		<description>Ancient belt-fed squad automatic weapon design, in a compact configuration for ease of handling. Comes equipped with an advanced scope and a suppressor.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_MGA-SAW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>45500</WorkToMake>
+			<Mass>6.8</Mass>
+			<Bulk>10.38</Bulk>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.14</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.92</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>1.35</warmupTime>
+				<range>55</range>
+				<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>100</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_300AACBlackout</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_LMG</li>
+			<li>Bipod_SAW</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.15,1.15</DrawSize>
+				<DrawOffset>0.1,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- ==================== XM556 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -698,7 +818,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -816,7 +936,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -855,8 +975,8 @@
 				<ammoSet>AmmoSet_277Fury</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>True</aiUseBurstMode>
-				<aiAimMode>AimedShot</aiAimMode>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
 				<aimedBurstShotCount>5</aimedBurstShotCount>
 			</li>
 		</comps>
@@ -939,7 +1059,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1054,7 +1174,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1092,7 +1212,7 @@
 				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiUseBurstMode>True</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
 				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
@@ -1161,7 +1281,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1196,6 +1316,7 @@
 				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>True</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
 				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
@@ -1278,7 +1399,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1402,7 +1523,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1435,7 +1556,6 @@
 				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
@@ -1519,7 +1639,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1552,7 +1672,6 @@
 				<ammoSet>AmmoSet_50BMG</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
@@ -1636,7 +1755,7 @@
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1671,7 +1790,6 @@
 				<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
@@ -1857,7 +1975,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -1983,7 +2101,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
@@ -2111,7 +2229,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
 		</equippedStatOffsets>
-		<generateCommonality>0.33</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
