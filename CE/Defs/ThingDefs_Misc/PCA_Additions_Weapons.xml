@@ -1765,8 +1765,8 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Steel>100</Steel>
-			<Plasteel>60</Plasteel>
+			<Steel>130</Steel>
+			<Plasteel>30</Plasteel>
 			<Chemfuel>20</Chemfuel>
 			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
