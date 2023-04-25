@@ -104,7 +104,7 @@
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>PCA_Apparel_Nanosuit</defName>
 		<label>nanosuit</label>
-		<description>A nanosuit, designed to keep the occupant well protected. Includes a built-in energy projectile-repulsion device that allows the wearer to fire out, small thrusters and nano-actuators for improved movement.</description>
+		<description>A nanosuit, designed to keep the occupant well protected. Includes a built-in energy projectile-repulsion device that allows the wearer to fire out, small thrusters and nano-actuators for improved movement, integrated combat HUD that improves weapon accuracy and built-in servo-motors that increase the wearer's load bearing capacity as well as assisting the user in weapon-handling.</description>
 		<techLevel>Spacer</techLevel>
 		<tickerType>Normal</tickerType>
 		<recipeMaker>
@@ -135,7 +135,7 @@
 			<Insulation_Heat>25</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
 			<DeteriorationRate>0</DeteriorationRate>
-			<Beauty>50</Beauty>
+			<Beauty>5</Beauty>
 			<EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>1.0</EnergyShieldEnergyMax>
 		</statBases>
@@ -177,7 +177,6 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Spacer</li>
 				<li>SpacerMilitary</li>
 			</tags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
@@ -189,6 +188,231 @@
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+	</ThingDef>
+
+	<!-- ==================== Immortal Helmet ==================== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PCA_Apparel_ImmortalHelmet</defName>
+		<label>immortal helmet</label>
+		<description>A very heavily-armored high-tech helmet, with a solid hyperweave-reinforced plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful shots.\n\nBuilt-in servo-motors assist the wearer's muscles in holding the weight of the helmet while the integrated combat HUD greatly improves weapon accuracy.\n\nInspired by the ancient immortal guard of the Achaemenid Empire, stories often tell about the fear that the immortal suit of power armor instills into the wearer's adversaries.</description>
+		<techLevel>Spacer</techLevel>
+		<tickerType>Normal</tickerType>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>PoweredArmor</li>
+				<li>AdvancedFabrication</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/ImmortalPowerArmor/ImmortalHelmet/PCA_ImmortalHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<generateCommonality>0.5</generateCommonality>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<ArmorRating_Electric>0.1</ArmorRating_Electric>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<Beauty>5</Beauty>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>-1.0</PsychicSensitivity>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<SmokeSensitivity>-1.0</SmokeSensitivity>
+			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HiTechArmor</li>
+		</tradeTags>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>150</Plasteel>
+			<Uranium>10</Uranium>
+			<Hyperweave>25</Hyperweave>
+		</costList>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<wearPerDay>0.25</wearPerDay>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/ImmortalPowerArmor/ImmortalHelmet/PCA_ImmortalHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+				<li>OnHead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<!-- <tags>
+				<li>SpacerMilitary</li>
+			</tags> -->
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+	</ThingDef>
+
+	<!-- ==================== Immortal Armor ==================== -->
+
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>PCA_Apparel_ImmortalArmor</defName>
+		<label>immortal armor</label>
+		<description>A suit of very heavy powered armor, built for the absolute maximum protection at a high cost of mobility. Heavy layered plasteel-weave hyperweave-reinforced plates with solid ablative coatings stop all but the most powerful attacks. Includes a built-in energy projectile-repulsion device that allows the wearer to fire out and the neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nWhile very bulky and heavy, the advanced built-in servo-motors massively increase the wearer's load bearing capacity unlike any other suit of armor, greatly assist in weapon-handling and allow the user to take advantage of heaviest and most unwieldy weapons ever made.\n\nInspired by the ancient immortal guard of the Achaemenid Empire, and similar to the elite heavy infantry unit's armor it's based on, the infantry wearing the armor are often described as walking fortresses due to the shear size of build of the armor.</description>
+		<techLevel>Spacer</techLevel>
+		<tickerType>Normal</tickerType>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>PoweredArmor</li>
+				<li>AdvancedFabrication</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/ImmortalPowerArmor/ImmortalArmor/PCA_ImmortalArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<generateCommonality>0.5</generateCommonality>
+		<statBases>
+			<WorkToMake>100000</WorkToMake>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Mass>20</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<ArmorRating_Electric>0.1</ArmorRating_Electric>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>20</EquipDelay>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.0</EnergyShieldEnergyMax>
+			<Beauty>5</Beauty>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDamageFactor MayRequire="Ludeon.Rimworld.Biotech">0.25</MeleeDamageFactor>
+			<MoveSpeed>-1.0</MoveSpeed>
+			<ToxicResistance>1.0</ToxicResistance>
+			<CarryingCapacity>200</CarryingCapacity>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HiTechArmor</li>
+		</tradeTags>
+		<costList>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Plasteel>350</Plasteel>
+			<Uranium>100</Uranium>
+			<Hyperweave>50</Hyperweave>
+		</costList>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<wearPerDay>0.25</wearPerDay>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/ImmortalPowerArmor/ImmortalArmor/PCA_ImmortalArmor</wornGraphicPath>
+			<layers>
+				<li>Belt</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<!-- <tags>
+				<li>SpacerMilitary</li>
+			</tags> -->
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Shield">
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
 		</comps>
 		<allowedArchonexusCount>1</allowedArchonexusCount>
 	</ThingDef>
