@@ -324,7 +324,7 @@
 			<texPath>Things/Apparel/ImmortalPowerArmor/ImmortalArmor/PCA_ImmortalArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<uiIconScale>1.25</uiIconScale>
+		<uiIconScale>1.3</uiIconScale>
 		<generateCommonality>0.5</generateCommonality>
 		<statBases>
 			<WorkToMake>100000</WorkToMake>
