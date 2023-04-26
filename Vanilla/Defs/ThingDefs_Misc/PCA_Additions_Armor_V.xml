@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- Tags:
+		<li>PCA_AS</li> Advanced Spacer -->
+
 	<!-- ==================== Ranged Shield Belt ==================== -->
 
 	<ThingDef ParentName="ApparelBase">
@@ -140,7 +143,7 @@
 			<EnergyShieldEnergyMax>1.0</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeDamageFactor MayRequire="Ludeon.Rimworld.Biotech">0.25</MeleeDamageFactor>
+			<MeleeDamageFactor MayRequire="Ludeon.Rimworld.Biotech">0.1</MeleeDamageFactor>
 			<MoveSpeed>0.5</MoveSpeed>
 			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 			<ToxicResistance>1.0</ToxicResistance>
@@ -177,7 +180,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>SpacerMilitary</li>
+				<li>PCA_AS</li><!-- Advanced Spacer -->
 			</tags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
@@ -221,7 +224,8 @@
 		<generateCommonality>0.5</generateCommonality>
 		<statBases>
 			<WorkToMake>50000</WorkToMake>
-			<MaxHitPoints>400</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
+			<MarketValue>2500</MarketValue>
 			<Mass>10</Mass>
 			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
@@ -264,9 +268,9 @@
 				<li>OnHead</li>
 				<li>StrappedHead</li>
 			</layers>
-			<!-- <tags>
-				<li>SpacerMilitary</li>
-			</tags> -->
+			<tags>
+				<li>PCA_AS</li>
+			</tags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<thingSetMakerTags>
@@ -328,7 +332,8 @@
 		<generateCommonality>0.5</generateCommonality>
 		<statBases>
 			<WorkToMake>100000</WorkToMake>
-			<MaxHitPoints>750</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<MarketValue>7500</MarketValue>
 			<Mass>20</Mass>
 			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
@@ -379,9 +384,9 @@
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
-			<!-- <tags>
-				<li>SpacerMilitary</li>
-			</tags> -->
+			<tags>
+				<li>PCA_AS</li>
+			</tags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<thingSetMakerTags>

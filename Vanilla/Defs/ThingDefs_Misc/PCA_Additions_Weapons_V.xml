@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- Tags:
+		<li>PCA_AEI</li> Advanced Early Industrial
+		<li>PCA_AEIMG</li> Advanced Early Industrial Machine Gun
+		<li>PCA_AEIM</li> Advanced Early Industrial "Minigun"
+		<li>PCA_ALI</li> Advanced Late Industrial
+		<li>PCA_ALIMG</li> Advanced Late Industrial Machine Gun
+		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
+		<li>PCA_ASM</li> Advanced Spacer "Minigun"
+		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
+		<li>PCA_AS</li> Advanced Spacer
+		<li>PCA_ASS</li> Advanced Spacer Machine Gun -->
+
 	<!-- ==================== 500 S&W ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -65,8 +77,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>Revolver</li>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_AEI</li><!-- Advanced Early Industrial -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -153,8 +164,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>Autopistol</li>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_AEI</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -238,7 +248,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_AEI</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -315,7 +325,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_AEI</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -404,7 +414,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_AEI</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -480,7 +490,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_AEIMG</li><!-- Advanced Early Industrial Machine Gun-->
 		</weaponTags>
 		<tools>
 			<li>
@@ -570,8 +580,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>GunHeavy</li>
+			<li>PCA_AEIM</li><!-- Advanced Early Industrial "Minigun"-->
 		</weaponTags>
 		<tools>
 			<li>
@@ -654,7 +663,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_ALI</li><!-- Advanced Late Industrial -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -730,7 +739,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_ALIMG</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -821,7 +830,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_ALI</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -900,7 +909,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>PCA_ALIMG</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -978,8 +987,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>SniperRifle</li>
+			<li>PCA_ALIS</li><!-- Advanced Late Industrial Sniper -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1072,8 +1080,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>SniperRifle</li>
+			<li>PCA_ALIS</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -1167,7 +1174,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>GunHeavy</li>
+			<li>PCA_ALIS</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -1270,7 +1277,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>SpacerGun</li>
+			<li>PCA_ASM</li><!-- Advanced Spacer "Minigun"-->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1359,8 +1366,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>AdvancedGun</li>
-			<li>SpacerGun</li>
+			<li>PCA_AS</li><!-- Advanced Spacer -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1445,8 +1451,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>AdvancedGun</li>
-			<li>SpacerGun</li>
+			<li>PCA_ASMG</li><!-- Advanced Spacer Machine Gun-->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1526,9 +1531,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>SniperRifle</li>
-			<li>AdvancedGun</li>
-			<li>SpacerGun</li>
+			<li>PCA_ASS</li><!-- Advanced Spacer Sniper -->
 		</weaponTags>
 		<tools>
 			<li>

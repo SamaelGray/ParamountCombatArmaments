@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
+		<value>
+			<li>LG_AEI</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy"]/weaponTags</xpath>
+		<value>
+			<li>LG_AEIM</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
+		<value>
+			<li>LG_ALI</li>
+			<li>LG_ALIMG</li>
+			<li>LG_ALIS</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
+					<value>
+						<li>LG_AEI</li>
+						<li>LG_AEIMG</li>
+						<li>LG_AEIM</li>
+						<li>LG_ALI</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
+					<value>
+						<li>LG_ALI</li>
+						<li>LG_ALIMG</li>
+						<li>LG_ALIS</li>
+						<li>LG_ASM</li>
+						<li>LG_AS</li>
+						<li>LG_ASMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
+					<value>
+						<li>LG_ALI</li>
+						<li>LG_ALIMG</li>
+						<li>LG_ASM</li>
+						<li>LG_AS</li>
+						<li>LG_ASMG</li>
+						<li>LG_ASS</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
+					<value>
+						<li>LG_ASM</li>
+						<li>LG_AS</li>
+						<li>LG_ASMG</li>
+						<li>LG_ASS</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
+					<value>
+						<li>LG_AEI</li>
+						<li>LG_AEIMG</li>
+						<li>LG_AEIM</li>
+						<li>LG_ALI</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
+					<value>
+						<li>LG_ALI</li>
+						<li>LG_ALIMG</li>
+						<li>LG_ALIS</li>
+						<li>LG_ASM</li>
+						<li>LG_AS</li>
+						<li>LG_ASMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
+					<value>
+						<li>LG_ALI</li>
+						<li>LG_ALIMG</li>
+						<li>LG_ASM</li>
+						<li>LG_AS</li>
+						<li>LG_ASMG</li>
+						<li>LG_ASS</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
+					<value>
+						<li>LG_ASM</li>
+						<li>LG_AS</li>
+						<li>LG_ASMG</li>
+						<li>LG_ASS</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags</xpath>
+					<value>
+						<li>LG_AEI</li>
+						<li>LG_AEIMG</li>
+						<li>LG_ALI</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="SanguophageThrall"]/weaponTags</xpath>
+					<value>
+						<li>LG_AEI</li>
+						<li>LG_AEIMG</li>
+						<li>LG_AEIM</li>
+						<li>LG_ALI</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
