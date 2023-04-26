@@ -888,7 +888,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
 				<warmupTime>1.35</warmupTime>
-				<range>35.9</range>
+				<range>39.9</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
 				<soundCast>Shot_AssaultRifle</soundCast>
