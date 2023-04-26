@@ -1150,7 +1150,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_HandheldNeoStrikeTactical</defName>
-		<label>Handheld NeoStrike machine gun Tactical</label>
+		<label>Handheld NeoStrike MG Tactical</label>
 		<description>Ancient heavy machine gun in portable configuration for use against infantry and lightly armored vehicles. Comes equipped with a suppressor and laser sights.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_HandheldNeoStrike</texPath>
