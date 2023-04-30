@@ -249,7 +249,7 @@
 			<Beauty>5</Beauty>
 		</statBases>
 		<equippedStatOffsets>
-			<AimingAccuracy>1.0</AimingAccuracy>
+			<AimingAccuracy>0.5</AimingAccuracy>
 			<PsychicSensitivity>-1.0</PsychicSensitivity>
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 			<SmokeSensitivity>-1.0</SmokeSensitivity>
