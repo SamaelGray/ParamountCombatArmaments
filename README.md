@@ -35,6 +35,7 @@ Compatible with both the vanilla combat system and CE.
 ### Other
 - Ranged shield belt
 - Nanosuit
+- Immortal power armor set
 - NeoStrike heavy machine gun
 - NeoStrike SD-ROW heavy machine gun
 - DTV Arms XR338 Minigun

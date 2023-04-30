@@ -4,23 +4,23 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
 		<value>
-			<li>LG_AEI</li>
+			<li>PCA_AEI</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Heavy"]/weaponTags</xpath>
 		<value>
-			<li>LG_AEIM</li>
+			<li>PCA_AEIM</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
 		<value>
-			<li>LG_ALI</li>
-			<li>LG_ALIMG</li>
-			<li>LG_ALIS</li>
+			<li>PCA_ALI</li>
+			<li>PCA_ALIMG</li>
+			<li>PCA_ALIS</li>
 		</value>
 	</Operation>
 
@@ -34,44 +34,44 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
 					<value>
-						<li>LG_AEI</li>
-						<li>LG_AEIMG</li>
-						<li>LG_AEIM</li>
-						<li>LG_ALI</li>
+						<li>PCA_AEI</li>
+						<li>PCA_AEIMG</li>
+						<li>PCA_AEIM</li>
+						<li>PCA_ALI</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
 					<value>
-						<li>LG_ALI</li>
-						<li>LG_ALIMG</li>
-						<li>LG_ALIS</li>
-						<li>LG_ASM</li>
-						<li>LG_AS</li>
-						<li>LG_ASMG</li>
+						<li>PCA_ALI</li>
+						<li>PCA_ALIMG</li>
+						<li>PCA_ALIS</li>
+						<li>PCA_ASM</li>
+						<li>PCA_AS</li>
+						<li>PCA_ASMG</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
 					<value>
-						<li>LG_ALI</li>
-						<li>LG_ALIMG</li>
-						<li>LG_ASM</li>
-						<li>LG_AS</li>
-						<li>LG_ASMG</li>
-						<li>LG_ASS</li>
+						<li>PCA_ALI</li>
+						<li>PCA_ALIMG</li>
+						<li>PCA_ASM</li>
+						<li>PCA_AS</li>
+						<li>PCA_ASMG</li>
+						<li>PCA_ASS</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
 					<value>
-						<li>LG_ASM</li>
-						<li>LG_AS</li>
-						<li>LG_ASMG</li>
-						<li>LG_ASS</li>
+						<li>PCA_ASM</li>
+						<li>PCA_AS</li>
+						<li>PCA_ASMG</li>
+						<li>PCA_ASS</li>
 					</value>
 				</li>
 
@@ -89,44 +89,141 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
 					<value>
-						<li>LG_AEI</li>
-						<li>LG_AEIMG</li>
-						<li>LG_AEIM</li>
-						<li>LG_ALI</li>
+						<li>PCA_AEI</li>
+						<li>PCA_AEIMG</li>
+						<li>PCA_AEIM</li>
+						<li>PCA_ALI</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
 					<value>
-						<li>LG_ALI</li>
-						<li>LG_ALIMG</li>
-						<li>LG_ALIS</li>
-						<li>LG_ASM</li>
-						<li>LG_AS</li>
-						<li>LG_ASMG</li>
+						<li>PCA_ALI</li>
+						<li>PCA_ALIMG</li>
+						<li>PCA_ALIS</li>
+						<li>PCA_ASM</li>
+						<li>PCA_AS</li>
+						<li>PCA_ASMG</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
 					<value>
-						<li>LG_ALI</li>
-						<li>LG_ALIMG</li>
-						<li>LG_ASM</li>
-						<li>LG_AS</li>
-						<li>LG_ASMG</li>
-						<li>LG_ASS</li>
+						<li>PCA_ALI</li>
+						<li>PCA_ALIMG</li>
+						<li>PCA_ASM</li>
+						<li>PCA_AS</li>
+						<li>PCA_ASMG</li>
+						<li>PCA_ASS</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
 					<value>
-						<li>LG_ASM</li>
-						<li>LG_AS</li>
-						<li>LG_ASMG</li>
-						<li>LG_ASS</li>
+						<li>PCA_ASM</li>
+						<li>PCA_AS</li>
+						<li>PCA_ASMG</li>
+						<li>PCA_ASS</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<PawnKindDef ParentName="ImperialFighterBase">
+							<defName>PCA_Empire_Fighter_Immortal</defName>
+							<label>immortal</label>
+							<maxGenerationAge>40</maxGenerationAge>
+							<minGenerationAge>18</minGenerationAge>
+							<itemQuality>Good</itemQuality>
+							<weaponMoney>1500~3000</weaponMoney>
+							<apparelMoney>20000~30000</apparelMoney>
+							<techHediffsChance>0.5</techHediffsChance>
+							<techHediffsMoney>2000~5000</techHediffsMoney>
+							<techHediffsMaxAmount>6</techHediffsMaxAmount>
+							<allowRoyalRoomRequirements>False</allowRoyalRoomRequirements>
+							<combatPower>250</combatPower>
+							<weaponTags>
+								<li>PCA_AS</li>
+								<li>PCA_ASMG</li>
+								<li>PCA_ASS</li>
+							</weaponTags>
+							<biocodeWeaponChance>1.0</biocodeWeaponChance>
+							<apparelColor>(128,128,128)</apparelColor>
+							<apparelRequired>
+								<li>PCA_Apparel_Nanosuit</li>
+								<li>PCA_Apparel_ImmortalHelmet</li>
+								<li>PCA_Apparel_ImmortalArmor</li>
+							</apparelRequired>
+							<techHediffsTags>
+								<li>Advanced</li>
+								<li>ImplantEmpireCommon</li>
+							</techHediffsTags>
+							<techHediffsDisallowTags>
+								<li>PainCauser</li>
+							</techHediffsDisallowTags>
+							<skills>
+								<li>
+									<skill>Shooting</skill>
+									<range>10~15</range>
+								</li>
+							</skills>
+							<disallowedTraits>
+								<li>BodyPurist</li>
+								<li>Brawler</li>
+								<li>Nudist</li>
+								<li>Wimp</li>
+							</disallowedTraits>
+							<requiredWorkTags>
+								<li>Violent</li>
+							</requiredWorkTags>
+							<initialWillRange>10~15</initialWillRange>
+							<initialResistanceRange>20~30</initialResistanceRange>
+							<useFactionXenotypes>false</useFactionXenotypes>
+							<xenotypeSet>
+								<xenotypeChances>
+									<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.5</Hussar>
+								</xenotypeChances>
+							</xenotypeSet>
+						</PawnKindDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[1]/guards</xpath>
+					<value>
+						<PCA_Empire_Fighter_Immortal>0.5</PCA_Empire_Fighter_Immortal>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[2]/options</xpath>
+					<value>
+						<PCA_Empire_Fighter_Immortal>0.5</PCA_Empire_Fighter_Immortal>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[3]/options</xpath>
+					<value>
+						<PCA_Empire_Fighter_Immortal>0.5</PCA_Empire_Fighter_Immortal>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[4]/options</xpath>
+					<value>
+						<PCA_Empire_Fighter_Immortal>0.5</PCA_Empire_Fighter_Immortal>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices/li[1]/pawnKinds</xpath>
+					<value>
+						<li>PCA_Empire_Fighter_Immortal</li>
 					</value>
 				</li>
 
@@ -144,9 +241,9 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags</xpath>
 					<value>
-						<li>LG_AEI</li>
-						<li>LG_AEIMG</li>
-						<li>LG_ALI</li>
+						<li>PCA_AEI</li>
+						<li>PCA_AEIMG</li>
+						<li>PCA_ALI</li>
 					</value>
 				</li>
 
@@ -164,10 +261,10 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="SanguophageThrall"]/weaponTags</xpath>
 					<value>
-						<li>LG_AEI</li>
-						<li>LG_AEIMG</li>
-						<li>LG_AEIM</li>
-						<li>LG_ALI</li>
+						<li>PCA_AEI</li>
+						<li>PCA_AEIMG</li>
+						<li>PCA_AEIM</li>
+						<li>PCA_ALI</li>
 					</value>
 				</li>
 
