@@ -232,7 +232,6 @@
 			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<ArmorRating_Electric>0.1</ArmorRating_Electric>
 			<Insulation_Cold>5</Insulation_Cold>
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>10</EquipDelay>
@@ -242,7 +241,6 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>-1.0</PsychicSensitivity>
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
-			<SmokeSensitivity>-1.0</SmokeSensitivity>
 			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<thingCategories>
@@ -266,8 +264,6 @@
 			<wornGraphicPath>Things/Apparel/ImmortalPowerArmor/ImmortalHelmet/PCA_ImmortalHelmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
-				<li>OnHead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>PCA_AS</li>
@@ -339,7 +335,6 @@
 			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<ArmorRating_Electric>0.1</ArmorRating_Electric>
 			<Insulation_Cold>40</Insulation_Cold>
 			<Insulation_Heat>15</Insulation_Heat>
 			<EquipDelay>20</EquipDelay>
