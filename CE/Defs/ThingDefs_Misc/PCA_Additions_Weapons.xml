@@ -28,10 +28,10 @@
 		<defName>Bullet_500SWMagnum_HV_FMJ</defName>
 		<label>.500 Smith Wessen Magnum bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>25</damageAmountBase>
+			<damageAmountBase>24</damageAmountBase>
 			<armorPenetrationSharp>8</armorPenetrationSharp>
-			<armorPenetrationBlunt>84.92</armorPenetrationBlunt>
-			<speed>123</speed>
+			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
+			<speed>114</speed>
 		</projectile>
 	</ThingDef>
 
@@ -39,10 +39,10 @@
 		<defName>Bullet_500SWMagnum_HV_AP</defName>
 		<label>.500 Smith Wessen Magnum bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>16</damageAmountBase>
+			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>16</armorPenetrationSharp>
-			<armorPenetrationBlunt>84.92</armorPenetrationBlunt>
-			<speed>123</speed>
+			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
+			<speed>114</speed>
 		</projectile>
 	</ThingDef>
 
@@ -50,10 +50,10 @@
 		<defName>Bullet_500SWMagnum_HV_HP</defName>
 		<label>.500 Smith Wessen Magnum bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>32</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationSharp>4</armorPenetrationSharp>
-			<armorPenetrationBlunt>84.92</armorPenetrationBlunt>
-			<speed>123</speed>
+			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
+			<speed>114</speed>
 		</projectile>
 	</ThingDef>
 
