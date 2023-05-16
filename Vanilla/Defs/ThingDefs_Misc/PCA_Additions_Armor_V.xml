@@ -247,6 +247,7 @@
 			<ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
 			<MeleeDamageFactor MayRequire="Ludeon.Rimworld.Biotech">0.25</MeleeDamageFactor>
 			<MoveSpeed>-1.0</MoveSpeed>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 			<ToxicResistance>1.0</ToxicResistance>
 			<CarryingCapacity>200</CarryingCapacity>
 		</equippedStatOffsets>
