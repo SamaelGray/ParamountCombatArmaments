@@ -155,7 +155,6 @@
 							<apparelColor>(128,128,128)</apparelColor>
 							<apparelRequired>
 								<li>PCA_Apparel_Nanosuit</li>
-								<li>PCA_Apparel_ImmortalHelmet</li>
 								<li>PCA_Apparel_ImmortalArmor</li>
 							</apparelRequired>
 							<specificApparelRequirements Inherit="False">
