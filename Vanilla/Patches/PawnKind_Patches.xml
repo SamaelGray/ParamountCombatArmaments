@@ -138,9 +138,9 @@
 							<label>immortal</label>
 							<maxGenerationAge>40</maxGenerationAge>
 							<minGenerationAge>18</minGenerationAge>
-							<itemQuality>Good</itemQuality>
+							<itemQuality>Excellent</itemQuality>
 							<weaponMoney>1500~3000</weaponMoney>
-							<apparelMoney>20000~30000</apparelMoney>
+							<apparelMoney>25000~50000</apparelMoney>
 							<techHediffsChance>0.5</techHediffsChance>
 							<techHediffsMoney>2000~5000</techHediffsMoney>
 							<techHediffsMaxAmount>6</techHediffsMaxAmount>
