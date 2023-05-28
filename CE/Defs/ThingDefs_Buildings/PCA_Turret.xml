@@ -63,6 +63,10 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/NeoStrike/PCA_NeoStrike_base</texPath>
 			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.4)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/NeoStrike/PCA_NeoStrike_uiIcon</uiIconPath>
 		<statBases>
@@ -152,6 +156,10 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/NeoStrikeSD-ROW/PCA_NeoStrikeSD-ROW_base</texPath>
 			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.4)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/NeoStrikeSD-ROW/PCA_NeoStrikeSD-ROW_uiIcon</uiIconPath>
 		<statBases>
@@ -258,6 +266,10 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/XR338/PCA_XR338_base</texPath>
 			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.6)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/XR338/PCA_XR338_uiIcon</uiIconPath>
 		<statBases>
@@ -360,6 +372,10 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/NexterP20/PCA_NexterP20_base</texPath>
 			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/NexterP20/PCA_NexterP20_uiIcon</uiIconPath>
 		<statBases>
@@ -475,6 +491,10 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/MCB/PCA_MCB_base</texPath>
 			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/MCB/PCA_MCB_uiIcon</uiIconPath>
 		<statBases>
@@ -588,6 +608,10 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/HCB/PCA_HCB_base</texPath>
 			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.6)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/HCB/PCA_HCB_uiIcon</uiIconPath>
 		<statBases>
@@ -702,7 +726,11 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		<graphicData>
 			<texPath>Things/Building/Turrets/HCA/PCA_HCA_base</texPath>
-			<drawSize>(2.0,2.0)</drawSize>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 		</graphicData>
 		<uiIconPath>Things/Building/Turrets/HCA/PCA_HCA_uiIcon</uiIconPath>
 		<statBases>
