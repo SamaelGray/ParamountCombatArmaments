@@ -55,6 +55,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>30</Steel>
@@ -145,6 +148,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>25</Steel>
@@ -226,6 +232,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>55</Steel>
@@ -301,6 +310,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
@@ -390,6 +402,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>45</Steel>
@@ -466,6 +481,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -556,6 +574,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>60</Steel>
@@ -639,6 +660,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>50</Steel>
@@ -715,6 +739,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -806,6 +833,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -885,6 +915,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>85</Steel>
@@ -965,6 +998,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>65</Steel>
@@ -1058,6 +1094,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>90</Steel>
@@ -1151,6 +1190,9 @@
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>130</Steel>
@@ -1252,6 +1294,9 @@
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>50</Steel>
@@ -1340,6 +1385,9 @@
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>60</Steel>
@@ -1425,6 +1473,9 @@
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>75</Steel>
@@ -1507,6 +1558,9 @@
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>115</Steel>
