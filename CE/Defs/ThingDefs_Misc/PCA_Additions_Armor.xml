@@ -258,7 +258,7 @@
 			<SmokeSensitivity>-1.0</SmokeSensitivity>
 			<MeleeDamageFactor MayRequire="Ludeon.Rimworld.Biotech">0.25</MeleeDamageFactor>
 			<MoveSpeed>-1.0</MoveSpeed>
-			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
 			<ToxicResistance>1.0</ToxicResistance>
 			<ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
 			<CarryWeight>200</CarryWeight>
