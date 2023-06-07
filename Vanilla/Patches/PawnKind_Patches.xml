@@ -140,6 +140,7 @@
 							<minGenerationAge>18</minGenerationAge>
 							<itemQuality>Excellent</itemQuality>
 							<weaponMoney>1500~3000</weaponMoney>
+							<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 							<apparelMoney>25000~50000</apparelMoney>
 							<techHediffsChance>0.5</techHediffsChance>
 							<techHediffsMoney>2000~5000</techHediffsMoney>
