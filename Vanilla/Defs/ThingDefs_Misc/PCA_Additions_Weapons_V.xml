@@ -1539,8 +1539,8 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>95500</WorkToMake>
-			<Mass>20.0</Mass>
+			<WorkToMake>97500</WorkToMake>
+			<Mass>25.0</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
@@ -1563,8 +1563,8 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>115</Steel>
-			<Plasteel>50</Plasteel>
+			<Steel>130</Steel>
+			<Plasteel>55</Plasteel>
 			<Chemfuel>30</Chemfuel>
 			<ComponentIndustrial>12</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
