@@ -11,7 +11,8 @@
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
-		<li>PCA_ASS</li> Advanced Spacer Sniper -->
+		<li>PCA_ASS</li> Advanced Spacer Sniper
+		<li>PCA_SpacerMelee</li> Powered Spear -->
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_500SWMagnum_HV</defName>
@@ -2065,6 +2066,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>20</magazineSize>
+				<AmmoGenPerMagOverride>50</AmmoGenPerMagOverride>
 				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_8x50mmCharged</ammoSet>
 			</li>
@@ -2320,6 +2322,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>5</magazineSize>
+				<AmmoGenPerMagOverride>10</AmmoGenPerMagOverride>
 				<reloadTime>4.5</reloadTime>
 				<ammoSet>AmmoSet_20x105mmCharged</ammoSet>
 			</li>
@@ -2372,6 +2375,131 @@
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.75,1.75</DrawSize>
 				<DrawOffset>0.4,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Powered Spear ==================== -->
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>PCA_UnfinishedPoweredMeleeWeapon</defName>
+		<label>unfinished powered melee weapon</label>
+		<description>An unfinished powered melee weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>PCA_Melee_PoweredSpear</defName>
+		<label>powered spear</label>
+		<description>A highly-advanced spear. Inspired by the spears carried by the ancient Immortal guard of the Achaemenid Empire, they are commonly used by the imperial elite heavy infantry of the same name. The blade is coated in a field of ionized plasma, helping it cut through enemy armor.</description>
+		<techLevel>Spacer</techLevel>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_PoweredSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.5</Mass>
+			<Bulk>10.0</Bulk>
+			<MeleeCounterParryBonus>1.34</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>CE_PoweredMelee</researchPrerequisite>
+			<unfinishedThingDef>PCA_UnfinishedPoweredMeleeWeapon</unfinishedThingDef>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>PCA_SpacerMelee</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.24</cooldownTime>
+				<chanceFactor>0.15</chanceFactor>
+				<armorPenetrationBlunt>3.613</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.57</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+				<armorPenetrationBlunt>1.8</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>1.11</cooldownTime>
+				<armorPenetrationBlunt>3.613</armorPenetrationBlunt>
+				<armorPenetrationSharp>18.07</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.13</MeleeCritChance>
+			<MeleeParryChance>1.16</MeleeParryChance>
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<relicChance>2</relicChance>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2,1.2</DrawSize>
+				<DrawOffset>0.15,0.15</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

@@ -180,6 +180,14 @@
 							<requiredWorkTags>
 								<li>Violent</li>
 							</requiredWorkTags>
+							<inventoryOptions>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>PCA_Melee_PoweredSpear</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
 							<initialWillRange>10~15</initialWillRange>
 							<initialResistanceRange>20~30</initialResistanceRange>
 							<useFactionXenotypes>false</useFactionXenotypes>

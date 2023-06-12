@@ -206,28 +206,14 @@
 									</primaryMagazineCount>
 									<forcedSidearm>
 										<sidearmMoney>
-											<min>300</min>
-											<max>600</max>
+											<min>2000</min>
+											<max>5000</max>
 										</sidearmMoney>
 										<weaponTags>
-											<li>CE_Sidearm_Melee</li>
+											<li>LG_SpacerMelee</li>
 										</weaponTags>
 									</forcedSidearm>
 									<sidearms>
-										<li>
-											<generateChance>0.5</generateChance>
-											<sidearmMoney>
-												<min>400</min>
-												<max>600</max>
-											</sidearmMoney>
-											<weaponTags>
-												<li>CE_Sidearm</li>
-											</weaponTags>
-											<magazineCount>
-												<min>2</min>
-												<max>4</max>
-											</magazineCount>
-										</li>
 										<li>
 											<generateChance>0.1</generateChance>
 											<sidearmMoney>

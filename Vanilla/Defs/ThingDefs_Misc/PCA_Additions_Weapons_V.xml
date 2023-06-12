@@ -11,7 +11,8 @@
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
-		<li>PCA_ASS</li> Advanced Spacer Sniper -->
+		<li>PCA_ASS</li> Advanced Spacer Sniper
+		<li>PCA_SpacerMelee</li> Powered Spear -->
 
 	<!-- ==================== 500 S&W ==================== -->
 
@@ -1606,6 +1607,102 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+	</ThingDef>
+
+	<!-- ==================== Powered Spear ==================== -->
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>PCA_UnfinishedPoweredMeleeWeapon</defName>
+		<label>unfinished powered melee weapon</label>
+		<description>An unfinished powered melee weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>PCA_Melee_PoweredSpear</defName>
+		<label>powered spear</label>
+		<description>A highly-advanced spear. Inspired by the spears carried by the ancient Immortal guard of the Achaemenid Empire, they are commonly used by the imperial elite heavy infantry of the same name. The blade is coated in a field of ionized plasma, helping it cut through enemy armor.</description>
+		<techLevel>Spacer</techLevel>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_PoweredSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<unfinishedThingDef>PCA_UnfinishedPoweredMeleeWeapon</unfinishedThingDef>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>PCA_SpacerMelee</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>25</power>
+				<armorPenetration>0.75</armorPenetration>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<relicChance>2</relicChance>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
 	</ThingDef>
 
 </Defs>
