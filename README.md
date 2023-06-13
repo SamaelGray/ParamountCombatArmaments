@@ -33,7 +33,7 @@ Compatible with both the vanilla combat system and CE.
 - M-6 advanced charge Microgun
 - M-8 advanced charge MMG
 ### Other
-- Powered Spear
+- Powered spear
 - Ranged shield belt
 - Nanosuit
 - Immortal power armor
