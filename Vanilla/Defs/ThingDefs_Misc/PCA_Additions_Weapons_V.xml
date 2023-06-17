@@ -1638,6 +1638,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCA_PoweredSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>

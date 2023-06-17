@@ -32,7 +32,7 @@
 			<damageAmountBase>24</damageAmountBase>
 			<armorPenetrationSharp>8</armorPenetrationSharp>
 			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
-			<speed>114</speed>
+			<speed>116</speed>
 		</projectile>
 	</ThingDef>
 
@@ -43,7 +43,7 @@
 			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>16</armorPenetrationSharp>
 			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
-			<speed>114</speed>
+			<speed>116</speed>
 		</projectile>
 	</ThingDef>
 
@@ -54,7 +54,7 @@
 			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationSharp>4</armorPenetrationSharp>
 			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
-			<speed>114</speed>
+			<speed>116</speed>
 		</projectile>
 	</ThingDef>
 
@@ -2498,7 +2498,7 @@
 		</tradeTags>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.2,1.2</DrawSize>
+				<DrawSize>1.25,1.25</DrawSize>
 				<DrawOffset>0.15,0.15</DrawOffset>
 			</li>
 		</modExtensions>
