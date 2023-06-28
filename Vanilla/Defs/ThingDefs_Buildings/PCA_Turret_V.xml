@@ -142,7 +142,7 @@
 
 	<!-- ==================== Vektor GA-1 SD-ROW ==================== -->
 
-	<ThingDef ParentName="BaseTurretGun">
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>PCA_Gun_VektorGA1SD-ROW</defName>
 		<label>Vektor GA-1 SD-ROW autocannon</label>
 		<graphicData>
