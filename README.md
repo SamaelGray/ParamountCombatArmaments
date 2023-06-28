@@ -30,8 +30,10 @@ Compatible with both the vanilla combat system and CE.
 - Empty Shell XM556 Microgun Tactical
 - Portable NeoStrike machine gun Tactical
 - SIG SAUER MG 338 Tactical
+- Handheld Vektor GA-1 autocannon Tactical
 - M-6 advanced charge Microgun
 - M-8 advanced charge MMG
+- H-12 charge HHMG
 ### Other
 - Powered spear
 - Ranged shield belt
@@ -40,6 +42,7 @@ Compatible with both the vanilla combat system and CE.
 - NeoStrike heavy machine gun
 - NeoStrike SD-ROW heavy machine gun
 - DTV Arms XR338 Minigun
+- Vektor GA-1 SD-ROW autocannon
 - Nexter P20 autocannon
 - Medium Charge Blaster turret
 - Heavy Charge Blaster turret
