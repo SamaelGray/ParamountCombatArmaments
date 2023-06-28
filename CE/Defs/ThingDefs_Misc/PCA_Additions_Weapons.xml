@@ -1828,7 +1828,7 @@
 				<defaultProjectile>Bullet_20x82mmMauser_AP</defaultProjectile>
 				<warmupTime>1.1</warmupTime>
 				<range>72</range>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
 				<soundCast>autocannon_slow</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -2429,7 +2429,7 @@
 				<defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
 				<warmupTime>1.1</warmupTime>
 				<range>75</range>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
