@@ -1203,7 +1203,7 @@
 			<Mass>14.0</Mass>
 			<Bulk>12.5</Bulk>
 			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>2.82</SwayFactor>
+			<SwayFactor>2.45</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
@@ -1793,7 +1793,7 @@
 			<Mass>25.0</Mass>
 			<Bulk>19.0</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>4.83</SwayFactor>
+			<SwayFactor>4.20</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
 		</statBases>
@@ -2391,7 +2391,7 @@
 			<Mass>24.0</Mass>
 			<Bulk>18.5</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>4.66</SwayFactor>
+			<SwayFactor>4.05</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
@@ -2408,6 +2408,9 @@
 				<li>ChargedShot</li>
 				<li>CE_TurretHeavyWeapons</li>
 			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>

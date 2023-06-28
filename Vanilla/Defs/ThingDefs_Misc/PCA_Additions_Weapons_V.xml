@@ -1667,10 +1667,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite Inherit="false" />
-			<researchPrerequisites>
-				<li>ChargedShot</li>
-			</researchPrerequisites>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
