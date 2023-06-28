@@ -58,9 +58,11 @@
 					<value>
 						<li>PCA_ALI</li>
 						<li>PCA_ALIMG</li>
+						<li>PCA_ALIA</li>
 						<li>PCA_ASM</li>
 						<li>PCA_AS</li>
 						<li>PCA_ASMG</li>
+						<li>PCA_ASHMG</li>
 						<li>PCA_ASS</li>
 					</value>
 				</li>
@@ -71,61 +73,7 @@
 						<li>PCA_ASM</li>
 						<li>PCA_AS</li>
 						<li>PCA_ASMG</li>
-						<li>PCA_ASS</li>
-					</value>
-				</li>
-
-			</operations>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Royalty</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
-					<value>
-						<li>PCA_AEI</li>
-						<li>PCA_AEIMG</li>
-						<li>PCA_AEIM</li>
-						<li>PCA_ALI</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
-					<value>
-						<li>PCA_ALI</li>
-						<li>PCA_ALIMG</li>
-						<li>PCA_ALIS</li>
-						<li>PCA_ASM</li>
-						<li>PCA_AS</li>
-						<li>PCA_ASMG</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
-					<value>
-						<li>PCA_ALI</li>
-						<li>PCA_ALIMG</li>
-						<li>PCA_ASM</li>
-						<li>PCA_AS</li>
-						<li>PCA_ASMG</li>
-						<li>PCA_ASS</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
-					<value>
-						<li>PCA_ASM</li>
-						<li>PCA_AS</li>
-						<li>PCA_ASMG</li>
+						<li>PCA_ASHMG</li>
 						<li>PCA_ASS</li>
 					</value>
 				</li>
@@ -150,6 +98,7 @@
 							<weaponTags>
 								<li>PCA_AS</li>
 								<li>PCA_ASMG</li>
+								<li>PCA_ASHMG</li>
 								<li>PCA_ASS</li>
 							</weaponTags>
 							<biocodeWeaponChance>1.0</biocodeWeaponChance>
@@ -210,7 +159,7 @@
 											<max>5000</max>
 										</sidearmMoney>
 										<weaponTags>
-											<li>LG_SpacerMelee</li>
+											<li>PCA_SpacerMelee</li>
 										</weaponTags>
 									</forcedSidearm>
 									<sidearms>

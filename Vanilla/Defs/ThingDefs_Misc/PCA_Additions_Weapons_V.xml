@@ -7,10 +7,12 @@
 		<li>PCA_AEIM</li> Advanced Early Industrial "Minigun"
 		<li>PCA_ALI</li> Advanced Late Industrial
 		<li>PCA_ALIMG</li> Advanced Late Industrial Machine Gun
+		<li>PCA_ALIA</li> Advanced Late Industrial Autocannon
 		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
+		<li>PCA_ASHMG</li> Advanced Spacer Heavy Machine Gun
 		<li>PCA_ASS</li> Advanced Spacer Sniper
 		<li>PCA_SpacerMelee</li> Powered Spear -->
 
@@ -27,7 +29,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>16</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<speed>98</speed>
+			<speed>104</speed>
 		</projectile>
 	</ThingDef>
 
@@ -104,7 +106,7 @@
 		</tools>
 	</ThingDef>
 
-	<!-- ==================== Five-seveN ==================== -->
+	<!-- ====================  S&W M&P 5.7 ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_FN57x28mm</defName>
@@ -117,16 +119,16 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>8</damageAmountBase>
 			<armorPenetrationBase>0.2</armorPenetrationBase>
-			<speed>130</speed>
+			<speed>129</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_FiveseveNTactical</defName>
-		<label>Five-SeveN MK3 MRD Tactical</label>
+		<defName>PCA_Gun_SWMPTactical</defName>
+		<label>S&amp;W M&amp;P 5.7 Tactical</label>
 		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
-			<texPath>Things/Weapons/PCA_FN57</texPath>
+			<texPath>Things/Weapons/PCA_SWMP57</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
@@ -136,7 +138,7 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
-			<Mass>0.9</Mass>
+			<Mass>1.0</Mass>
 			<AccuracyTouch>0.85</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
@@ -154,7 +156,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>25</Steel>
+			<Steel>30</Steel>
 			<Chemfuel>5</Chemfuel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
@@ -207,7 +209,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<speed>123</speed>
+			<speed>117</speed>
 		</projectile>
 	</ThingDef>
 
@@ -374,7 +376,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1.0</stoppingPower>
-			<speed>135</speed>
+			<speed>133</speed>
 		</projectile>
 	</ThingDef>
 
@@ -544,7 +546,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>11</damageAmountBase>
-			<speed>185</speed>
+			<speed>168</speed>
 		</projectile>
 	</ThingDef>
 
@@ -630,7 +632,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>14</damageAmountBase>
 			<stoppingPower>1.0</stoppingPower>
-			<speed>182</speed>
+			<speed>166</speed>
 		</projectile>
 	</ThingDef>
 
@@ -803,7 +805,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<speed>182</speed>
+			<speed>166</speed>
 		</projectile>
 	</ThingDef>
 
@@ -1060,7 +1062,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>30</damageAmountBase>
 			<stoppingPower>2.0</stoppingPower>
-			<speed>178</speed>
+			<speed>163</speed>
 		</projectile>
 	</ThingDef>
 
@@ -1143,6 +1145,97 @@
 		</tools>
 	</ThingDef>
 
+	<!-- ==================== Vektor ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_20x82mmMauser</defName>
+		<label>20x102mm NATO bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<stoppingPower>2.0</stoppingPower>
+			<speed>139</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_HandheldVektorTactical</defName>
+		<label>Handheld Vektor GA-1 autocannon Tactical</label>
+		<description>Ancient autocannon in portable configuration for use against armored targets. Comes equipped with a suppressor and laser sights.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeHHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>25.0</Mass>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.4</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.33</AccuracyLong>
+			<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>125</Steel>
+			<Plasteel>30</Plasteel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x82mmMauser</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>35.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ALIA</li><!-- Advanced Late Industrial Autocannon -->
+		</weaponTags>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 	<!-- ==================== Anzio ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -1156,7 +1249,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<stoppingPower>2.0</stoppingPower>
-			<speed>206</speed>
+			<speed>182</speed>
 		</projectile>
 	</ThingDef>
 
@@ -1253,7 +1346,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationBase>0.35</armorPenetrationBase>
-			<speed>160</speed>
+			<speed>151</speed>
 		</projectile>
 	</ThingDef>
 
@@ -1351,7 +1444,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>22</damageAmountBase>
 			<armorPenetrationBase>0.45</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>178</speed>
 		</projectile>
 	</ThingDef>
 
@@ -1526,7 +1619,119 @@
 		</tools>
 	</ThingDef>
 
+	<!-- ==================== Charge HHMG ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_12x72mmCharged</defName>
+		<label>12x72mm Charged bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<stoppingPower>2.0</stoppingPower>
+			<speed>165</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_ChargeHHMG</defName>
+		<label>H-12 charge HHMG</label>
+		<description>Charged-shot heavy machine gun in portable configuration. Comes equipped with a suppressor and laser sights.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeHHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>69500</WorkToMake>
+			<Mass>24.0</Mass>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.4</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.33</AccuracyLong>
+			<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>130</Steel>
+			<Plasteel>55</Plasteel>
+			<Chemfuel>30</Chemfuel>
+			<ComponentIndustrial>11</ComponentIndustrial><!-- +1 for the laser sights -->
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>35.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the muzzle device -->
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ASHMG</li><!-- Advanced Spacer Heavy Machine Gun-->
+		</weaponTags>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 	<!-- ==================== Charge AAMR ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_20x105mmCharged</defName>
+		<label>20x105mm Charged bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>192</speed>
+		</projectile>
+	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeAAMR</defName>
@@ -1538,7 +1743,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
 			<WorkToMake>97500</WorkToMake>
 			<Mass>25.0</Mass>
@@ -1574,7 +1779,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_HCA</defaultProjectile>
+				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
 				<warmupTime>4.05</warmupTime>
 				<range>50.9</range>
 				<soundCast>ChargeLance_Fire</soundCast>

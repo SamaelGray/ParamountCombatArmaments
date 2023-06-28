@@ -7,10 +7,12 @@
 		<li>PCA_AEIM</li> Advanced Early Industrial "Minigun"
 		<li>PCA_ALI</li> Advanced Late Industrial
 		<li>PCA_ALIMG</li> Advanced Late Industrial Machine Gun
+		<li>PCA_ALIA</li> Advanced Late Industrial Autocannon
 		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
+		<li>PCA_ASHMG</li> Advanced Spacer Heavy Machine Gun
 		<li>PCA_ASS</li> Advanced Spacer Sniper
 		<li>PCA_SpacerMelee</li> Powered Spear -->
 
@@ -32,7 +34,7 @@
 			<damageAmountBase>24</damageAmountBase>
 			<armorPenetrationSharp>8</armorPenetrationSharp>
 			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
-			<speed>116</speed>
+			<speed>117</speed>
 		</projectile>
 	</ThingDef>
 
@@ -43,7 +45,7 @@
 			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>16</armorPenetrationSharp>
 			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
-			<speed>116</speed>
+			<speed>117</speed>
 		</projectile>
 	</ThingDef>
 
@@ -54,7 +56,7 @@
 			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationSharp>4</armorPenetrationSharp>
 			<armorPenetrationBlunt>73.42</armorPenetrationBlunt>
-			<speed>116</speed>
+			<speed>117</speed>
 		</projectile>
 	</ThingDef>
 
@@ -159,14 +161,14 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- ==================== Five-seveN ==================== -->
+	<!-- ==================== S&W M&P 5.7 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_FiveseveNTactical</defName>
-		<label>Five-SeveN MK3 MRD Tactical</label>
+		<defName>PCA_Gun_SWMPTactical</defName>
+		<label>S&amp;W M&amp;P 5.7 Tactical</label>
 		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents. Comes equipped with reflex sights and a suppressor.</description>
 		<graphicData>
-			<texPath>Things/Weapons/PCA_FN57</texPath>
+			<texPath>Things/Weapons/PCA_SWMP57</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
@@ -175,10 +177,10 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
-			<Mass>0.9</Mass>
+			<Mass>1.0</Mass>
 			<Bulk>4.2</Bulk>
-			<ShotSpread>0.15</ShotSpread>
-			<SwayFactor>0.51</SwayFactor>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>0.52</SwayFactor>
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
@@ -197,13 +199,13 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>25</Steel>
+			<Steel>30</Steel>
 			<Chemfuel>5</Chemfuel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.46</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.38</recoilAmount><!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
@@ -1772,6 +1774,119 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- ==================== Handheld Vektor ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_HandheldVektorTactical</defName>
+		<label>Handheld Vektor GA-1 autocannon Tactical</label>
+		<description>Ancient autocannon in portable configuration for use against armored targets. Comes equipped with a suppressor and laser sights.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_HandheldVektor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>25.0</Mass>
+			<Bulk>19.0</Bulk>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>4.83</SwayFactor>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<AimingAccuracy>0.05</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_TurretHeavyWeapons</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>125</Steel>
+			<Plasteel>30</Plasteel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.91</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x82mmMauser_AP</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>72</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>autocannon_slow</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_20x82mmMauser</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ALIA</li><!-- Advanced Late Industrial Autocannon -->
+			<li>CE_AI_LMG</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.9,1.9</DrawSize>
+				<DrawOffset>0.2,-0.1</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- ==================== Anzio ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -2257,6 +2372,119 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- ==================== Charge HHMG ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_ChargeHHMG</defName>
+		<label>H-12 charge HHMG</label>
+		<description>Charged-shot heavy machine gun in portable configuration. Comes equipped with a suppressor and laser sights.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeHHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>69500</WorkToMake>
+			<Mass>24.0</Mass>
+			<Bulk>18.5</Bulk>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>4.66</SwayFactor>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<AimingAccuracy>0.05</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+				<li>CE_TurretHeavyWeapons</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>130</Steel>
+			<Plasteel>55</Plasteel>
+			<Chemfuel>30</Chemfuel>
+			<ComponentIndustrial>11</ComponentIndustrial><!-- +1 for the laser sights -->
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.33</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>75</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>75</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_12x72mmCharged</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ASHMG</li><!-- Advanced Spacer Heavy Machine Gun-->
+			<li>CE_AI_LMG</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.9,1.9</DrawSize>
+				<DrawOffset>0.2,-0.1</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- ==================== Charge AAMR ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -2268,7 +2496,7 @@
 			<texPath>Things/Weapons/PCA_ChargeAAMR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
 			<WorkToMake>97500</WorkToMake>
 			<Mass>25.0</Mass>

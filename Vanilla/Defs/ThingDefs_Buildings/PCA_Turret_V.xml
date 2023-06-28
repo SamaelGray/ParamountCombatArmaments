@@ -140,6 +140,123 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
+	<!-- ==================== Vektor GA-1 SD-ROW ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>PCA_Gun_VektorGA1SD-ROW</defName>
+		<label>Vektor GA-1 SD-ROW autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/VektorGA1SD-ROW/PCA_VektorGA1SD-ROW_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Automated autocannon gun for use against armored targets. Equipped with a large gun shield to protect the weapon's vital parts.</description>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x102mmNATO</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>47.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="PCA_TurretBase">
+		<defName>PCA_Turret_VektorGA1SD-ROW</defName>
+		<label>Vektor GA-1 SD-ROW autocannon</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/VektorGA1SD-ROW/PCA_VektorGA1SD-ROW_base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.75)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/VektorGA1SD-ROW/PCA_VektorGA1SD-ROW_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>80000</WorkToBuild>
+			<Mass>90</Mass>
+		</statBases>
+		<description>Vektor GA-1 SD-ROW autocannon mounted on a quadpod. Equipped with a large gun shield to protect the weapon's vital parts.</description>
+		<costList>
+			<Steel>300</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_VektorGA1SD-ROW</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps Inherit="false" >
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>200</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>RangedStab</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+			<li>PrecisionRifling</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Nexter P20 ==================== -->
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -176,7 +293,7 @@
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 	</ThingDef>
@@ -280,7 +397,7 @@
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 	</ThingDef>
@@ -348,23 +465,6 @@
 
 	<!-- ==================== Heavy Charge Blaster ==================== -->
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_HCB</defName>
-		<label>12x72mm Charged bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Charge_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
-			<armorPenetrationBase>0.65</armorPenetrationBase>
-			<stoppingPower>2.0</stoppingPower>
-			<speed>180</speed>
-		</projectile>
-	</ThingDef>
-
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>PCA_Gun_HCB</defName>
 		<label>heavy charge blaster</label>
@@ -392,14 +492,14 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_HCB</defaultProjectile>
+				<defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
 				<warmupTime>1.6</warmupTime>
 				<range>48.9</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 	</ThingDef>
@@ -468,23 +568,6 @@
 
 	<!-- ==================== Heavy Charge Autocannon ==================== -->
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_HCA</defName>
-		<label>20x105mm Charged bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Charge_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>45</damageAmountBase>
-			<armorPenetrationBase>0.9</armorPenetrationBase>
-			<stoppingPower>3.0</stoppingPower>
-			<speed>200</speed>
-		</projectile>
-	</ThingDef>
-
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>PCA_Gun_HCA</defName>
 		<label>heavy charge autocannon</label>
@@ -512,14 +595,14 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_HCA</defaultProjectile>
+				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
 				<warmupTime>1.6</warmupTime>
 				<range>50.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 	</ThingDef>

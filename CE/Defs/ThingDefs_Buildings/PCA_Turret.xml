@@ -313,6 +313,135 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
+	<!-- ==================== Vektor GA-1 SD-ROW ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>PCA_Gun_VektorGA1SD-ROW</defName>
+		<label>Vektor GA-1 SD-ROW autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/VektorGA1SD-ROW/PCA_VektorGA1SD-ROW_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Automated autocannon gun for use against armored targets. Equipped with a large gun shield to protect the weapon's vital parts.</description>
+		<statBases>
+			<Mass>40</Mass>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.48</SwayFactor>
+			<SightsEfficiency>2.06</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.12</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x82mmMauser_AP</defaultProjectile>
+				<warmupTime>1.35</warmupTime>
+				<range>75</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>autocannon_slow</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>100</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_20x82mmMauser</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretAutoBase">
+		<defName>PCA_Turret_VektorGA1SD-ROW</defName>
+		<label>Vektor GA-1 SD-ROW autocannon</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/VektorGA1SD-ROW/PCA_VektorGA1SD-ROW_base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.75)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/VektorGA1SD-ROW/PCA_VektorGA1SD-ROW_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>80000</WorkToBuild>
+			<Mass>90</Mass>
+			<Bulk>120</Bulk>
+			<AimingAccuracy>0.75</AimingAccuracy>
+			<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
+		</statBases>
+		<description>Vektor GA-1 SD-ROW autocannon mounted on a quadpod. Equipped with a large gun shield to protect the weapon's vital parts.</description>
+		<costList>
+			<Steel>300</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_VektorGA1SD-ROW</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>200</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>CE_AdvancedNV</li>
+			<li>CE_HeavyTurret</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Nexter P20 ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
