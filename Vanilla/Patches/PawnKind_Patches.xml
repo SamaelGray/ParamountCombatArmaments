@@ -54,6 +54,7 @@
 					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
 					<value>
 						<li>PCA_ALIMG</li>
+						<li>PCA_ALIA</li>
 						<li>PCA_ASM</li>
 						<li>PCA_AS</li>
 						<li>PCA_ASMG</li>

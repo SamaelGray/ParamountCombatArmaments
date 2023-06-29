@@ -1199,15 +1199,16 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>41500</WorkToMake>
-			<Mass>14.0</Mass>
-			<Bulk>12.5</Bulk>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>12.0</Mass>
+			<Bulk>11.5</Bulk>
 			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>2.45</SwayFactor>
+			<SwayFactor>2.15</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 			<AimingAccuracy>0.05</AimingAccuracy>
 			<AimingDelayFactor>-0.10</AimingDelayFactor>
 			<HuntingStealth>0.5</HuntingStealth>
@@ -1224,13 +1225,12 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>100</Steel>
-			<Chemfuel>5</Chemfuel>
+			<Steel>95</Steel>
 			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.68</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.78</recoilAmount><!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x42mm_AP</defaultProjectile>
@@ -1248,7 +1248,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>100</magazineSize>
+				<magazineSize>50</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
@@ -1779,7 +1779,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_HandheldVektorTactical</defName>
 		<label>Handheld Vektor GA-1 autocannon Tactical</label>
-		<description>Ancient autocannon in portable configuration for use against armored targets. Comes equipped with a suppressor and laser sights.</description>
+		<description>Ancient autocannon in portable configuration for use against armored targets. Features a shorter than average barrel for better portability and comes equipped with a suppressor and laser sights. Due to the use of plasteel in its manufacturing, it is a relatively light weapon.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_HandheldVektor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1789,13 +1789,13 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>49500</WorkToMake>
-			<Mass>25.0</Mass>
-			<Bulk>19.0</Bulk>
+			<WorkToMake>45500</WorkToMake>
+			<Mass>20.0</Mass>
+			<Bulk>18.0</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>4.20</SwayFactor>
+			<SwayFactor>4.14</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
@@ -1815,14 +1815,13 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>125</Steel>
+			<Steel>115</Steel>
 			<Plasteel>30</Plasteel>
-			<Chemfuel>10</Chemfuel>
 			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.91</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>2.13</recoilAmount><!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x82mmMauser_AP</defaultProjectile>
@@ -2377,7 +2376,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_ChargeHHMG</defName>
 		<label>H-12 charge HHMG</label>
-		<description>Charged-shot heavy machine gun in portable configuration. Comes equipped with a suppressor and laser sights.</description>
+		<description>Charged-shot heavy machine gun in portable configuration. Features a shorter than average barrel for better portability and comes equipped with a suppressor and laser sights. Due to the use of plasteel in its manufacturing, it is a relatively light weapon.</description>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_ChargeHHMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2387,11 +2386,11 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>69500</WorkToMake>
-			<Mass>24.0</Mass>
+			<WorkToMake>67500</WorkToMake>
+			<Mass>20.0</Mass>
 			<Bulk>18.5</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>4.05</SwayFactor>
+			<SwayFactor>4.2</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
@@ -2416,14 +2415,14 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>130</Steel>
-			<Plasteel>55</Plasteel>
+			<Steel>115</Steel>
+			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
 			<ComponentIndustrial>11</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.33</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>1.45</recoilAmount><!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
