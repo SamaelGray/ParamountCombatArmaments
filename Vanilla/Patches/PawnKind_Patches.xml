@@ -20,7 +20,6 @@
 		<value>
 			<li>PCA_ALI</li>
 			<li>PCA_ALIMG</li>
-			<li>PCA_ALIS</li>
 		</value>
 	</Operation>
 
@@ -46,24 +45,18 @@
 					<value>
 						<li>PCA_ALI</li>
 						<li>PCA_ALIMG</li>
-						<li>PCA_ALIS</li>
 						<li>PCA_ASM</li>
 						<li>PCA_AS</li>
-						<li>PCA_ASMG</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
 					<value>
-						<li>PCA_ALI</li>
 						<li>PCA_ALIMG</li>
-						<li>PCA_ALIA</li>
 						<li>PCA_ASM</li>
 						<li>PCA_AS</li>
 						<li>PCA_ASMG</li>
-						<li>PCA_ASHMG</li>
-						<li>PCA_ASS</li>
 					</value>
 				</li>
 
@@ -74,7 +67,6 @@
 						<li>PCA_AS</li>
 						<li>PCA_ASMG</li>
 						<li>PCA_ASHMG</li>
-						<li>PCA_ASS</li>
 					</value>
 				</li>
 
