@@ -576,7 +576,6 @@
 			<SwayFactor>1.11</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
@@ -693,7 +692,6 @@
 			<SwayFactor>1.50</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
@@ -812,7 +810,6 @@
 			<SwayFactor>1.63</SwayFactor>
 			<SightsEfficiency>2.12</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
