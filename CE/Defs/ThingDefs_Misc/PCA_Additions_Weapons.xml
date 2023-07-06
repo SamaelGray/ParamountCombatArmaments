@@ -2622,19 +2622,14 @@
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseWeapon">
+	<ThingDef ParentName="BaseMeleeWeapon">
 		<defName>PCA_Melee_PoweredSpear</defName>
 		<label>powered spear</label>
 		<description>A highly-advanced spear. Inspired by the spears carried by the ancient Immortal guard of the Achaemenid Empire, they are commonly used by the imperial elite heavy infantry of the same name. The blade is coated in a field of ionized plasma, helping it cut through enemy armor.</description>
 		<techLevel>Spacer</techLevel>
 		<weaponClasses>
-			<li>Melee</li>
 			<li>MeleePiercer</li>
 		</weaponClasses>
-		<smeltable>true</smeltable>
-		<thingCategories>
-			<li>WeaponsMelee</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Weapons/PCA_PoweredSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2720,12 +2715,6 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
-		<tradeTags>
-			<li>WeaponMelee</li>
-		</tradeTags>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.25,1.25</DrawSize>
