@@ -274,7 +274,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>15000</WorkToMake><!--+1500 for a simulated extra work-->
+			<WorkToMake>15500</WorkToMake>
 			<Mass>3.40</Mass>
 			<Bulk>9.14</Bulk>
 			<ShotSpread>0.09</ShotSpread>
@@ -296,7 +296,7 @@
 		<costList>
 			<Steel>55</Steel>
 			<Chemfuel>5</Chemfuel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
