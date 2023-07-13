@@ -214,7 +214,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<comps Inherit="false" >
+		<comps Inherit="false">
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>

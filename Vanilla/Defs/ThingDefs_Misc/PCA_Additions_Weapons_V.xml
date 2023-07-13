@@ -1379,7 +1379,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite Inherit="false" />
+			<researchPrerequisite Inherit="false"/>
 			<researchPrerequisites>
 				<li>ChargedShot</li>
 				<li>MultibarrelWeapons</li>
