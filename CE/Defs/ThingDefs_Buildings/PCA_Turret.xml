@@ -298,8 +298,8 @@
 				<storedEnergyMax>200</storedEnergyMax>
 				<efficiency>0.5</efficiency>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>

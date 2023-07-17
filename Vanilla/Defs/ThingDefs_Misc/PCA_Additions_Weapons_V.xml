@@ -1379,7 +1379,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.5</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite Inherit="false"/>
+			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
 				<li>ChargedShot</li>
 				<li>MultibarrelWeapons</li>
@@ -1823,7 +1823,7 @@
 			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<stuffCategories Inherit="false"/>
+		<stuffCategories Inherit="false" />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseMeleeWeapon">

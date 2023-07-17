@@ -193,7 +193,7 @@
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 		<allowedArchonexusCount>1</allowedArchonexusCount>
 	</ThingDef>
@@ -318,7 +318,7 @@
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 		<allowedArchonexusCount>1</allowedArchonexusCount>
 	</ThingDef>

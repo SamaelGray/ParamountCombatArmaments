@@ -105,7 +105,7 @@
 	</ThingDef>
 
 	<!-- ==================== Nanosuit ==================== -->
-	
+
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>PCA_Apparel_Nanosuit</defName>
 		<label>nanosuit</label>
@@ -199,7 +199,7 @@
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 		<allowedArchonexusCount>1</allowedArchonexusCount>
 	</ThingDef>
@@ -333,7 +333,7 @@
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 		<allowedArchonexusCount>1</allowedArchonexusCount>
 	</ThingDef>
