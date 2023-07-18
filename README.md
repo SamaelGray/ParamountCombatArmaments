@@ -8,7 +8,7 @@ Compatible with both the vanilla combat system and CE.
 ## Currently included:
 
 ### Pistols
-- FN Five-SeveN MK3 MRD Tactical
+- S&W M&P 5.7 Tactical
 - 500 S&W Magnum Tactical
 ### SMGs
 - FN P90 TR Tactical
