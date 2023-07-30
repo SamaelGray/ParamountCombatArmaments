@@ -1082,8 +1082,8 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>49000</WorkToMake>
-			<Mass>12.3</Mass>
+			<WorkToMake>54500</WorkToMake>
+			<Mass>16.3</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
@@ -1103,17 +1103,17 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>90</Steel>
+			<Steel>100</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x82mmMauser</defaultProjectile>
-				<warmupTime>2.85</warmupTime>
-				<range>44.9</range>
+				<warmupTime>1.6</warmupTime>
+				<range>45.9</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
