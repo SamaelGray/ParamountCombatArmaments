@@ -7,7 +7,7 @@
 		</mods>
 
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="PCA_Melee_PoweredSpear"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName="PCA_Melee_PoweredSpear"]/recipeMaker/researchPrerequisite</xpath>
 			<value>
 				<researchPrerequisite>CE_PoweredMelee</researchPrerequisite>
 			</value>
