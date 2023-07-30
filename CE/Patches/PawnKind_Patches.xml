@@ -235,14 +235,14 @@
 			<li>Ideology</li>
 		</mods>
 
-		<li Class="PatchOperationAdd">
+		<match Class="PatchOperationAdd">
 			<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags</xpath>
 			<value>
 				<li>PCA_AEI</li>
 				<li>PCA_AEIMG</li>
 				<li>PCA_ALI</li>
 			</value>
-		</li>
+		</match>
 
 	</Operation>
 
