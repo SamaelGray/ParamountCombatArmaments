@@ -1656,7 +1656,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- ==================== Lynx ==================== -->
+	<!-- ==================== Jaguar ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_JaguarTactical</defName>

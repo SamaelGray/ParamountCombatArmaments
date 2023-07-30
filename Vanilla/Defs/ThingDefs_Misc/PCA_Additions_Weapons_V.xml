@@ -985,7 +985,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>46000</WorkToMake>
+			<WorkToMake>41000</WorkToMake>
 			<Mass>6.10</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.8</AccuracyShort>
@@ -1008,14 +1008,14 @@
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua</defaultProjectile>
-				<warmupTime>2.05</warmupTime>
+				<warmupTime>1.8</warmupTime>
 				<range>45.9</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1049,31 +1049,32 @@
 		</tools>
 	</ThingDef>
 
-	<!-- ==================== Lynx ==================== -->
+	<!-- ==================== Jaguar ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_50BMG</defName>
-		<label>.50 BMG bullet</label>
+		<defName>Bullet_20x82mmMauser</defName>
+		<label>20x102mm NATO bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>32</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
 			<stoppingPower>2.0</stoppingPower>
-			<speed>163</speed>
+			<speed>139</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_LynxTactical</defName>
-		<label>GM6 Lynx Tactical</label>
-		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
+		<defName>PCA_Gun_JaguarTactical</defName>
+		<label>GM20 Jaguar Tactical</label>
+		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Comes equipped with a suppressor and vertical foregrip.</description>
 		<graphicData>
-			<texPath>Things/Weapons/PCA_Lynx</texPath>
+			<texPath>Things/Weapons/PCA_Jaguar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>(1.55,1.55)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -1081,7 +1082,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>64000</WorkToMake>
+			<WorkToMake>49000</WorkToMake>
 			<Mass>12.3</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
@@ -1104,15 +1105,15 @@
 		<costList>
 			<Steel>90</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_50BMG</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
-				<range>47.9</range>
+				<defaultProjectile>Bullet_20x82mmMauser</defaultProjectile>
+				<warmupTime>2.85</warmupTime>
+				<range>44.9</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
@@ -1146,22 +1147,6 @@
 	</ThingDef>
 
 	<!-- ==================== Vektor ==================== -->
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_20x82mmMauser</defName>
-		<label>20x102mm NATO bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>32</damageAmountBase>
-			<armorPenetrationBase>0.4</armorPenetrationBase>
-			<stoppingPower>2.0</stoppingPower>
-			<speed>139</speed>
-		</projectile>
-	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>PCA_Gun_HandheldVektorTactical</defName>
@@ -1267,7 +1252,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>56500</WorkToMake>
+			<WorkToMake>47500</WorkToMake>
 			<Mass>25</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.8</AccuracyShort>
@@ -1291,14 +1276,14 @@
 			<Steel>130</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>20</Chemfuel>
-			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x102mmNATO</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
+				<warmupTime>3.3</warmupTime>
 				<range>49.9</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1678,7 +1663,7 @@
 			<Steel>115</Steel>
 			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>9</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li>
@@ -1744,7 +1729,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
-			<WorkToMake>97500</WorkToMake>
+			<WorkToMake>86500</WorkToMake>
 			<Mass>25.0</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
@@ -1771,7 +1756,7 @@
 			<Steel>130</Steel>
 			<Plasteel>55</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentIndustrial>11</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
 		</costList>
 		<verbs>
@@ -1779,7 +1764,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
+				<warmupTime>3.3</warmupTime>
 				<range>50.9</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
