@@ -22,7 +22,7 @@ Compatible with both the vanilla combat system and CE.
 - B-8 advanced charge BR
 ### Sniper rifles
 - Desert Tech SRS-A2 Tactical
-- GM6 Lynx Tactical
+- GM20 Jaguar Tactical
 - Anzio 20mm Tactical
 - A-20 advanced charge AMR
 ### Machine guns

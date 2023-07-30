@@ -1554,13 +1554,13 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>46000</WorkToMake>
+			<WorkToMake>41000</WorkToMake>
 			<Mass>6.10</Mass>
 			<Bulk>12.0</Bulk>
 			<ShotSpread>0.02</ShotSpread>
-			<SwayFactor>1.28</SwayFactor>
-			<SightsEfficiency>2.9</SightsEfficiency>
-			<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+			<SwayFactor>1.27</SwayFactor>
+			<SightsEfficiency>2.6</SightsEfficiency>
+			<RangedWeapon_Cooldown>1.37</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
@@ -1582,7 +1582,7 @@
 		<costList>
 			<Steel>65</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -1590,7 +1590,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
-				<warmupTime>2.05</warmupTime>
+				<warmupTime>1.8</warmupTime>
 				<range>81</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1659,11 +1659,11 @@
 	<!-- ==================== Lynx ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>PCA_Gun_LynxTactical</defName>
-		<label>GM6 Lynx Tactical</label>
-		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Comes equipped with a suppressor.</description>
+		<defName>PCA_Gun_JaguarTactical</defName>
+		<label>GM20 Jaguar Tactical</label>
+		<description>Ancient semi-automatic anti-materiel rifle in bullpup design. Combines a very powerful cartridge with a high-magnification scope for sniping at long range. Comes equipped with a suppressor and vertical foregrip.</description>
 		<graphicData>
-			<texPath>Things/Weapons/PCA_Lynx</texPath>
+			<texPath>Things/Weapons/PCA_Jaguar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -1672,13 +1672,13 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>64000</WorkToMake>
-			<Mass>12.3</Mass>
+			<WorkToMake>49000</WorkToMake>
+			<Mass>16.3</Mass>
 			<Bulk>12.25</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>1.87</SwayFactor>
-			<SightsEfficiency>3.5</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.58</RangedWeapon_Cooldown>
+			<SwayFactor>2.11</SwayFactor>
+			<SightsEfficiency>2.3</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
@@ -1698,18 +1698,18 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>90</Steel>
+			<Steel>100</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>10</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.91</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>2.34</recoilAmount><!-- Decreased by 25% due to the suppressor -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
-				<range>86</range>
+				<defaultProjectile>Bullet_20x82mmMauser_AP</defaultProjectile>
+				<warmupTime>2.85</warmupTime>
+				<range>78</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
@@ -1717,9 +1717,9 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>5</magazineSize>
+				<magazineSize>10</magazineSize>
 				<reloadTime>4.5</reloadTime>
-				<ammoSet>AmmoSet_50BMG</ammoSet>
+				<ammoSet>AmmoSet_20x82mmMauser</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
@@ -1730,7 +1730,6 @@
 		</thingSetMakerTags>
 		<weaponTags>
 			<li>PCA_ALIS</li>
-			<li>Bipod_DMR</li>
 			<li>CE_AI_SR</li>
 		</weaponTags>
 		<tools>
@@ -1768,8 +1767,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.5,1.5</DrawSize>
-				<DrawOffset>0.35,0</DrawOffset>
+				<DrawSize>1.55,1.55</DrawSize>
+				<DrawOffset>0.3,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -1902,12 +1901,12 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>56500</WorkToMake>
+			<WorkToMake>47500</WorkToMake>
 			<Mass>25</Mass>
 			<Bulk>23</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>3.37</SwayFactor>
-			<SightsEfficiency>3.5</SightsEfficiency>
+			<SwayFactor>3.36</SwayFactor>
+			<SightsEfficiency>2.6</SightsEfficiency>
 			<RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
@@ -1932,7 +1931,7 @@
 			<Steel>130</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>20</Chemfuel>
-			<ComponentIndustrial>8</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -1940,7 +1939,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
+				<warmupTime>3.3</warmupTime>
 				<range>86</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -2418,7 +2417,7 @@
 			<Steel>115</Steel>
 			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>9</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -2500,12 +2499,12 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
-			<WorkToMake>97500</WorkToMake>
+			<WorkToMake>86500</WorkToMake>
 			<Mass>25.0</Mass>
 			<Bulk>17.5</Bulk>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>3.06</SwayFactor>
-			<SightsEfficiency>3.5</SightsEfficiency>
+			<SwayFactor>3.05</SwayFactor>
+			<SightsEfficiency>2.6</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.59</RangedWeapon_Cooldown>
 			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
 		</statBases>
@@ -2533,7 +2532,7 @@
 			<Steel>130</Steel>
 			<Plasteel>55</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentIndustrial>11</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
 		</costList>
 		<verbs>
@@ -2542,7 +2541,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
+				<warmupTime>3.3</warmupTime>
 				<range>86</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
