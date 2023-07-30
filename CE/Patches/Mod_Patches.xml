@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended Melee</li>
+		</mods>
+
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PCA_Melee_PoweredSpear"]/recipeMaker</xpath>
+			<value>
+				<researchPrerequisite>CE_PoweredMelee</researchPrerequisite>
+			</value>
+		</match>
+
+	</Operation>
+
+</Patch>

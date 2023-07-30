@@ -2646,7 +2646,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>CE_PoweredMelee</researchPrerequisite>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
 			<unfinishedThingDef>PCA_UnfinishedPoweredMeleeWeapon</unfinishedThingDef>
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
