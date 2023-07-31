@@ -9,11 +9,12 @@
 		<li>PCA_ALIMG</li> Advanced Late Industrial Machine Gun
 		<li>PCA_ALIA</li> Advanced Late Industrial Autocannon
 		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
+		<li>PCA_ALIAMR</li> Advanced Late Industrial AMR
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
 		<li>PCA_ASHMG</li> Advanced Spacer Heavy Machine Gun
-		<li>PCA_ASS</li> Advanced Spacer Sniper
+		<li>PCA_ASS</li> Advanced Spacer AMR
 		<li>PCA_SpacerMelee</li> Powered Spear -->
 
 	<!-- ==================== 500 S&W ==================== -->
@@ -1123,7 +1124,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>PCA_ALIS</li>
+			<li>PCA_ALIAMR</li><!-- Advanced Late Industrial AMR -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1294,7 +1295,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>PCA_ALIS</li>
+			<li>PCA_ALIAMR</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -1768,14 +1769,14 @@
 				<range>50.9</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 33% due to the suppressor -->
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
 			</li>
 		</verbs>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>PCA_ASS</li><!-- Advanced Spacer Sniper -->
+			<li>PCA_ASA</li><!-- Advanced Spacer AMR -->
 		</weaponTags>
 		<tools>
 			<li>
