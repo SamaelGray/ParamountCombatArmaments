@@ -1054,7 +1054,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_20x82mmMauser</defName>
-		<label>20x102mm NATO bullet</label>
+		<label>20x82mm Mauser bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
