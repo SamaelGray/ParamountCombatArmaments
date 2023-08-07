@@ -169,7 +169,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_20x102mmNATO</defaultProjectile>
+				<defaultProjectile>Bullet_20x82mmMauser</defaultProjectile>
 				<warmupTime>1.6</warmupTime>
 				<range>47.9</range>
 				<burstShotCount>2</burstShotCount>
