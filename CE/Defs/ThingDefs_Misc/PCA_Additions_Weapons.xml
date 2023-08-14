@@ -2637,15 +2637,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<WorkToMake>42000</WorkToMake>
+			<WorkToMake>46000</WorkToMake>
 			<Mass>2.5</Mass>
 			<Bulk>10.0</Bulk>
 			<MeleeCounterParryBonus>1.34</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<costList>
-			<Steel>40</Steel>
-			<Plasteel>60</Plasteel>
+			<Steel>30</Steel>
+			<Plasteel>70</Plasteel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>

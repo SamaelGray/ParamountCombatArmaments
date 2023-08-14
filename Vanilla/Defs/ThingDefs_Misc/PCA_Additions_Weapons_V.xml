@@ -1828,13 +1828,13 @@
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<statBases>
-			<WorkToMake>42000</WorkToMake>
+			<WorkToMake>46000</WorkToMake>
 			<Mass>2.5</Mass>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<costList>
-			<Steel>40</Steel>
-			<Plasteel>60</Plasteel>
+			<Steel>30</Steel>
+			<Plasteel>70</Plasteel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
