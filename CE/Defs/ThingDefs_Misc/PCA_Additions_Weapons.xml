@@ -2022,7 +2022,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>61000</WorkToMake>
+			<WorkToMake>59500</WorkToMake>
 			<Mass>7.0</Mass>
 			<Bulk>8.1</Bulk>
 			<ShotSpread>0.06</ShotSpread>
@@ -2054,7 +2054,8 @@
 			<Steel>50</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>12</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>6</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -2126,7 +2127,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>59000</WorkToMake>
+			<WorkToMake>57000</WorkToMake>
 			<Mass>6.0</Mass>
 			<Bulk>10.5</Bulk><!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
@@ -2159,8 +2160,8 @@
 			<Steel>60</Steel>
 			<Plasteel>30</Plasteel>
 			<Chemfuel>15</Chemfuel>
-			<ComponentIndustrial>10</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+			<ComponentIndustrial>6</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -2255,7 +2256,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>67000</WorkToMake>
+			<WorkToMake>65500</WorkToMake>
 			<Mass>10.0</Mass>
 			<Bulk>13.7</Bulk><!-- Folding stock -->
 			<ShotSpread>0.04</ShotSpread>
@@ -2288,8 +2289,8 @@
 			<Steel>75</Steel>
 			<Plasteel>35</Plasteel>
 			<Chemfuel>20</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -2386,7 +2387,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>67500</WorkToMake>
+			<WorkToMake>66000</WorkToMake>
 			<Mass>20.0</Mass>
 			<Bulk>18.5</Bulk>
 			<ShotSpread>0.01</ShotSpread>
@@ -2418,7 +2419,8 @@
 			<Steel>115</Steel>
 			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>9</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>5</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -2500,7 +2502,7 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
-			<WorkToMake>86500</WorkToMake>
+			<WorkToMake>84500</WorkToMake>
 			<Mass>25.0</Mass>
 			<Bulk>17.5</Bulk>
 			<ShotSpread>0.01</ShotSpread>
@@ -2533,8 +2535,8 @@
 			<Steel>130</Steel>
 			<Plasteel>55</Plasteel>
 			<Chemfuel>30</Chemfuel>
-			<ComponentIndustrial>11</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer><!-- For the advanced scope -->
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -2635,14 +2637,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<WorkToMake>40000</WorkToMake>
+			<WorkToMake>42000</WorkToMake>
 			<Mass>2.5</Mass>
 			<Bulk>10.0</Bulk>
 			<MeleeCounterParryBonus>1.34</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<costList>
-			<Plasteel>100</Plasteel>
+			<Steel>40</Steel>
+			<Plasteel>60</Plasteel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
