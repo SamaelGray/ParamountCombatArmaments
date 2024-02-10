@@ -794,6 +794,138 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
+	<!-- ==================== Heavy Charge Blaster SD-ROW ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>PCA_Gun_HCB_SD-ROW</defName>
+		<label>heavy charge blaster SD-ROW</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/HCB_SD-ROW/PCA_HCB_SD-ROW_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Automated heavy charge blaster for use against armored targets. Equipped with extra armor plates and very resistant to damage.</description>
+		<statBases>
+			<Mass>45</Mass>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.56</SwayFactor>
+			<SightsEfficiency>2.12</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+			<AimingAccuracy>0.25</AimingAccuracy>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.71</recoilAmount><!-- Decreased by 25% due to the muzzle device -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>86</range>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle device -->
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>150</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_12x72mmCharged</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretAutoBase">
+		<defName>PCA_Turret_HCB_SD-ROW</defName>
+		<label>heavy charge blaster SD-ROW</label>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/HCB_SD-ROW/PCA_HCB_SD-ROW_base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.6)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/HCB_SD-ROW/PCA_HCB_SD-ROW_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>110000</WorkToBuild>
+			<Mass>90</Mass>
+			<Bulk>120</Bulk>
+			<AimingAccuracy>0.75</AimingAccuracy>
+			<ShootingAccuracyTurret>1.5</ShootingAccuracyTurret>
+			<NightVisionEfficiency>0.5</NightVisionEfficiency>
+		</statBases>
+		<description>Heavy charge blaster mounted on a tripod. Equipped with extra armor plates and very resistant to damage.</description>
+		<costList>
+			<Steel>350</Steel>
+			<Plasteel>125</Plasteel>
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_HCB_SD-ROW</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>200</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>CE_ChargeTurret</li>
+			<li>CE_AdvancedNV</li>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 	<!-- ==================== Heavy Charge Autocannon ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">

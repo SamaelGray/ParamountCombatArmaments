@@ -46,4 +46,5 @@ Compatible with both the vanilla combat system and CE.
 - Nexter P20 autocannon
 - Medium Charge Blaster turret
 - Heavy Charge Blaster turret
+- Heavy Charge Blaster SD-ROW turret
 - Heavy Charge Autocannon turret
