@@ -11,6 +11,7 @@
 		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
 		<li>PCA_ALIAMR</li> Advanced Late Industrial AMR
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
+		<li>PCA_ACS</li> Advanced Compact Spacer
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
 		<li>PCA_ASHMG</li> Advanced Spacer Heavy Machine Gun
@@ -598,7 +599,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.1,1.1</DrawSize>
-				<DrawOffset>0.05,0</DrawOffset>
+				<DrawOffset>0.07,0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -740,7 +741,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>42000</WorkToMake>
+			<WorkToMake>43500</WorkToMake>
 			<Mass>7.25</Mass>
 			<Bulk>8.6</Bulk>
 			<ShotSpread>0.07</ShotSpread>
@@ -764,7 +765,7 @@
 		<costList>
 			<Steel>60</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -835,7 +836,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>47000</WorkToMake>
+			<WorkToMake>45000</WorkToMake>
 			<Mass>5.0</Mass>
 			<Bulk>8.9</Bulk>
 			<ShotSpread>0.05</ShotSpread>
@@ -956,7 +957,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>49500</WorkToMake>
+			<WorkToMake>47500</WorkToMake>
 			<Mass>5.5</Mass>
 			<Bulk>11.4</Bulk>
 			<ShotSpread>0.04</ShotSpread>
@@ -1200,7 +1201,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>40000</WorkToMake>
+			<WorkToMake>39000</WorkToMake>
 			<Mass>12.0</Mass>
 			<Bulk>11.5</Bulk>
 			<ShotSpread>0.08</ShotSpread>
@@ -2114,6 +2115,131 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- ==================== Charge ACBR ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_ChargeACBR</defName>
+		<label>C-8 advanced charge compact BR</label>
+		<description>Charged-shot fully automatic compact battle rifle in bullpup design firing a full power charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeACBR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>63500</WorkToMake>
+			<Mass>4.3</Mass>
+			<Bulk>7.8</Bulk>
+			<ShotSpread>0.07</ShotSpread>
+			<SwayFactor>1.23</SwayFactor>
+			<SightsEfficiency>2.12</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+			<AimingAccuracy>0.25</AimingAccuracy>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>45</Steel>
+			<Plasteel>25</Plasteel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.37</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>62</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>20</magazineSize>
+				<AmmoGenPerMagOverride>30</AmmoGenPerMagOverride>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_8x35mmCharged</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>True</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ACS</li><!-- Advanced Compact Spacer -->
+			<li>CE_AI_AR</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0.06,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- ==================== Charge ABR ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -2181,7 +2307,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>20</magazineSize>
-				<AmmoGenPerMagOverride>50</AmmoGenPerMagOverride>
+				<AmmoGenPerMagOverride>40</AmmoGenPerMagOverride>
 				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_8x50mmCharged</ammoSet>
 			</li>

@@ -11,6 +11,7 @@
 		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
 		<li>PCA_ALIAMR</li> Advanced Late Industrial AMR
 		<li>PCA_ASM</li> Advanced Spacer "Minigun"
+		<li>PCA_ACS</li> Advanced Compact Spacer
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
 		<li>PCA_ASHMG</li> Advanced Spacer Heavy Machine Gun
@@ -562,7 +563,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>42000</WorkToMake>
+			<WorkToMake>43500</WorkToMake>
 			<Mass>7.25</Mass>
 			<AccuracyTouch>0.25</AccuracyTouch>
 			<AccuracyShort>0.35</AccuracyShort>
@@ -585,7 +586,7 @@
 		<costList>
 			<Steel>60</Steel>
 			<Chemfuel>10</Chemfuel>
-			<ComponentIndustrial>7</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentIndustrial>8</ComponentIndustrial><!-- +1 for the laser sights -->
 		</costList>
 		<verbs>
 			<li>
@@ -648,7 +649,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>47000</WorkToMake>
+			<WorkToMake>45000</WorkToMake>
 			<Mass>5.0</Mass>
 			<AccuracyTouch>0.85</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
@@ -727,7 +728,7 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>49500</WorkToMake>
+			<WorkToMake>47500</WorkToMake>
 			<Mass>5.5</Mass>
 			<AccuracyTouch>0.75</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
@@ -1417,6 +1418,106 @@
 		</tools>
 	</ThingDef>
 
+	<!-- ==================== Charge ACBR ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_8x35mmCharged</defName>
+		<label>8x35mm Charged</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<speed>151</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_ChargeACBR</defName>
+		<label>C-8 advanced charge compact BR</label>
+		<description>Charged-shot fully automatic compact battle rifle in bullpup design firing a full power charged cartridge. Equipped with a suppressor and an advanced scope that helps the shooter with target acquisition.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeACBR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>63500</WorkToMake>
+			<Mass>4.3</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>45</Steel>
+			<Plasteel>25</Plasteel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>32.9</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale><!-- Decreased by 66% due to the suppressor -->
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ACS</li><!-- Advanced Compact Spacer -->
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 	<!-- ==================== Charge ABR ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -1738,7 +1839,7 @@
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.85</AccuracyLong>
-			<RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
