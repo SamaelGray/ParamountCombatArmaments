@@ -19,6 +19,7 @@ Compatible with both the vanilla combat system and CE.
 - LoneStar Future Weapons RM277 SAW Tactical
 - Neopup PAW-20 Tactical
 - SWORD International Mk-18 Mod 1 Mjölnir Tactical
+- c-8 advanced compact charge BR
 - B-8 advanced charge BR
 ### Sniper rifles
 - Desert Tech SRS-A2 Tactical
