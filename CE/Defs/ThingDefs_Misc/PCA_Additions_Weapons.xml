@@ -787,7 +787,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>500</magazineSize>
+				<magazineSize>250</magazineSize>
 				<reloadTime>9.2</reloadTime>
 				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
 			</li>
@@ -2078,7 +2078,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>500</magazineSize>
+				<magazineSize>250</magazineSize>
 				<reloadTime>9.2</reloadTime>
 				<ammoSet>AmmoSet_6x24mmCharged</ammoSet>
 			</li>
