@@ -1,5 +1,5 @@
-# PowerCreepArmory
-Power Creep Armory mod for Rimworld
+# Paramount Combat Armaments
+Paramount Combat Armaments mod for Rimworld
 
 This mod adds several new guns, apparel and buildings designed to take advantage of CE and vanilla mechanics while filling in niches in the vanilla lineup in a way that the included items are both balanced and reasonably stronger than the other modded options in the workshop.
 
@@ -10,6 +10,7 @@ Compatible with both the vanilla combat system and CE.
 ### Pistols
 - S&W M&P 5.7 Tactical
 - 500 S&W Magnum Tactical
+- R-12 advanced magnum charge revolver
 ### SMGs
 - FN P90 TR Tactical
 ### Assault/battle rifles
@@ -19,7 +20,8 @@ Compatible with both the vanilla combat system and CE.
 - LoneStar Future Weapons RM277 SAW Tactical
 - Neopup PAW-20 Tactical
 - SWORD International Mk-18 Mod 1 Mjölnir Tactical
-- c-8 advanced compact charge BR
+- L-12 advanced magnum charge lever-action
+- C-8 advanced compact charge BR
 - B-8 advanced charge BR
 ### Sniper rifles
 - Desert Tech SRS-A2 Tactical
@@ -45,7 +47,9 @@ Compatible with both the vanilla combat system and CE.
 - DTV Arms XR338 Minigun
 - Vektor GA-1 SD-ROW autocannon
 - Nexter P20 autocannon
+- Bofors 40mm L/70 autocannon
 - Medium Charge Blaster turret
 - Heavy Charge Blaster turret
 - Heavy Charge Blaster SD-ROW turret
 - Heavy Charge Autocannon turret
+- Super Heavy Charge Autocannon turret

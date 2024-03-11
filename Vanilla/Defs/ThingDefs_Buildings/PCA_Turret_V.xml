@@ -129,6 +129,25 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>500</fuelCapacity>
+				<fuelMultiplier>10</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
@@ -219,6 +238,25 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>100</fuelCapacity>
+				<fuelMultiplier>2.85</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>300</basePowerConsumption>
@@ -241,6 +279,10 @@
 			<li>
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Demolish</damageDef>
@@ -333,6 +375,27 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>100</fuelCapacity>
+				<fuelMultiplier>2</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
 		<damageMultipliers>
 			<li>
 				<damageDef>Bullet</damageDef>
@@ -345,6 +408,154 @@
 			<li>
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+			<li>PrecisionRifling</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<!-- ==================== Bofors 40mm L/70 ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_40x365mmBofors</defName>
+		<label>40x365mm Bofors bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>181</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>PCA_Gun_Bofors40mm</defName>
+		<label>Bofors 40mm L/70 autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/Bofors40mm/PCA_Bofors40mm_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Bofors 40mm L/70 autocannon, a dedicated multi-purpose weapon for use against light to heavily armored targets. Equipped with a large gun shield to protect the user behind it.</description>
+		<statBases>
+			<Mass>250</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_40x365mmBofors</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>50.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="PCA_TurretBase">
+		<defName>PCA_Turret_Bofors40mm</defName>
+		<label>Bofors 40mm L/70 autocannon</label>
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/Bofors40mm/PCA_Bofors40mm_base</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.5,1.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/Bofors40mm/PCA_Bofors40mm_uiIcon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>80000</WorkToBuild>
+			<Mass>500</Mass>
+		</statBases>
+		<description>Bofors 40mm L/70 autocannon mounted on a carriage. Equipped with a large gun shield to protect the user behind it.</description>
+		<costList>
+			<Steel>450</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_Bofors40mm</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.39</turretBurstCooldownTime>
+			<turretTopDrawSize>4.0</turretTopDrawSize>
+			<turretTopOffset>(0.0,0.65)</turretTopOffset>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>24</fuelCapacity>
+				<fuelMultiplier>0.8</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>RangedStab</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Demolish</damageDef>
@@ -436,6 +647,27 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>250</fuelCapacity>
+				<fuelMultiplier>20</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
 		<damageMultipliers>
 			<li>
 				<damageDef>Bullet</damageDef>
@@ -448,6 +680,10 @@
 			<li>
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Demolish</damageDef>
@@ -539,6 +775,27 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>200</fuelCapacity>
+				<fuelMultiplier>6.25</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
 		<damageMultipliers>
 			<li>
 				<damageDef>Bullet</damageDef>
@@ -551,6 +808,10 @@
 			<li>
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Demolish</damageDef>
@@ -647,6 +908,25 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>150</fuelCapacity>
+				<fuelMultiplier>6.25</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>500</basePowerConsumption>
@@ -669,6 +949,10 @@
 			<li>
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Demolish</damageDef>
@@ -760,6 +1044,27 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>100</fuelCapacity>
+				<fuelMultiplier>2.5</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
 		<damageMultipliers>
 			<li>
 				<damageDef>Bullet</damageDef>
@@ -774,6 +1079,10 @@
 				<multiplier>0.25</multiplier>
 			</li>
 			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
 				<damageDef>Demolish</damageDef>
 				<multiplier>0.5</multiplier>
 			</li>
@@ -783,6 +1092,154 @@
 			</li>
 		</damageMultipliers>
 		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+			<li>ChargedShot</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<!-- ==================== Super Heavy Charge Autocannon ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_40x235mmCharged</defName>
+		<label>40x235mm Charged bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>70</damageAmountBase>
+			<armorPenetrationBase>1.4</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>192</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>PCA_Gun_SHCA</defName>
+		<label>super heavy charge autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/SHCA/PCA_SHCA_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Super heavy charge autocannon, a dedicated multi-purpose weapon for use against light to heavily armored targets. Equipped with a large gun shield to protect the user behind it.</description>
+		<statBases>
+			<Mass>250</Mass>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>50.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale><!-- Decreased by 33% due to the muzzle break -->
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>PCA_Turret_SHCA</defName>
+		<label>super heavy charge autocannon</label>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/SHCA/PCA_SHCA_base</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.5,1.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/SHCA/PCA_SHCA_uiIcon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>700</MaxHitPoints>
+			<WorkToBuild>140000</WorkToBuild>
+			<Mass>500</Mass>
+		</statBases>
+		<description>Super heavy autocannon mounted on a carriage. Equipped with a large gun shield to protect the user behind it.</description>
+		<costList>
+			<Steel>500</Steel>
+			<Plasteel>200</Plasteel>
+			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<building>
+			<turretGunDef>PCA_Gun_SHCA</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.38</turretBurstCooldownTime>
+			<turretTopDrawSize>4.0</turretTopDrawSize>
+			<turretTopOffset>(0.0,0.55)</turretTopOffset>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until relaod</fuelLabel>
+				<fuelGizmoLabel>Remaining ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Needs reloading</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>24</fuelCapacity>
+				<fuelMultiplier>1.33</fuelMultiplier>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>RangedStab</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
 			<li>ChargedShot</li>
 		</researchPrerequisites>
 		<minifiedDef>MinifiedThing</minifiedDef>

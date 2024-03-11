@@ -4,13 +4,15 @@
 	<!-- Tags:
 		<li>PCA_AEI</li> Advanced Early Industrial
 		<li>PCA_AEIMG</li> Advanced Early Industrial Machine Gun
-		<li>PCA_AEIM</li> Advanced Early Industrial "Minigun"
+		<li>PCA_AEIM</li> Advanced Early Industrial Microgun
 		<li>PCA_ALI</li> Advanced Late Industrial
 		<li>PCA_ALIMG</li> Advanced Late Industrial Machine Gun
 		<li>PCA_ALIA</li> Advanced Late Industrial Autocannon
 		<li>PCA_ALIS</li> Advanced Late Industrial Sniper
 		<li>PCA_ALIAMR</li> Advanced Late Industrial AMR
-		<li>PCA_ASM</li> Advanced Spacer "Minigun"
+		<li>PCA_ASR</li> Advanced Spacer Revolver
+		<li>PCA_AES</li> Advanced Early Spacer
+		<li>PCA_ASM</li> Advanced Spacer Microgun
 		<li>PCA_ACS</li> Advanced Compact Spacer
 		<li>PCA_AS</li> Advanced Spacer
 		<li>PCA_ASMG</li> Advanced Spacer Machine Gun
@@ -606,7 +608,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>PCA_AEIM</li><!-- Advanced Early Industrial "Minigun"-->
+			<li>PCA_AEIM</li><!-- Advanced Early Industrial Microgun -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1319,6 +1321,185 @@
 		</tools>
 	</ThingDef>
 
+	<!-- ==================== Magnum Charge Revolver ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_12x20mmCharged</defName>
+		<label>12x20mm Charged</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>122</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_ChargeMR</defName>
+		<label>R-12 advanced magnum charge revolver</label>
+		<description>Charged-shot double-action revolver that fires a magnum charged pistol cartridge. Comes equipped with a holo and laser sights.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeMR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>20</Plasteel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>2</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12x20mmCharged</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>28.9</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_ASR</li><!-- Advanced Spacer Revolver -->
+		</weaponTags>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- ==================== Magnum Charge Lever-Action ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>PCA_Gun_ChargeLA</defName>
+		<label>L-12 advanced magnum charge lever-action</label>
+		<description>Charged-shot lever-action repeating rifle that fires a magnum charged pistol cartridge. Comes equipped with a holo and laser sights.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCA_ChargeLA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.35,1.35)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>34000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>25</Plasteel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>2</ComponentIndustrial><!-- +1 for the laser sights -->
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12x20mmCharged</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>33.9</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>PCA_AES</li><!-- Advanced Early Spacer -->
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 	<!-- ==================== Charge Microgun ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -1403,7 +1584,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>PCA_ASM</li><!-- Advanced Spacer "Minigun"-->
+			<li>PCA_ASM</li><!-- Advanced Spacer Microgun -->
 		</weaponTags>
 		<tools>
 			<li>
@@ -1808,7 +1989,7 @@
 		<defName>Bullet_20x105mmCharged</defName>
 		<label>20x105mm Charged bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/Charge_Small</texPath>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -1833,13 +2014,13 @@
 		</graphicData>
 		<soundInteract>Interact_ChargeLance</soundInteract>
 		<statBases>
-			<WorkToMake>84500</WorkToMake>
+			<WorkToMake>84000</WorkToMake>
 			<Mass>25.0</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.85</AccuracyLong>
-			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
@@ -1858,7 +2039,7 @@
 		</recipeMaker>
 		<costList>
 			<Steel>130</Steel>
-			<Plasteel>55</Plasteel>
+			<Plasteel>50</Plasteel>
 			<Chemfuel>30</Chemfuel>
 			<ComponentIndustrial>7</ComponentIndustrial><!-- +2 for the advanced scope -->
 			<ComponentSpacer>1</ComponentSpacer>
@@ -1868,7 +2049,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x105mmCharged</defaultProjectile>
-				<warmupTime>3.3</warmupTime>
+				<warmupTime>1.6</warmupTime>
 				<range>50.9</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

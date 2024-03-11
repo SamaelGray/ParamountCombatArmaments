@@ -20,6 +20,7 @@
 		<value>
 			<li>PCA_ALI</li>
 			<li>PCA_ALIMG</li>
+			<li>PCA_AES</li>
 		</value>
 	</Operation>
 
@@ -37,6 +38,7 @@
 						<li>PCA_AEIMG</li>
 						<li>PCA_AEIM</li>
 						<li>PCA_ALI</li>
+						<li>PCA_AES</li>
 					</value>
 				</li>
 
@@ -46,6 +48,7 @@
 						<li>PCA_ALI</li>
 						<li>PCA_ALIMG</li>
 						<li>PCA_ALIS</li>
+						<li>PCA_AES</li>
 						<li>PCA_ASM</li>
 						<li>PCA_ACS</li>
 						<li>PCA_AS</li>
@@ -57,6 +60,7 @@
 					<value>
 						<li>PCA_ALIMG</li>
 						<li>PCA_ALIA</li>
+						<li>PCA_AES</li>
 						<li>PCA_ASM</li>
 						<li>PCA_ACS</li>
 						<li>PCA_AS</li>
@@ -161,31 +165,45 @@
 									</forcedSidearm>
 									<sidearms>
 										<li>
-											<generateChance>0.1</generateChance>
+											<generateChance>0.5</generateChance>
 											<sidearmMoney>
-												<min>10</min>
-												<max>100</max>
+												<min>200</min>
+												<max>500</max>
 											</sidearmMoney>
 											<weaponTags>
 												<li>CE_FlareLauncher</li>
 											</weaponTags>
 											<magazineCount>
-												<min>1</min>
-												<max>2</max>
+												<min>2</min>
+												<max>3</max>
 											</magazineCount>
 										</li>
 										<li>
-											<generateChance>0.25</generateChance>
+											<generateChance>0.5</generateChance>
 											<sidearmMoney>
-												<min>50</min>
-												<max>100</max>
+												<min>100</min>
+												<max>250</max>
 											</sidearmMoney>
 											<weaponTags>
 												<li>GrenadeSmoke</li>
 											</weaponTags>
 											<magazineCount>
-												<min>1</min>
-												<max>2</max>
+												<min>2</min>
+												<max>3</max>
+											</magazineCount>
+										</li>
+										<li>
+											<generateChance>1.0</generateChance>
+											<sidearmMoney>
+												<min>1000</min>
+												<max>2500</max>
+											</sidearmMoney>
+											<weaponTags>
+												<li>PCA_ASR</li>
+											</weaponTags>
+											<magazineCount>
+												<min>2</min>
+												<max>3</max>
 											</magazineCount>
 										</li>
 									</sidearms>
