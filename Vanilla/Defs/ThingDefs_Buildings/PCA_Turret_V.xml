@@ -1117,7 +1117,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseTurretGun">
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>PCA_Gun_SHCA</defName>
 		<label>super heavy charge autocannon</label>
 		<graphicData>
@@ -1151,7 +1151,7 @@
 		</verbs>
 	</ThingDef>
 
-	<ThingDef ParentName="TurretMannedBuildableBase">
+	<ThingDef ParentName="PCA_TurretBase">
 		<defName>PCA_Turret_SHCA</defName>
 		<label>super heavy charge autocannon</label>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
