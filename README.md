@@ -1,7 +1,7 @@
 # Paramount Combat Armaments
 Paramount Combat Armaments mod for Rimworld
 
-This mod adds several new guns, apparel and buildings designed to take advantage of CE and vanilla mechanics while filling in niches in the vanilla lineup in a way that the included items are both balanced and reasonably stronger than the other modded options in the workshop.
+This mod adds several new items ranging from guns and apparel to turrets and emplacements to offer you the best-in-class arms. The included items are both balanced and reasonably stronger than the other options in the workshop, some don't even have an alternative.
 
 Compatible with both the vanilla combat system and CE.
 
