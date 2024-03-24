@@ -870,7 +870,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.33</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>0.89</recoilAmount><!-- Decreased by 50% due to the suppressor and special recoil mitigation system -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
@@ -991,7 +991,7 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.25</recoilAmount><!-- Decreased by 25% due to the suppressor -->
+				<recoilAmount>0.83</recoilAmount><!-- Decreased by 50% due to the suppressor and special recoil mitigation system -->
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
